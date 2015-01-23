@@ -1,0 +1,13 @@
+2015-01-23 10:26:38 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/font-awesome/css/font-awesome.min.css
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
