@@ -1,0 +1,95 @@
+2015-01-23 12:15:24 Notice: Notice (8): Undefined offset: 0 in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\tmp\index-ctp.php, line 64]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+include - ROOT\tmp\index-ctp.php, line 64
+Bake\View\BakeView::_evaluate() - ROOT\plugins\Bake\src\View\BakeView.php, line 179
+Cake\View\View::_render() - CORE\src\View\View.php, line 775
+Bake\View\BakeView::render() - ROOT\plugins\Bake\src\View\BakeView.php, line 117
+Bake\Shell\Task\TemplateTask::generate() - ROOT\plugins\Bake\src\Shell\Task\TemplateTask.php, line 87
+Bake\Shell\Task\ViewTask::getContent() - ROOT\plugins\Bake\src\Shell\Task\ViewTask.php, line 392
+Bake\Shell\Task\ViewTask::main() - ROOT\plugins\Bake\src\Shell\Task\ViewTask.php, line 143
+Bake\Shell\BakeShell::all() - ROOT\plugins\Bake\src\Shell\BakeShell.php, line 228
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 376
+Cake\Console\ShellDispatcher::_dispatch() - CORE\src\Console\ShellDispatcher.php, line 200
+Cake\Console\ShellDispatcher::dispatch() - CORE\src\Console\ShellDispatcher.php, line 171
+Cake\Console\ShellDispatcher::run() - CORE\src\Console\ShellDispatcher.php, line 122
+[main] - ROOT\bin\cake.php, line 20
+
+
+
+2015-01-23 12:15:27 Notice: Notice (8): Undefined offset: 0 in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\tmp\view-ctp.php, line 87]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+include - ROOT\tmp\view-ctp.php, line 87
+Bake\View\BakeView::_evaluate() - ROOT\plugins\Bake\src\View\BakeView.php, line 179
+Cake\View\View::_render() - CORE\src\View\View.php, line 775
+Bake\View\BakeView::render() - ROOT\plugins\Bake\src\View\BakeView.php, line 117
+Bake\Shell\Task\TemplateTask::generate() - ROOT\plugins\Bake\src\Shell\Task\TemplateTask.php, line 87
+Bake\Shell\Task\ViewTask::getContent() - ROOT\plugins\Bake\src\Shell\Task\ViewTask.php, line 392
+Bake\Shell\Task\ViewTask::main() - ROOT\plugins\Bake\src\Shell\Task\ViewTask.php, line 143
+Bake\Shell\BakeShell::all() - ROOT\plugins\Bake\src\Shell\BakeShell.php, line 228
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 376
+Cake\Console\ShellDispatcher::_dispatch() - CORE\src\Console\ShellDispatcher.php, line 200
+Cake\Console\ShellDispatcher::dispatch() - CORE\src\Console\ShellDispatcher.php, line 171
+Cake\Console\ShellDispatcher::run() - CORE\src\Console\ShellDispatcher.php, line 122
+[main] - ROOT\bin\cake.php, line 20
+
+
+
+2015-01-23 12:17:42 Notice: Notice (8): Undefined offset: 0 in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\tmp\index-ctp.php, line 64]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+include - ROOT\tmp\index-ctp.php, line 64
+Bake\View\BakeView::_evaluate() - ROOT\plugins\Bake\src\View\BakeView.php, line 179
+Cake\View\View::_render() - CORE\src\View\View.php, line 775
+Bake\View\BakeView::render() - ROOT\plugins\Bake\src\View\BakeView.php, line 117
+Bake\Shell\Task\TemplateTask::generate() - ROOT\plugins\Bake\src\Shell\Task\TemplateTask.php, line 87
+Bake\Shell\Task\ViewTask::getContent() - ROOT\plugins\Bake\src\Shell\Task\ViewTask.php, line 392
+Bake\Shell\Task\ViewTask::main() - ROOT\plugins\Bake\src\Shell\Task\ViewTask.php, line 143
+Bake\Shell\BakeShell::all() - ROOT\plugins\Bake\src\Shell\BakeShell.php, line 228
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 376
+Cake\Console\ShellDispatcher::_dispatch() - CORE\src\Console\ShellDispatcher.php, line 200
+Cake\Console\ShellDispatcher::dispatch() - CORE\src\Console\ShellDispatcher.php, line 171
+Cake\Console\ShellDispatcher::run() - CORE\src\Console\ShellDispatcher.php, line 122
+[main] - ROOT\bin\cake.php, line 20
+
+
+
+2015-01-23 12:17:43 Notice: Notice (8): Undefined offset: 0 in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\tmp\view-ctp.php, line 87]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+include - ROOT\tmp\view-ctp.php, line 87
+Bake\View\BakeView::_evaluate() - ROOT\plugins\Bake\src\View\BakeView.php, line 179
+Cake\View\View::_render() - CORE\src\View\View.php, line 775
+Bake\View\BakeView::render() - ROOT\plugins\Bake\src\View\BakeView.php, line 117
+Bake\Shell\Task\TemplateTask::generate() - ROOT\plugins\Bake\src\Shell\Task\TemplateTask.php, line 87
+Bake\Shell\Task\ViewTask::getContent() - ROOT\plugins\Bake\src\Shell\Task\ViewTask.php, line 392
+Bake\Shell\Task\ViewTask::main() - ROOT\plugins\Bake\src\Shell\Task\ViewTask.php, line 143
+Bake\Shell\BakeShell::all() - ROOT\plugins\Bake\src\Shell\BakeShell.php, line 228
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 376
+Cake\Console\ShellDispatcher::_dispatch() - CORE\src\Console\ShellDispatcher.php, line 200
+Cake\Console\ShellDispatcher::dispatch() - CORE\src\Console\ShellDispatcher.php, line 171
+Cake\Console\ShellDispatcher::run() - CORE\src\Console\ShellDispatcher.php, line 122
+[main] - ROOT\bin\cake.php, line 20
+
+
+
+2015-01-23 14:34:39 Notice: Notice (8): Undefined offset: 0 in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\tmp\view-ctp.php, line 155]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+include - ROOT\tmp\view-ctp.php, line 155
+Bake\View\BakeView::_evaluate() - ROOT\plugins\Bake\src\View\BakeView.php, line 179
+Cake\View\View::_render() - CORE\src\View\View.php, line 775
+Bake\View\BakeView::render() - ROOT\plugins\Bake\src\View\BakeView.php, line 117
+Bake\Shell\Task\TemplateTask::generate() - ROOT\plugins\Bake\src\Shell\Task\TemplateTask.php, line 87
+Bake\Shell\Task\ViewTask::getContent() - ROOT\plugins\Bake\src\Shell\Task\ViewTask.php, line 392
+Bake\Shell\Task\ViewTask::main() - ROOT\plugins\Bake\src\Shell\Task\ViewTask.php, line 143
+Bake\Shell\BakeShell::all() - ROOT\plugins\Bake\src\Shell\BakeShell.php, line 228
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 376
+Cake\Console\ShellDispatcher::_dispatch() - CORE\src\Console\ShellDispatcher.php, line 200
+Cake\Console\ShellDispatcher::dispatch() - CORE\src\Console\ShellDispatcher.php, line 171
+Cake\Console\ShellDispatcher::run() - CORE\src\Console\ShellDispatcher.php, line 122
+[main] - ROOT\bin\cake.php, line 20
+
+
+

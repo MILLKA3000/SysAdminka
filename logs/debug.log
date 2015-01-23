@@ -1,0 +1,420 @@
+2015-01-23 12:49:04 Notice: Notice (8): Object of class Cake\I18n\Time could not be converted to int in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Template\Students\index.ctp, line 36]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+include - APP/Template\Students\index.ctp, line 36
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 815
+Cake\View\View::_render() - CORE\src\View\View.php, line 775
+Cake\View\View::render() - CORE\src\View\View.php, line 463
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 577
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-23 14:10:14 Notice: Notice (8): Undefined variable: school in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\SchoolsController.php, line 33]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Controller\SchoolsController::view() - APP/Controller\SchoolsController.php, line 33
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-23 14:10:14 Notice: Notice (8): Trying to get property of non-object in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Template\Schools\view.ctp, line 4]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+include - APP/Template\Schools\view.ctp, line 4
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 815
+Cake\View\View::_render() - CORE\src\View\View.php, line 775
+Cake\View\View::render() - CORE\src\View\View.php, line 463
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 577
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-23 14:10:14 Notice: Notice (8): Trying to get property of non-object in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Template\Schools\view.ctp, line 5]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+include - APP/Template\Schools\view.ctp, line 5
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 815
+Cake\View\View::_render() - CORE\src\View\View.php, line 775
+Cake\View\View::render() - CORE\src\View\View.php, line 463
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 577
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-23 14:10:14 Notice: Notice (8): Trying to get property of non-object in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Template\Schools\view.ctp, line 5]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+include - APP/Template\Schools\view.ctp, line 5
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 815
+Cake\View\View::_render() - CORE\src\View\View.php, line 775
+Cake\View\View::render() - CORE\src\View\View.php, line 463
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 577
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-23 14:10:14 Notice: Notice (8): Trying to get property of non-object in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Template\Schools\view.ctp, line 11]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+include - APP/Template\Schools\view.ctp, line 11
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 815
+Cake\View\View::_render() - CORE\src\View\View.php, line 775
+Cake\View\View::render() - CORE\src\View\View.php, line 463
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 577
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-23 14:10:14 Notice: Notice (8): Trying to get property of non-object in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Template\Schools\view.ctp, line 15]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+include - APP/Template\Schools\view.ctp, line 15
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 815
+Cake\View\View::_render() - CORE\src\View\View.php, line 775
+Cake\View\View::render() - CORE\src\View\View.php, line 463
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 577
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-23 14:10:14 Notice: Notice (8): Trying to get property of non-object in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Template\Schools\view.ctp, line 21]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+include - APP/Template\Schools\view.ctp, line 21
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 815
+Cake\View\View::_render() - CORE\src\View\View.php, line 775
+Cake\View\View::render() - CORE\src\View\View.php, line 463
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 577
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-23 14:35:40 Notice: Notice (8): Undefined variable: status in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Template\Students\edit.ctp, line 27]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+include - APP/Template\Students\edit.ctp, line 27
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 815
+Cake\View\View::_render() - CORE\src\View\View.php, line 775
+Cake\View\View::render() - CORE\src\View\View.php, line 463
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 577
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-23 14:48:02 Notice: Notice (8): Trying to get property of non-object in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Template\Students\index.ctp, line 36]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+include - APP/Template\Students\index.ctp, line 36
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 815
+Cake\View\View::_render() - CORE\src\View\View.php, line 775
+Cake\View\View::render() - CORE\src\View\View.php, line 463
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 577
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-23 14:48:19 Notice: Notice (8): Trying to get property of non-object in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Template\Students\index.ctp, line 36]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+include - APP/Template\Students\index.ctp, line 36
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 815
+Cake\View\View::_render() - CORE\src\View\View.php, line 775
+Cake\View\View::render() - CORE\src\View\View.php, line 463
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 577
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-23 14:48:20 Notice: Notice (8): Trying to get property of non-object in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Template\Students\index.ctp, line 36]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+include - APP/Template\Students\index.ctp, line 36
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 815
+Cake\View\View::_render() - CORE\src\View\View.php, line 775
+Cake\View\View::render() - CORE\src\View\View.php, line 463
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 577
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-23 14:50:12 Notice: Notice (8): Undefined variable: _SESSION in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Network\Session.php, line 439]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Network\Session::write() - CORE\src\Network\Session.php, line 439
+Cake\Controller\Component\FlashComponent::set() - CORE\src\Controller\Component\FlashComponent.php, line 99
+Cake\Controller\Component\FlashComponent::__call() - CORE\src\Controller\Component\FlashComponent.php, line 126
+Cake\Controller\Component\FlashComponent::success() - APP/Controller\StudentsController.php, line 80
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 80
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-23 14:50:31 Notice: Notice (8): Undefined variable: _SESSION in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Network\Session.php, line 439]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Network\Session::write() - CORE\src\Network\Session.php, line 439
+Cake\Controller\Component\FlashComponent::set() - CORE\src\Controller\Component\FlashComponent.php, line 99
+Cake\Controller\Component\FlashComponent::__call() - CORE\src\Controller\Component\FlashComponent.php, line 126
+Cake\Controller\Component\FlashComponent::success() - APP/Controller\StudentsController.php, line 80
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 80
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-23 14:56:17 Notice: Notice (8): Undefined variable: _SESSION in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Network\Session.php, line 439]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Network\Session::write() - CORE\src\Network\Session.php, line 439
+Cake\Controller\Component\FlashComponent::set() - CORE\src\Controller\Component\FlashComponent.php, line 99
+Cake\Controller\Component\FlashComponent::__call() - CORE\src\Controller\Component\FlashComponent.php, line 126
+Cake\Controller\Component\FlashComponent::success() - APP/Controller\StudentsController.php, line 80
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 80
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-23 14:56:59 Notice: Notice (8): Undefined variable: _SESSION in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Network\Session.php, line 439]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Network\Session::write() - CORE\src\Network\Session.php, line 439
+Cake\Controller\Component\FlashComponent::set() - CORE\src\Controller\Component\FlashComponent.php, line 99
+Cake\Controller\Component\FlashComponent::__call() - CORE\src\Controller\Component\FlashComponent.php, line 126
+Cake\Controller\Component\FlashComponent::success() - APP/Controller\StudentsController.php, line 80
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 80
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-23 14:57:05 Notice: Notice (8): Undefined variable: _SESSION in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Network\Session.php, line 439]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Network\Session::write() - CORE\src\Network\Session.php, line 439
+Cake\Controller\Component\FlashComponent::set() - CORE\src\Controller\Component\FlashComponent.php, line 99
+Cake\Controller\Component\FlashComponent::__call() - CORE\src\Controller\Component\FlashComponent.php, line 126
+Cake\Controller\Component\FlashComponent::success() - APP/Controller\StudentsController.php, line 80
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 80
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-23 14:57:53 Notice: Notice (8): Undefined variable: _SESSION in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Network\Session.php, line 439]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Network\Session::write() - CORE\src\Network\Session.php, line 439
+Cake\Controller\Component\FlashComponent::set() - CORE\src\Controller\Component\FlashComponent.php, line 99
+Cake\Controller\Component\FlashComponent::__call() - CORE\src\Controller\Component\FlashComponent.php, line 126
+Cake\Controller\Component\FlashComponent::success() - APP/Controller\StudentsController.php, line 80
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 80
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-23 14:58:50 Notice: Notice (8): Undefined variable: _SESSION in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Network\Session.php, line 439]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Network\Session::write() - CORE\src\Network\Session.php, line 439
+Cake\Controller\Component\FlashComponent::set() - CORE\src\Controller\Component\FlashComponent.php, line 99
+Cake\Controller\Component\FlashComponent::__call() - CORE\src\Controller\Component\FlashComponent.php, line 126
+Cake\Controller\Component\FlashComponent::success() - APP/Controller\StudentsController.php, line 80
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 80
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-23 15:01:11 Notice: Notice (8): Undefined variable: _SESSION in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Network\Session.php, line 439]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Network\Session::write() - CORE\src\Network\Session.php, line 439
+Cake\Controller\Component\FlashComponent::set() - CORE\src\Controller\Component\FlashComponent.php, line 99
+Cake\Controller\Component\FlashComponent::__call() - CORE\src\Controller\Component\FlashComponent.php, line 126
+Cake\Controller\Component\FlashComponent::success() - APP/Controller\StudentsController.php, line 80
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 80
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-23 15:03:54 Notice: Notice (8): Undefined variable: _SESSION in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Network\Session.php, line 439]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Network\Session::write() - CORE\src\Network\Session.php, line 439
+Cake\Controller\Component\FlashComponent::set() - CORE\src\Controller\Component\FlashComponent.php, line 99
+Cake\Controller\Component\FlashComponent::__call() - CORE\src\Controller\Component\FlashComponent.php, line 126
+Cake\Controller\Component\FlashComponent::success() - APP/Controller\StudentsController.php, line 81
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 81
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-23 15:05:03 Notice: Notice (8): Undefined variable: _SESSION in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Network\Session.php, line 439]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Network\Session::write() - CORE\src\Network\Session.php, line 439
+Cake\Controller\Component\FlashComponent::set() - CORE\src\Controller\Component\FlashComponent.php, line 99
+Cake\Controller\Component\FlashComponent::__call() - CORE\src\Controller\Component\FlashComponent.php, line 126
+Cake\Controller\Component\FlashComponent::success() - APP/Controller\StudentsController.php, line 81
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 81
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-23 15:06:15 Notice: Notice (8): Undefined variable: _SESSION in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Network\Session.php, line 439]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Network\Session::write() - CORE\src\Network\Session.php, line 439
+Cake\Controller\Component\FlashComponent::set() - CORE\src\Controller\Component\FlashComponent.php, line 99
+Cake\Controller\Component\FlashComponent::__call() - CORE\src\Controller\Component\FlashComponent.php, line 126
+Cake\Controller\Component\FlashComponent::success() - APP/Controller\StudentsController.php, line 81
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 81
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-23 15:16:27 Notice: Notice (8): Undefined variable: _SESSION in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Network\Session.php, line 439]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Network\Session::write() - CORE\src\Network\Session.php, line 439
+Cake\Controller\Component\FlashComponent::set() - CORE\src\Controller\Component\FlashComponent.php, line 99
+Cake\Controller\Component\FlashComponent::__call() - CORE\src\Controller\Component\FlashComponent.php, line 126
+Cake\Controller\Component\FlashComponent::success() - APP/Controller\StudentsController.php, line 79
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 79
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-23 15:16:57 Notice: Notice (8): Undefined variable: _SESSION in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Network\Session.php, line 439]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Network\Session::write() - CORE\src\Network\Session.php, line 439
+Cake\Controller\Component\FlashComponent::set() - CORE\src\Controller\Component\FlashComponent.php, line 99
+Cake\Controller\Component\FlashComponent::__call() - CORE\src\Controller\Component\FlashComponent.php, line 126
+Cake\Controller\Component\FlashComponent::success() - APP/Controller\StudentsController.php, line 79
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 79
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-23 15:17:07 Notice: Notice (8): Undefined variable: _SESSION in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Network\Session.php, line 439]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Network\Session::write() - CORE\src\Network\Session.php, line 439
+Cake\Controller\Component\FlashComponent::set() - CORE\src\Controller\Component\FlashComponent.php, line 99
+Cake\Controller\Component\FlashComponent::__call() - CORE\src\Controller\Component\FlashComponent.php, line 126
+Cake\Controller\Component\FlashComponent::success() - APP/Controller\StudentsController.php, line 79
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 79
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-23 15:18:15 Notice: Notice (8): Undefined variable: _SESSION in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Network\Session.php, line 439]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Network\Session::write() - CORE\src\Network\Session.php, line 439
+Cake\Controller\Component\FlashComponent::set() - CORE\src\Controller\Component\FlashComponent.php, line 99
+Cake\Controller\Component\FlashComponent::__call() - CORE\src\Controller\Component\FlashComponent.php, line 126
+Cake\Controller\Component\FlashComponent::success() - APP/Controller\StudentsController.php, line 79
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 79
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-23 15:29:11 Notice: Notice (8): Undefined variable: _SESSION in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Network\Session.php, line 439]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Network\Session::write() - CORE\src\Network\Session.php, line 439
+Cake\Controller\Component\FlashComponent::set() - CORE\src\Controller\Component\FlashComponent.php, line 99
+Cake\Controller\Component\FlashComponent::__call() - CORE\src\Controller\Component\FlashComponent.php, line 126
+Cake\Controller\Component\FlashComponent::success() - APP/Controller\StudentsController.php, line 80
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 80
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-23 15:35:13 Notice: Notice (8): Undefined variable: _SESSION in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Network\Session.php, line 439]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Network\Session::write() - CORE\src\Network\Session.php, line 439
+Cake\Controller\Component\FlashComponent::set() - CORE\src\Controller\Component\FlashComponent.php, line 99
+Cake\Controller\Component\FlashComponent::__call() - CORE\src\Controller\Component\FlashComponent.php, line 126
+Cake\Controller\Component\FlashComponent::success() - APP/Controller\StudentsController.php, line 80
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 80
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+

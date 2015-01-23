@@ -1,0 +1,124 @@
+2015-01-23 10:51:21 Error: [PDOException] SQLSTATE[HY000] [2002] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение.
+
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Database\Driver\PDODriverTrait.php(47): PDO->__construct('mysql:host=loca...', 'my_app', 'secret', Array)
+#1 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(84): Cake\Database\Driver\Mysql->_connect('mysql:host=loca...', Array)
+#2 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Database\Schema\BaseSchema.php(46): Cake\Database\Driver\Mysql->connect()
+#3 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Database\Dialect\MysqlDialectTrait.php(62): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Mysql))
+#4 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(52): Cake\Database\Driver\Mysql->schemaDialect()
+#5 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(44): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Database\Connection.php(320): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\plugins\Bake\src\Shell\Task\ModelTask.php(757): Cake\Database\Connection->schemaCollection()
+#8 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\plugins\Bake\src\Shell\Task\ModelTask.php(733): Bake\Shell\Task\ModelTask->_getAllTables()
+#9 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\plugins\Bake\src\Shell\Task\ModelTask.php(184): Bake\Shell\Task\ModelTask->listAll()
+#10 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\plugins\Bake\src\Shell\Task\ModelTask.php(109): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#11 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\plugins\Bake\src\Shell\BakeShell.php(225): Bake\Shell\Task\ModelTask->bake('Users')
+#12 [internal function]: Bake\Shell\BakeShell->all('users')
+#13 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Console\Shell.php(376): call_user_func_array(Array, Array)
+#14 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(200): Cake\Console\Shell->runCommand(Array, true)
+#15 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(171): Cake\Console\ShellDispatcher->_dispatch()
+#16 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(122): Cake\Console\ShellDispatcher->dispatch()
+#17 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\bin\cake.php(20): Cake\Console\ShellDispatcher::run(Array)
+#18 {main}
+
+
+2015-01-23 10:56:20 Error: [PDOException] SQLSTATE[HY000] [2002] Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера.
+
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Database\Driver\PDODriverTrait.php(47): PDO->__construct('mysql:host=10.1...', 'root', 'admin5', Array)
+#1 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(84): Cake\Database\Driver\Mysql->_connect('mysql:host=10.1...', Array)
+#2 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Database\Schema\BaseSchema.php(46): Cake\Database\Driver\Mysql->connect()
+#3 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Database\Dialect\MysqlDialectTrait.php(62): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Mysql))
+#4 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(52): Cake\Database\Driver\Mysql->schemaDialect()
+#5 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(44): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Database\Connection.php(320): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\plugins\Bake\src\Shell\Task\ModelTask.php(757): Cake\Database\Connection->schemaCollection()
+#8 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\plugins\Bake\src\Shell\Task\ModelTask.php(733): Bake\Shell\Task\ModelTask->_getAllTables()
+#9 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\plugins\Bake\src\Shell\Task\ModelTask.php(184): Bake\Shell\Task\ModelTask->listAll()
+#10 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\plugins\Bake\src\Shell\Task\ModelTask.php(109): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#11 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\plugins\Bake\src\Shell\BakeShell.php(225): Bake\Shell\Task\ModelTask->bake('Students')
+#12 [internal function]: Bake\Shell\BakeShell->all('students')
+#13 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Console\Shell.php(376): call_user_func_array(Array, Array)
+#14 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(200): Cake\Console\Shell->runCommand(Array, true)
+#15 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(171): Cake\Console\ShellDispatcher->_dispatch()
+#16 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(122): Cake\Console\ShellDispatcher->dispatch()
+#17 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\bin\cake.php(20): Cake\Console\ShellDispatcher::run(Array)
+#18 {main}
+
+
+2015-01-23 11:40:36 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'c2sysadmin.schools' doesn't exist
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'schools', Array, Object(Cake\Database\Schema\Table))
+#1 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(65): Cake\Database\Schema\Collection->describe('schools', Array)
+#2 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Table.php(364): Cake\Database\Schema\CachedCollection->describe('schools')
+#3 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Table.php(440): Cake\ORM\Table->schema()
+#4 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\plugins\Bake\src\Shell\Task\ViewTask.php(455): Cake\ORM\Table->primaryKey()
+#5 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\plugins\Bake\src\Shell\Task\ViewTask.php(275): Bake\Shell\Task\ViewTask->_associations(Object(App\Model\Table\StudentsTable))
+#6 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\plugins\Bake\src\Shell\Task\ViewTask.php(139): Bake\Shell\Task\ViewTask->_loadController()
+#7 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\plugins\Bake\src\Shell\BakeShell.php(228): Bake\Shell\Task\ViewTask->main('Students')
+#8 [internal function]: Bake\Shell\BakeShell->all('students')
+#9 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Console\Shell.php(376): call_user_func_array(Array, Array)
+#10 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(200): Cake\Console\Shell->runCommand(Array, true)
+#11 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(171): Cake\Console\ShellDispatcher->_dispatch()
+#12 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(122): Cake\Console\ShellDispatcher->dispatch()
+#13 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\bin\cake.php(20): Cake\Console\ShellDispatcher::run(Array)
+#14 {main}
+
+
+2015-01-23 12:26:37 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'c2sysadmin.staffs' doesn't exist
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'staffs', Array, Object(Cake\Database\Schema\Table))
+#1 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(65): Cake\Database\Schema\Collection->describe('staffs', Array)
+#2 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Table.php(364): Cake\Database\Schema\CachedCollection->describe('staffs')
+#3 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Table.php(440): Cake\ORM\Table->schema()
+#4 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\plugins\Bake\src\Shell\Task\ViewTask.php(455): Cake\ORM\Table->primaryKey()
+#5 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\plugins\Bake\src\Shell\Task\ViewTask.php(275): Bake\Shell\Task\ViewTask->_associations(Object(App\Model\Table\ClassesTable))
+#6 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\plugins\Bake\src\Shell\Task\ViewTask.php(139): Bake\Shell\Task\ViewTask->_loadController()
+#7 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\plugins\Bake\src\Shell\BakeShell.php(228): Bake\Shell\Task\ViewTask->main('Classes')
+#8 [internal function]: Bake\Shell\BakeShell->all('classes')
+#9 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Console\Shell.php(376): call_user_func_array(Array, Array)
+#10 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(200): Cake\Console\Shell->runCommand(Array, true)
+#11 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(171): Cake\Console\ShellDispatcher->_dispatch()
+#12 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(122): Cake\Console\ShellDispatcher->dispatch()
+#13 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\bin\cake.php(20): Cake\Console\ShellDispatcher::run(Array)
+#14 {main}
+
+
+2015-01-23 12:27:20 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'c2sysadmin.staffs' doesn't exist
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'staffs', Array, Object(Cake\Database\Schema\Table))
+#1 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(65): Cake\Database\Schema\Collection->describe('staffs', Array)
+#2 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Table.php(364): Cake\Database\Schema\CachedCollection->describe('staffs')
+#3 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Table.php(440): Cake\ORM\Table->schema()
+#4 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\plugins\Bake\src\Shell\Task\ViewTask.php(455): Cake\ORM\Table->primaryKey()
+#5 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\plugins\Bake\src\Shell\Task\ViewTask.php(275): Bake\Shell\Task\ViewTask->_associations(Object(App\Model\Table\StaffTable))
+#6 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\plugins\Bake\src\Shell\Task\ViewTask.php(139): Bake\Shell\Task\ViewTask->_loadController()
+#7 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\plugins\Bake\src\Shell\BakeShell.php(228): Bake\Shell\Task\ViewTask->main('Staff')
+#8 [internal function]: Bake\Shell\BakeShell->all('staff')
+#9 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Console\Shell.php(376): call_user_func_array(Array, Array)
+#10 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(200): Cake\Console\Shell->runCommand(Array, true)
+#11 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(171): Cake\Console\ShellDispatcher->_dispatch()
+#12 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(122): Cake\Console\ShellDispatcher->dispatch()
+#13 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\bin\cake.php(20): Cake\Console\ShellDispatcher::run(Array)
+#14 {main}
+
+
+2015-01-23 14:34:53 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'c2sysadmin.statuses' doesn't exist
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'statuses', Array, Object(Cake\Database\Schema\Table))
+#1 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(65): Cake\Database\Schema\Collection->describe('statuses', Array)
+#2 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Table.php(364): Cake\Database\Schema\CachedCollection->describe('statuses')
+#3 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Table.php(440): Cake\ORM\Table->schema()
+#4 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\plugins\Bake\src\Shell\Task\ViewTask.php(455): Cake\ORM\Table->primaryKey()
+#5 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\plugins\Bake\src\Shell\Task\ViewTask.php(275): Bake\Shell\Task\ViewTask->_associations(Object(App\Model\Table\StatusTable))
+#6 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\plugins\Bake\src\Shell\Task\ViewTask.php(139): Bake\Shell\Task\ViewTask->_loadController()
+#7 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\plugins\Bake\src\Shell\BakeShell.php(228): Bake\Shell\Task\ViewTask->main('Status')
+#8 [internal function]: Bake\Shell\BakeShell->all('status')
+#9 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Console\Shell.php(376): call_user_func_array(Array, Array)
+#10 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(200): Cake\Console\Shell->runCommand(Array, true)
+#11 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(171): Cake\Console\ShellDispatcher->_dispatch()
+#12 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(122): Cake\Console\ShellDispatcher->dispatch()
+#13 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\bin\cake.php(20): Cake\Console\ShellDispatcher::run(Array)
+#14 {main}
+
+
