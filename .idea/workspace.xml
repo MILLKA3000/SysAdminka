@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f1f1f89-f03c-4650-94cd-3a0807349563" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/error.log" afterPath="$PROJECT_DIR$/logs/error.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Template/Students/index.ctp" afterPath="$PROJECT_DIR$/src/Template/Students/index.ctp" />
     </list>
     <ignored path="SysAdminka.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -70,10 +71,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="add.ctp" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="add.ctp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Template/Schools/add.ctp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="827">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="323">
               <folding />
             </state>
           </provider>
@@ -108,10 +109,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.ctp" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.ctp" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Template/Students/index.ctp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1007">
+            <state line="29" column="117" selection-start="1715" selection-end="1715" vertical-scroll-proportion="0.6662636" vertical-offset="0" max-vertical-offset="969">
               <folding />
             </state>
           </provider>
@@ -146,10 +147,10 @@
         <option value="$PROJECT_DIR$/src/Controller/StudentsController.php" />
         <option value="$PROJECT_DIR$/src/Template/Students/edit.ctp" />
         <option value="$PROJECT_DIR$/src/Template/Students/view.ctp" />
-        <option value="$PROJECT_DIR$/src/Template/Students/index.ctp" />
         <option value="$PROJECT_DIR$/src/Template/Schools/index.ctp" />
         <option value="$PROJECT_DIR$/src/Template/Schools/edit.ctp" />
         <option value="$PROJECT_DIR$/src/Template/Schools/add.ctp" />
+        <option value="$PROJECT_DIR$/src/Template/Students/index.ctp" />
       </list>
     </option>
   </component>
@@ -816,13 +817,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Template/Students/index.ctp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1007">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Template/Students/edit.ctp">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="475">
@@ -847,6 +841,13 @@
     <entry file="file://$PROJECT_DIR$/src/Template/Schools/add.ctp">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="852">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Template/Students/index.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="117" selection-start="1715" selection-end="1715" vertical-scroll-proportion="0.6662636" vertical-offset="0" max-vertical-offset="969">
           <folding />
         </state>
       </provider>

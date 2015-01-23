@@ -27,9 +27,7 @@
 <!--            <td>--><?//= $student->password ?><!--</td>-->
             <td><? print_r($student->status_id)?></td>
             <td class="actions">
-                <?= $this->Html->link(__('View'), ['action' => 'view', $student->id],['class'=>'btn btn-primary']) ?>
                 <?= $this->Html->link(__('Edit'), ['action' => 'edit', $student->id],['class'=>'btn btn-warning']) ?>
-                <?= $this->Html->link(__('Delete'), ['action' => 'delete', $student->id],['class'=>'btn btn-danger']) ?>
             </td>
         </tr>
 
