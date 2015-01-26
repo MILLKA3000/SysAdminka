@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f1f1f89-f03c-4650-94cd-3a0807349563" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Template/Students/index.ctp" afterPath="$PROJECT_DIR$/src/Template/Students/index.ctp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Template/Element/menu/rightmenu.ctp" afterPath="$PROJECT_DIR$/src/Template/Element/menu/rightmenu.ctp" />
     </list>
     <ignored path="SysAdminka.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -99,16 +99,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.ctp" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Template/Students/index.ctp">
+      <file leaf-file-name="rightmenu.ctp" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Template/Element/menu/rightmenu.ctp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="75" selection-start="1976" selection-end="1976" vertical-scroll-proportion="0.7393868" vertical-offset="0" max-vertical-offset="1121">
-              <folding>
-                <element signature="n#style#0;n#th#2;n#tr#0;n#thead#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#th#3;n#tr#0;n#thead#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#th#4;n#tr#0;n#thead#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#th#5;n#tr#0;n#thead#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state line="36" column="21" selection-start="1755" selection-end="1755" vertical-scroll-proportion="0.6639151" vertical-offset="121" max-vertical-offset="1292">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -139,7 +134,6 @@
         <option value="$PROJECT_DIR$/config/app.php" />
         <option value="$PROJECT_DIR$/src/Template/Element/menu/index.ctp" />
         <option value="$PROJECT_DIR$/src/Template/Element/navbar/header.ctp" />
-        <option value="$PROJECT_DIR$/src/Template/Element/menu/rightmenu.ctp" />
         <option value="$PROJECT_DIR$/src/Model/Table/StatusTable.php" />
         <option value="$PROJECT_DIR$/src/Model/Table/RostersTable.php" />
         <option value="$PROJECT_DIR$/src/Template/Students/view.ctp" />
@@ -161,6 +155,7 @@
         <option value="$PROJECT_DIR$/src/Template/Schools/index.ctp" />
         <option value="$PROJECT_DIR$/src/Model/Table/SchoolsTable.php" />
         <option value="$PROJECT_DIR$/src/Template/Students/index.ctp" />
+        <option value="$PROJECT_DIR$/src/Template/Element/menu/rightmenu.ctp" />
       </list>
     </option>
   </component>
@@ -815,13 +810,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Template/Element/menu/rightmenu.ctp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="116" selection-start="581" selection-end="593" vertical-scroll-proportion="-7.6" vertical-offset="0" max-vertical-offset="589">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Template/Element/menu/topmenu.ctp">
       <provider selected="true" editor-type-id="text-editor">
         <state line="83" column="99" selection-start="3957" selection-end="3957" vertical-scroll-proportion="-19.48" vertical-offset="1090" max-vertical-offset="2014">
@@ -945,6 +933,13 @@
             <element signature="n#style#0;n#th#4;n#tr#0;n#thead#0;n#table#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#th#5;n#tr#0;n#thead#0;n#table#0;n#div#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Template/Element/menu/rightmenu.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="21" selection-start="1755" selection-end="1755" vertical-scroll-proportion="0.6639151" vertical-offset="121" max-vertical-offset="1292">
+          <folding />
         </state>
       </provider>
     </entry>
