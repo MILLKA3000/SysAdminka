@@ -418,3 +418,347 @@ Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
 
 
 
+2015-01-26 13:09:25 Notice: Notice (8): Undefined variable: form in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Template\Students\index.ctp, line 11]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+include - APP/Template\Students\index.ctp, line 11
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 815
+Cake\View\View::_render() - CORE\src\View\View.php, line 775
+Cake\View\View::render() - CORE\src\View\View.php, line 463
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 577
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 13:10:26 Notice: Notice (8): Undefined variable: form in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Template\Students\index.ctp, line 11]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+include - APP/Template\Students\index.ctp, line 11
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 815
+Cake\View\View::_render() - CORE\src\View\View.php, line 775
+Cake\View\View::render() - CORE\src\View\View.php, line 463
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 577
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 13:11:30 Notice: Notice (8): Undefined variable: form in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Template\Students\index.ctp, line 11]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+include - APP/Template\Students\index.ctp, line 11
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 815
+Cake\View\View::_render() - CORE\src\View\View.php, line 775
+Cake\View\View::render() - CORE\src\View\View.php, line 463
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 577
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 13:31:47 Notice: Notice (8): Undefined variable: status in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Template\Students\index.ctp, line 13]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+include - APP/Template\Students\index.ctp, line 13
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 815
+Cake\View\View::_render() - CORE\src\View\View.php, line 775
+Cake\View\View::render() - CORE\src\View\View.php, line 463
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 577
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 13:59:27 Notice: Notice (8): Undefined variable: status in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\StudentsController.php, line 27]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Controller\StudentsController::index() - APP/Controller\StudentsController.php, line 27
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 14:14:05 Notice: Notice (8): Undefined variable: currentuserstatus in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Template\Students\index.ctp, line 12]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+include - APP/Template\Students\index.ctp, line 12
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 815
+Cake\View\View::_render() - CORE\src\View\View.php, line 775
+Cake\View\View::render() - CORE\src\View\View.php, line 463
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 577
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 14:15:39 Notice: Notice (8): Undefined property: Cake\ORM\Query::$name in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Template\Students\edit.ctp, line 8]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+include - APP/Template\Students\edit.ctp, line 8
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 815
+Cake\View\View::_render() - CORE\src\View\View.php, line 775
+Cake\View\View::render() - CORE\src\View\View.php, line 463
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 577
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 14:17:47 Notice: Notice (8): Undefined variable: schools in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Template\Students\edit.ctp, line 8]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+include - APP/Template\Students\edit.ctp, line 8
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 815
+Cake\View\View::_render() - CORE\src\View\View.php, line 775
+Cake\View\View::render() - CORE\src\View\View.php, line 463
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 577
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 14:18:19 Notice: Notice (8): Undefined variable: schools in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Template\Students\edit.ctp, line 8]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+include - APP/Template\Students\edit.ctp, line 8
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 815
+Cake\View\View::_render() - CORE\src\View\View.php, line 775
+Cake\View\View::render() - CORE\src\View\View.php, line 463
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 577
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 14:18:19 Notice: Notice (8): Trying to get property of non-object in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Template\Students\edit.ctp, line 8]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+include - APP/Template\Students\edit.ctp, line 8
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 815
+Cake\View\View::_render() - CORE\src\View\View.php, line 775
+Cake\View\View::render() - CORE\src\View\View.php, line 463
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 577
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 14:18:21 Notice: Notice (8): Undefined variable: schools in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Template\Students\edit.ctp, line 8]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+include - APP/Template\Students\edit.ctp, line 8
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 815
+Cake\View\View::_render() - CORE\src\View\View.php, line 775
+Cake\View\View::render() - CORE\src\View\View.php, line 463
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 577
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 14:18:21 Notice: Notice (8): Trying to get property of non-object in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Template\Students\edit.ctp, line 8]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+include - APP/Template\Students\edit.ctp, line 8
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 815
+Cake\View\View::_render() - CORE\src\View\View.php, line 775
+Cake\View\View::render() - CORE\src\View\View.php, line 463
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 577
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 14:18:36 Notice: Notice (8): Undefined variable: schools in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Template\Students\edit.ctp, line 8]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+include - APP/Template\Students\edit.ctp, line 8
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 815
+Cake\View\View::_render() - CORE\src\View\View.php, line 775
+Cake\View\View::render() - CORE\src\View\View.php, line 463
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 577
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 14:18:50 Notice: Notice (8): Undefined variable: students in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Template\Students\edit.ctp, line 8]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+include - APP/Template\Students\edit.ctp, line 8
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 815
+Cake\View\View::_render() - CORE\src\View\View.php, line 775
+Cake\View\View::render() - CORE\src\View\View.php, line 463
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 577
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 14:18:50 Notice: Notice (8): Trying to get property of non-object in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Template\Students\edit.ctp, line 8]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+include - APP/Template\Students\edit.ctp, line 8
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 815
+Cake\View\View::_render() - CORE\src\View\View.php, line 775
+Cake\View\View::render() - CORE\src\View\View.php, line 463
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 577
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 14:59:20 Notice: Notice (8): Undefined property: Cake\ORM\Query::$Students in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\StudentsController.php, line 29]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Controller\StudentsController::index() - APP/Controller\StudentsController.php, line 29
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 14:59:34 Notice: Notice (8): Undefined property: Cake\ORM\Query::$Status in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\StudentsController.php, line 29]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Controller\StudentsController::index() - APP/Controller\StudentsController.php, line 29
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 14:59:59 Notice: Notice (8): Undefined property: Cake\ORM\Query::$name in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\StudentsController.php, line 29]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Controller\StudentsController::index() - APP/Controller\StudentsController.php, line 29
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 15:00:07 Notice: Notice (8): Undefined property: Cake\ORM\Query::$names in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\StudentsController.php, line 29]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Controller\StudentsController::index() - APP/Controller\StudentsController.php, line 29
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 15:00:25 Notice: Notice (8): Undefined property: Cake\ORM\Query::$value in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\StudentsController.php, line 29]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Controller\StudentsController::index() - APP/Controller\StudentsController.php, line 29
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 15:03:30 Notice: Notice (8): Undefined property: Cake\ORM\Query::$data in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\StudentsController.php, line 29]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Controller\StudentsController::index() - APP/Controller\StudentsController.php, line 29
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 15:04:49 Notice: Notice (8): Use of undefined constant status_id - assumed 'status_id' in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\StudentsController.php, line 29]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Controller\StudentsController::index() - APP/Controller\StudentsController.php, line 29
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 15:10:50 Notice: Notice (8): Undefined variable: _SESSION in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Network\Session.php, line 439]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Network\Session::write() - CORE\src\Network\Session.php, line 439
+Cake\Controller\Component\FlashComponent::set() - CORE\src\Controller\Component\FlashComponent.php, line 99
+Cake\Controller\Component\FlashComponent::__call() - CORE\src\Controller\Component\FlashComponent.php, line 126
+Cake\Controller\Component\FlashComponent::success() - APP/Controller\StudentsController.php, line 85
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 85
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 15:10:53 Notice: Notice (8): Undefined variable: _SESSION in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Network\Session.php, line 439]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Network\Session::write() - CORE\src\Network\Session.php, line 439
+Cake\Controller\Component\FlashComponent::set() - CORE\src\Controller\Component\FlashComponent.php, line 99
+Cake\Controller\Component\FlashComponent::__call() - CORE\src\Controller\Component\FlashComponent.php, line 126
+Cake\Controller\Component\FlashComponent::success() - APP/Controller\StudentsController.php, line 85
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 85
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 15:13:18 Notice: Notice (8): Undefined variable: _SESSION in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Network\Session.php, line 439]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Network\Session::write() - CORE\src\Network\Session.php, line 439
+Cake\Controller\Component\FlashComponent::set() - CORE\src\Controller\Component\FlashComponent.php, line 99
+Cake\Controller\Component\FlashComponent::__call() - CORE\src\Controller\Component\FlashComponent.php, line 126
+Cake\Controller\Component\FlashComponent::success() - APP/Controller\StudentsController.php, line 85
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 85
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 15:13:24 Notice: Notice (8): Undefined variable: _SESSION in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Network\Session.php, line 439]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Network\Session::write() - CORE\src\Network\Session.php, line 439
+Cake\Controller\Component\FlashComponent::set() - CORE\src\Controller\Component\FlashComponent.php, line 99
+Cake\Controller\Component\FlashComponent::__call() - CORE\src\Controller\Component\FlashComponent.php, line 126
+Cake\Controller\Component\FlashComponent::success() - APP/Controller\StudentsController.php, line 85
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 85
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+

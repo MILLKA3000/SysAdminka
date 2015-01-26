@@ -11,7 +11,7 @@
             echo $this->Form->input('grade_level',['class'=>'form-control']);
             echo $this->Form->input('user_name',['class'=>'form-control']);
             echo $this->Form->input('password',['class'=>'form-control']);
-            echo $this->Form->input('status',['options' => $status,'class'=>'form-control']);
+            echo $this->Form->input('status_id',['options' => $status,'class'=>'form-control']);
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>

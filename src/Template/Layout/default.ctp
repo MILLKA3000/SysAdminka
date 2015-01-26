@@ -16,6 +16,7 @@ $cakeDescription = 'SysAdminka(TDMU)';
     <?= $this->Html->css('sb-admin.css') ?>
     <?= $this->Html->css('plugins/morris.css') ?>
     <?= $this->Html->css('../font-awesome/css/font-awesome.min.css') ?>
+    <?= $this->Html->script('jquery.js') ?>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -48,7 +49,7 @@ $cakeDescription = 'SysAdminka(TDMU)';
     </div>
 </div>
     <!-- jQuery -->
-    <?= $this->Html->script('jquery.js') ?>
+
     <?= $this->Html->script('angular/angular.min.js') ?>
     <!-- Bootstrap Core JavaScript -->
     <?= $this->Html->script('bootstrap.min.js') ?>

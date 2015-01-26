@@ -10844,3 +10844,2913 @@ Stack Trace:
 #6 {main}
 
 
+2015-01-26 12:52:11 Warning: Warning (4096): Argument 1 passed to Cake\ORM\Marshaller::one() must be of the type array, string given, called in D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php on line 202 and defined in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php, line 101]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 101
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 77
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 12:52:11 Warning: Warning (4096): Argument 1 passed to Cake\Validation\Validator::errors() must be of the type array, string given, called in D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php on line 185 and defined in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\Validator.php, line 86]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Validation\Validator::errors() - CORE\src\Validation\Validator.php, line 86
+Cake\ORM\Marshaller::_validate() - CORE\src\ORM\Marshaller.php, line 185
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 122
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 77
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 12:52:11 Warning: Warning (2): array_key_exists() expects parameter 2 to be array, string given in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\Validator.php, line 99]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+array_key_exists - [internal], line ??
+Cake\Validation\Validator::errors() - CORE\src\Validation\Validator.php, line 99
+Cake\ORM\Marshaller::_validate() - CORE\src\ORM\Marshaller.php, line 185
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 122
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 77
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 12:52:11 Warning: Warning (2): array_key_exists() expects parameter 2 to be array, string given in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\Validator.php, line 99]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+array_key_exists - [internal], line ??
+Cake\Validation\Validator::errors() - CORE\src\Validation\Validator.php, line 99
+Cake\ORM\Marshaller::_validate() - CORE\src\ORM\Marshaller.php, line 185
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 122
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 77
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 12:52:11 Warning: Warning (2): Invalid argument supplied for foreach() in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php, line 125]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 125
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 77
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 13:04:09 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'c2sysadmin.statuses' doesn't exist
+Request URL: /status/edit/1
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'statuses', Array, Object(Cake\Database\Schema\Table))
+#1 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(65): Cake\Database\Schema\Collection->describe('statuses', Array)
+#2 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Table.php(364): Cake\Database\Schema\CachedCollection->describe('statuses')
+#3 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Query.php(147): Cake\ORM\Table->schema()
+#4 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Query.php(129): Cake\ORM\Query->addDefaultTypes(Object(Cake\ORM\Table))
+#5 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Table.php(1073): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(Cake\ORM\Table))
+#6 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Table.php(822): Cake\ORM\Table->query()
+#7 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Association.php(562): Cake\ORM\Table->find('list', Array)
+#8 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\StatusController.php(84): Cake\ORM\Association->find('list', Array)
+#9 [internal function]: App\Controller\StatusController->edit('1')
+#10 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Controller\Controller.php(406): call_user_func_array(Array, Array)
+#11 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#12 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\StatusController))
+#13 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#14 {main}
+
+
+2015-01-26 13:04:32 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Phpmyadmin could not be found.
+Exception Attributes: array (
+  'class' => 'Phpmyadmin',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /phpmyadmin
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 13:09:25 Error: Fatal Error (1): Call to a member function input() on a non-object in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Template\Students\index.ctp, line 11]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 13:09:25 Error: [Cake\Error\FatalErrorException] Call to a member function input() on a non-object
+Request URL: /students?sort=status&direction=asc
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', 'D:\\SERVERPHP\\Op...', 11)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 13:10:26 Error: Fatal Error (1): Call to a member function input() on a non-object in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Template\Students\index.ctp, line 11]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 13:10:27 Error: [Cake\Error\FatalErrorException] Call to a member function input() on a non-object
+Request URL: /students?sort=status&direction=asc
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', 'D:\\SERVERPHP\\Op...', 11)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 13:11:30 Error: Fatal Error (1): Call to a member function input() on a non-object in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Template\Students\index.ctp, line 11]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 13:11:31 Error: [Cake\Error\FatalErrorException] Call to a member function input() on a non-object
+Request URL: /students?sort=status&direction=asc
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', 'D:\\SERVERPHP\\Op...', 11)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 13:15:05 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'c2sysadmin.statuses' doesn't exist
+Request URL: /status/edit/2
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'statuses', Array, Object(Cake\Database\Schema\Table))
+#1 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(65): Cake\Database\Schema\Collection->describe('statuses', Array)
+#2 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Table.php(364): Cake\Database\Schema\CachedCollection->describe('statuses')
+#3 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Query.php(147): Cake\ORM\Table->schema()
+#4 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Query.php(129): Cake\ORM\Query->addDefaultTypes(Object(Cake\ORM\Table))
+#5 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Table.php(1073): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(Cake\ORM\Table))
+#6 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Table.php(822): Cake\ORM\Table->query()
+#7 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Association.php(562): Cake\ORM\Table->find('list', Array)
+#8 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\StatusController.php(84): Cake\ORM\Association->find('list', Array)
+#9 [internal function]: App\Controller\StatusController->edit('2')
+#10 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Controller\Controller.php(406): call_user_func_array(Array, Array)
+#11 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#12 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\StatusController))
+#13 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#14 {main}
+
+
+2015-01-26 13:15:24 Error: Fatal Error (4): syntax error, unexpected 'echo' (T_ECHO) in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Template\Students\index.ctp, line 37]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 13:15:25 Error: [Cake\Error\FatalErrorException] syntax error, unexpected 'echo' (T_ECHO)
+Request URL: /Students/index
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'D:\\SERVERPHP\\Op...', 37)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 13:15:26 Error: Fatal Error (4): syntax error, unexpected 'echo' (T_ECHO) in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Template\Students\index.ctp, line 37]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 13:15:26 Error: [Cake\Error\FatalErrorException] syntax error, unexpected 'echo' (T_ECHO)
+Request URL: /Students/index
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'D:\\SERVERPHP\\Op...', 37)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 13:15:29 Error: Fatal Error (4): syntax error, unexpected 'echo' (T_ECHO) in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Template\Students\index.ctp, line 37]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 13:15:29 Error: [Cake\Error\FatalErrorException] syntax error, unexpected 'echo' (T_ECHO)
+Request URL: /students?page=5&sort=email&direction=desc&lang=en
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'D:\\SERVERPHP\\Op...', 37)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 13:15:42 Error: Fatal Error (4): syntax error, unexpected 'echo' (T_ECHO) in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Template\Students\index.ctp, line 37]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 13:15:42 Error: [Cake\Error\FatalErrorException] syntax error, unexpected 'echo' (T_ECHO)
+Request URL: /students?page=6&sort=status&direction=asc&lang=en
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'D:\\SERVERPHP\\Op...', 37)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 13:31:08 Error: Fatal Error (4): syntax error, unexpected 'echo' (T_ECHO) in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Template\Students\index.ctp, line 13]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 13:31:08 Error: [Cake\Error\FatalErrorException] syntax error, unexpected 'echo' (T_ECHO)
+Request URL: /students?sort=status_id&direction=desc
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'D:\\SERVERPHP\\Op...', 13)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 13:32:57 Error: Fatal Error (4): syntax error, unexpected ')' in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\StudentsController.php, line 27]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 13:32:58 Error: [Cake\Error\FatalErrorException] syntax error, unexpected ')'
+Request URL: /students?sort=status_id&direction=desc
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'D:\\SERVERPHP\\Op...', 27)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 13:44:56 Error: Fatal Error (4): syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ',' or ';' in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Template\Students\index.ctp, line 12]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 13:44:56 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ',' or ';'
+Request URL: /students?sort=user_name&direction=asc
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'D:\\SERVERPHP\\Op...', 12)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 13:45:10 Error: Fatal Error (4): syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ',' or ';' in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Template\Students\index.ctp, line 12]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 13:45:10 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ',' or ';'
+Request URL: /students?sort=user_name&direction=asc
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'D:\\SERVERPHP\\Op...', 12)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 13:45:11 Error: Fatal Error (4): syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ',' or ';' in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Template\Students\index.ctp, line 12]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 13:45:12 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ',' or ';'
+Request URL: /students?sort=user_name&direction=asc
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'D:\\SERVERPHP\\Op...', 12)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 13:45:22 Error: Fatal Error (4): syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ',' or ';' in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Template\Students\index.ctp, line 12]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 13:45:22 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ',' or ';'
+Request URL: /students?sort=user_name&direction=asc
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'D:\\SERVERPHP\\Op...', 12)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 13:45:24 Error: Fatal Error (4): syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ',' or ';' in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Template\Students\index.ctp, line 12]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 13:45:24 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ',' or ';'
+Request URL: /students?sort=user_name&direction=asc
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'D:\\SERVERPHP\\Op...', 12)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 13:46:07 Error: Fatal Error (4): syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ',' or ';' in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Template\Students\index.ctp, line 12]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 13:46:07 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ',' or ';'
+Request URL: /students?sort=user_name&direction=asc
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'D:\\SERVERPHP\\Op...', 12)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 13:46:08 Error: Fatal Error (4): syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ',' or ';' in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Template\Students\index.ctp, line 12]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 13:46:09 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ',' or ';'
+Request URL: /students?sort=user_name&direction=asc
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'D:\\SERVERPHP\\Op...', 12)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 13:46:41 Error: Fatal Error (4): syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ',' or ';' in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Template\Students\index.ctp, line 12]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 13:46:41 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ',' or ';'
+Request URL: /students?sort=user_name&direction=asc
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'D:\\SERVERPHP\\Op...', 12)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 13:46:42 Error: Fatal Error (4): syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ',' or ';' in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Template\Students\index.ctp, line 12]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 13:46:43 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ',' or ';'
+Request URL: /students?sort=user_name&direction=asc
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'D:\\SERVERPHP\\Op...', 12)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 13:51:19 Error: Fatal Error (4): syntax error, unexpected 'echo' (T_ECHO) in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Template\Students\index.ctp, line 12]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 13:51:19 Error: [Cake\Error\FatalErrorException] syntax error, unexpected 'echo' (T_ECHO)
+Request URL: /students?sort=user_name&direction=asc
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'D:\\SERVERPHP\\Op...', 12)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 13:56:44 Error: Fatal Error (4): syntax error, unexpected '$this' (T_VARIABLE), expecting function (T_FUNCTION) in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\StudentsController.php, line 20]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 13:56:45 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '$this' (T_VARIABLE), expecting function (T_FUNCTION)
+Request URL: /students?sort=status_id&direction=desc
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'D:\\SERVERPHP\\Op...', 20)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 13:56:45 Error: Fatal Error (4): syntax error, unexpected '$this' (T_VARIABLE), expecting function (T_FUNCTION) in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\StudentsController.php, line 20]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 13:56:46 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '$this' (T_VARIABLE), expecting function (T_FUNCTION)
+Request URL: /students?sort=status_id&direction=desc
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'D:\\SERVERPHP\\Op...', 20)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 13:57:19 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Student.status_id' in 'where clause'
+Request URL: /students?sort=status_id&direction=desc
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(161): PDOStatement->execute(NULL)
+#1 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(161): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#2 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(55): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Database\Connection.php(275): Cake\Database\Log\LoggingStatement->execute()
+#4 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Database\Query.php(166): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Query.php(671): Cake\Database\Query->execute()
+#6 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(218): Cake\ORM\Query->_execute()
+#7 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Query.php(626): Cake\ORM\Query->_all()
+#8 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php(169): Cake\ORM\Query->all()
+#9 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Controller\Controller.php(636): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\StudentsTable), Array)
+#10 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\StudentsController.php(30): Cake\Controller\Controller->paginate(Object(App\Model\Table\StudentsTable))
+#11 [internal function]: App\Controller\StudentsController->index()
+#12 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Controller\Controller.php(406): call_user_func_array(Array, Array)
+#13 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#14 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\StudentsController))
+#15 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#16 {main}
+
+
+2015-01-26 13:59:27 Warning: Warning (2): Missing argument 1 for App\Controller\StudentsController::index() in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\StudentsController.php, line 22]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Controller\StudentsController::index() - APP/Controller\StudentsController.php, line 22
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 14:02:38 Error: [Cake\Controller\Exception\MissingActionException] Action StudentsController:: this.value() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => ' this.value',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /students/+this.value
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\StudentsController))
+#2 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-01-26 14:03:39 Error: [Cake\Controller\Exception\MissingActionException] Action StudentsController:: this.value() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => ' this.value',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /students/+this.value
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\StudentsController))
+#2 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-01-26 14:03:45 Error: [Cake\Controller\Exception\MissingActionException] Action StudentsController::alert(this.value)() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'alert(this.value)',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /students/alert(this.value)
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\StudentsController))
+#2 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-01-26 14:05:11 Error: [Cake\Controller\Exception\MissingActionException] Action StudentsController::alert(this.value)() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'alert(this.value)',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /students/alert(this.value)
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\StudentsController))
+#2 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-01-26 14:13:53 Error: Fatal Error (4): syntax error, unexpected ';' in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\StudentsController.php, line 31]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 14:13:53 Error: [Cake\Error\FatalErrorException] syntax error, unexpected ';'
+Request URL: /students/index/2
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'D:\\SERVERPHP\\Op...', 31)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 14:14:02 Error: Fatal Error (4): syntax error, unexpected ';' in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\StudentsController.php, line 31]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 14:14:02 Error: [Cake\Error\FatalErrorException] syntax error, unexpected ';'
+Request URL: /students/index/2
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'D:\\SERVERPHP\\Op...', 31)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 14:16:53 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ']' in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\StudentsController.php, line 81]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 14:16:53 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ']'
+Request URL: /students/edit/1
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'D:\\SERVERPHP\\Op...', 81)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 14:16:54 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ']' in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\StudentsController.php, line 81]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 14:16:55 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ']'
+Request URL: /students/edit/1
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'D:\\SERVERPHP\\Op...', 81)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 14:21:24 Warning: Warning (4096): Argument 1 passed to Cake\ORM\Marshaller::one() must be of the type array, string given, called in D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php on line 202 and defined in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php, line 101]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 101
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 83
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 14:21:24 Warning: Warning (4096): Argument 1 passed to Cake\Validation\Validator::errors() must be of the type array, string given, called in D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php on line 185 and defined in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\Validator.php, line 86]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Validation\Validator::errors() - CORE\src\Validation\Validator.php, line 86
+Cake\ORM\Marshaller::_validate() - CORE\src\ORM\Marshaller.php, line 185
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 122
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 83
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 14:21:24 Warning: Warning (2): array_key_exists() expects parameter 2 to be array, string given in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\Validator.php, line 99]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+array_key_exists - [internal], line ??
+Cake\Validation\Validator::errors() - CORE\src\Validation\Validator.php, line 99
+Cake\ORM\Marshaller::_validate() - CORE\src\ORM\Marshaller.php, line 185
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 122
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 83
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 14:21:24 Warning: Warning (2): array_key_exists() expects parameter 2 to be array, string given in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\Validator.php, line 99]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+array_key_exists - [internal], line ??
+Cake\Validation\Validator::errors() - CORE\src\Validation\Validator.php, line 99
+Cake\ORM\Marshaller::_validate() - CORE\src\ORM\Marshaller.php, line 185
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 122
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 83
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 14:21:24 Warning: Warning (2): Invalid argument supplied for foreach() in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php, line 125]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 125
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 83
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 14:21:28 Warning: Warning (4096): Argument 1 passed to Cake\ORM\Marshaller::one() must be of the type array, string given, called in D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php on line 202 and defined in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php, line 101]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 101
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 83
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 14:21:28 Warning: Warning (4096): Argument 1 passed to Cake\Validation\Validator::errors() must be of the type array, string given, called in D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php on line 185 and defined in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\Validator.php, line 86]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Validation\Validator::errors() - CORE\src\Validation\Validator.php, line 86
+Cake\ORM\Marshaller::_validate() - CORE\src\ORM\Marshaller.php, line 185
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 122
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 83
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 14:21:28 Warning: Warning (2): array_key_exists() expects parameter 2 to be array, string given in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\Validator.php, line 99]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+array_key_exists - [internal], line ??
+Cake\Validation\Validator::errors() - CORE\src\Validation\Validator.php, line 99
+Cake\ORM\Marshaller::_validate() - CORE\src\ORM\Marshaller.php, line 185
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 122
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 83
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 14:21:28 Warning: Warning (2): array_key_exists() expects parameter 2 to be array, string given in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\Validator.php, line 99]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+array_key_exists - [internal], line ??
+Cake\Validation\Validator::errors() - CORE\src\Validation\Validator.php, line 99
+Cake\ORM\Marshaller::_validate() - CORE\src\ORM\Marshaller.php, line 185
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 122
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 83
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 14:21:28 Warning: Warning (2): Invalid argument supplied for foreach() in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php, line 125]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 125
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 83
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 14:26:35 Error: Fatal Error (1): Call to a member function find() on a non-object in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\StudentsController.php, line 92]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 14:26:35 Error: [Cake\Error\FatalErrorException] Call to a member function find() on a non-object
+Request URL: /students/edit/1
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', 'D:\\SERVERPHP\\Op...', 92)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 14:27:02 Error: Fatal Error (1): Call to a member function find() on a non-object in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\StudentsController.php, line 92]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 14:27:02 Error: [Cake\Error\FatalErrorException] Call to a member function find() on a non-object
+Request URL: /students/edit/1
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', 'D:\\SERVERPHP\\Op...', 92)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 14:27:15 Error: Fatal Error (1): Call to a member function find() on a non-object in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\StudentsController.php, line 92]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 14:27:16 Error: [Cake\Error\FatalErrorException] Call to a member function find() on a non-object
+Request URL: /students/edit/1
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', 'D:\\SERVERPHP\\Op...', 92)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 14:27:17 Error: Fatal Error (1): Call to a member function find() on a non-object in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\StudentsController.php, line 92]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 14:27:17 Error: [Cake\Error\FatalErrorException] Call to a member function find() on a non-object
+Request URL: /students/edit/1
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', 'D:\\SERVERPHP\\Op...', 92)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 14:28:35 Error: [RuntimeException] Table "App\Model\Table\StudentsTable" is not associated with "School"
+Request URL: /students/edit/1
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\StudentsController.php(92): Cake\ORM\Table->__get('School')
+#1 [internal function]: App\Controller\StudentsController->edit('1')
+#2 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Controller\Controller.php(406): call_user_func_array(Array, Array)
+#3 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#4 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\StudentsController))
+#5 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#6 {main}
+
+
+2015-01-26 14:31:33 Warning: Warning (4096): Argument 1 passed to Cake\ORM\Marshaller::one() must be of the type array, string given, called in D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php on line 202 and defined in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php, line 101]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 101
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 83
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 14:31:33 Warning: Warning (4096): Argument 1 passed to Cake\Validation\Validator::errors() must be of the type array, string given, called in D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php on line 185 and defined in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\Validator.php, line 86]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Validation\Validator::errors() - CORE\src\Validation\Validator.php, line 86
+Cake\ORM\Marshaller::_validate() - CORE\src\ORM\Marshaller.php, line 185
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 122
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 83
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 14:31:33 Warning: Warning (2): array_key_exists() expects parameter 2 to be array, string given in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\Validator.php, line 99]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+array_key_exists - [internal], line ??
+Cake\Validation\Validator::errors() - CORE\src\Validation\Validator.php, line 99
+Cake\ORM\Marshaller::_validate() - CORE\src\ORM\Marshaller.php, line 185
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 122
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 83
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 14:31:33 Warning: Warning (2): array_key_exists() expects parameter 2 to be array, string given in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\Validator.php, line 99]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+array_key_exists - [internal], line ??
+Cake\Validation\Validator::errors() - CORE\src\Validation\Validator.php, line 99
+Cake\ORM\Marshaller::_validate() - CORE\src\ORM\Marshaller.php, line 185
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 122
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 83
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 14:31:33 Warning: Warning (2): Invalid argument supplied for foreach() in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php, line 125]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 125
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 83
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 14:39:07 Error: Fatal Error (4): syntax error, unexpected '$defautl_status' (T_VARIABLE), expecting function (T_FUNCTION) in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\StudentsController.php, line 20]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 14:39:07 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '$defautl_status' (T_VARIABLE), expecting function (T_FUNCTION)
+Request URL: /students/index/1
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'D:\\SERVERPHP\\Op...', 20)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 14:39:20 Error: Fatal Error (4): syntax error, unexpected '$defautl_status' (T_VARIABLE), expecting function (T_FUNCTION) in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\StudentsController.php, line 20]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 14:39:21 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '$defautl_status' (T_VARIABLE), expecting function (T_FUNCTION)
+Request URL: /students/index/1
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'D:\\SERVERPHP\\Op...', 20)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 14:39:22 Error: Fatal Error (4): syntax error, unexpected '$defautl_status' (T_VARIABLE), expecting function (T_FUNCTION) in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\StudentsController.php, line 20]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 14:39:23 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '$defautl_status' (T_VARIABLE), expecting function (T_FUNCTION)
+Request URL: /students/index/1
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'D:\\SERVERPHP\\Op...', 20)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 14:39:25 Error: Fatal Error (4): syntax error, unexpected '$defautl_status' (T_VARIABLE), expecting function (T_FUNCTION) in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\StudentsController.php, line 20]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 14:39:25 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '$defautl_status' (T_VARIABLE), expecting function (T_FUNCTION)
+Request URL: /students/index/1
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'D:\\SERVERPHP\\Op...', 20)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 14:39:37 Error: Fatal Error (4): syntax error, unexpected '$defautl_status' (T_VARIABLE), expecting function (T_FUNCTION) in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\StudentsController.php, line 20]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 14:39:37 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '$defautl_status' (T_VARIABLE), expecting function (T_FUNCTION)
+Request URL: /students/index/1
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'D:\\SERVERPHP\\Op...', 20)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 14:39:39 Error: Fatal Error (4): syntax error, unexpected '$defautl_status' (T_VARIABLE), expecting function (T_FUNCTION) in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\StudentsController.php, line 20]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 14:39:39 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '$defautl_status' (T_VARIABLE), expecting function (T_FUNCTION)
+Request URL: /students/index/1
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'D:\\SERVERPHP\\Op...', 20)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 14:39:58 Error: Fatal Error (4): syntax error, unexpected '$defautl_status' (T_VARIABLE), expecting function (T_FUNCTION) in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\StudentsController.php, line 20]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 14:39:58 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '$defautl_status' (T_VARIABLE), expecting function (T_FUNCTION)
+Request URL: /students/index/1
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'D:\\SERVERPHP\\Op...', 20)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 14:40:00 Error: Fatal Error (4): syntax error, unexpected '$defautl_status' (T_VARIABLE), expecting function (T_FUNCTION) in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\StudentsController.php, line 20]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 14:40:00 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '$defautl_status' (T_VARIABLE), expecting function (T_FUNCTION)
+Request URL: /students/index/1
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'D:\\SERVERPHP\\Op...', 20)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 14:40:11 Error: Fatal Error (4): syntax error, unexpected '$defautl_status' (T_VARIABLE), expecting function (T_FUNCTION) in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\StudentsController.php, line 20]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 14:40:11 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '$defautl_status' (T_VARIABLE), expecting function (T_FUNCTION)
+Request URL: /students/index/1
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'D:\\SERVERPHP\\Op...', 20)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 14:46:29 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\StudentsController.php, line 29]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 14:46:30 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /Students/index/0
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'D:\\SERVERPHP\\Op...', 29)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 14:46:41 Error: Fatal Error (4): syntax error, unexpected '$this' (T_VARIABLE) in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\StudentsController.php, line 30]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 14:46:41 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '$this' (T_VARIABLE)
+Request URL: /Students/index/0
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'D:\\SERVERPHP\\Op...', 30)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 14:46:51 Warning: Warning (2): array_push() expects parameter 1 to be array, object given in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\StudentsController.php, line 29]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+array_push - [internal], line ??
+App\Controller\StudentsController::index() - APP/Controller\StudentsController.php, line 29
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 14:47:49 Error: Fatal Error (1): Cannot use object of type Cake\ORM\Query as array in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\StudentsController.php, line 29]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 14:47:50 Error: [Cake\Error\FatalErrorException] Cannot use object of type Cake\ORM\Query as array
+Request URL: /Students/index/0
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Cannot use obje...', 'D:\\SERVERPHP\\Op...', 29)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 14:48:04 Error: Fatal Error (1): Cannot use object of type Cake\ORM\Query as array in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\StudentsController.php, line 29]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 14:48:04 Error: [Cake\Error\FatalErrorException] Cannot use object of type Cake\ORM\Query as array
+Request URL: /Students/index/0
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Cannot use obje...', 'D:\\SERVERPHP\\Op...', 29)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 14:48:05 Error: Fatal Error (1): Cannot use object of type Cake\ORM\Query as array in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\StudentsController.php, line 29]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 14:48:05 Error: [Cake\Error\FatalErrorException] Cannot use object of type Cake\ORM\Query as array
+Request URL: /Students/index/0
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Cannot use obje...', 'D:\\SERVERPHP\\Op...', 29)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 14:48:24 Error: Fatal Error (1): Cannot use object of type Cake\ORM\Query as array in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\StudentsController.php, line 29]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 14:48:24 Error: [Cake\Error\FatalErrorException] Cannot use object of type Cake\ORM\Query as array
+Request URL: /Students/index/0
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Cannot use obje...', 'D:\\SERVERPHP\\Op...', 29)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 14:48:31 Error: Fatal Error (1): Cannot use object of type Cake\ORM\Query as array in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\StudentsController.php, line 29]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 14:48:31 Error: [Cake\Error\FatalErrorException] Cannot use object of type Cake\ORM\Query as array
+Request URL: /Students/index/0
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Cannot use obje...', 'D:\\SERVERPHP\\Op...', 29)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 14:48:42 Error: Fatal Error (1): Cannot use object of type Cake\ORM\Query as array in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\StudentsController.php, line 29]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 14:48:42 Error: [Cake\Error\FatalErrorException] Cannot use object of type Cake\ORM\Query as array
+Request URL: /Students/index/0
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Cannot use obje...', 'D:\\SERVERPHP\\Op...', 29)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 14:48:48 Error: Fatal Error (1): Cannot use object of type Cake\ORM\Query as array in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\StudentsController.php, line 29]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 14:48:48 Error: [Cake\Error\FatalErrorException] Cannot use object of type Cake\ORM\Query as array
+Request URL: /Students/index/0
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Cannot use obje...', 'D:\\SERVERPHP\\Op...', 29)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 14:48:55 Error: Fatal Error (1): Cannot use object of type Cake\ORM\Query as array in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\StudentsController.php, line 29]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 14:48:55 Error: [Cake\Error\FatalErrorException] Cannot use object of type Cake\ORM\Query as array
+Request URL: /Students/index/0
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Cannot use obje...', 'D:\\SERVERPHP\\Op...', 29)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 14:49:06 Error: Fatal Error (1): Cannot use object of type Cake\ORM\Query as array in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\StudentsController.php, line 29]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 14:49:06 Error: [Cake\Error\FatalErrorException] Cannot use object of type Cake\ORM\Query as array
+Request URL: /Students/index/0
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Cannot use obje...', 'D:\\SERVERPHP\\Op...', 29)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 14:49:55 Error: Fatal Error (1): Cannot use object of type Cake\ORM\Query as array in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\StudentsController.php, line 29]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 14:49:55 Error: [Cake\Error\FatalErrorException] Cannot use object of type Cake\ORM\Query as array
+Request URL: /Students/index/0
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Cannot use obje...', 'D:\\SERVERPHP\\Op...', 29)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 14:49:58 Error: Fatal Error (1): Cannot use object of type Cake\ORM\Query as array in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\StudentsController.php, line 29]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 14:49:58 Error: [Cake\Error\FatalErrorException] Cannot use object of type Cake\ORM\Query as array
+Request URL: /Students/index/0
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Cannot use obje...', 'D:\\SERVERPHP\\Op...', 29)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 14:49:59 Error: Fatal Error (1): Cannot use object of type Cake\ORM\Query as array in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\StudentsController.php, line 29]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 14:50:00 Error: [Cake\Error\FatalErrorException] Cannot use object of type Cake\ORM\Query as array
+Request URL: /Students/index/0
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Cannot use obje...', 'D:\\SERVERPHP\\Op...', 29)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 14:50:08 Error: Fatal Error (1): Cannot use object of type Cake\ORM\Query as array in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\StudentsController.php, line 29]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 14:50:08 Error: [Cake\Error\FatalErrorException] Cannot use object of type Cake\ORM\Query as array
+Request URL: /Students/index/0
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Cannot use obje...', 'D:\\SERVERPHP\\Op...', 29)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 14:50:17 Error: Fatal Error (1): Cannot use object of type Cake\ORM\Query as array in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\StudentsController.php, line 29]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 14:50:18 Error: [Cake\Error\FatalErrorException] Cannot use object of type Cake\ORM\Query as array
+Request URL: /Students/index/0
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Cannot use obje...', 'D:\\SERVERPHP\\Op...', 29)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 14:50:19 Error: Fatal Error (1): Cannot use object of type Cake\ORM\Query as array in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\StudentsController.php, line 29]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 14:50:19 Error: [Cake\Error\FatalErrorException] Cannot use object of type Cake\ORM\Query as array
+Request URL: /Students/index/0
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Cannot use obje...', 'D:\\SERVERPHP\\Op...', 29)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 14:59:46 Warning: Warning (2): Missing argument 1 for Cake\Database\Query::values(), called in D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\StudentsController.php on line 29 and defined in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Database\Query.php, line 1242]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Database\Query::values() - CORE\src\Database\Query.php, line 1242
+App\Controller\StudentsController::index() - APP/Controller\StudentsController.php, line 29
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 14:59:47 Error: [Cake\Database\Exception] You cannot add values before defining columns to use.
+Request URL: /students/index/2
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\StudentsController.php(29): Cake\Database\Query->values()
+#1 [internal function]: App\Controller\StudentsController->index('2')
+#2 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Controller\Controller.php(406): call_user_func_array(Array, Array)
+#3 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#4 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\StudentsController))
+#5 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#6 {main}
+
+
+2015-01-26 15:02:15 Error: Fatal Error (1): Cannot use object of type Cake\ORM\Query as array in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\StudentsController.php, line 29]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 15:02:16 Error: [Cake\Error\FatalErrorException] Cannot use object of type Cake\ORM\Query as array
+Request URL: /students/index/2
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Cannot use obje...', 'D:\\SERVERPHP\\Op...', 29)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 15:02:59 Error: Fatal Error (1): Cannot use object of type Cake\ORM\Query as array in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\StudentsController.php, line 29]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 15:03:00 Error: [Cake\Error\FatalErrorException] Cannot use object of type Cake\ORM\Query as array
+Request URL: /students/index/2
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Cannot use obje...', 'D:\\SERVERPHP\\Op...', 29)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 15:03:36 Error: [BadMethodCallException] Unknown method "data"
+Request URL: /students/index/2
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Query.php(814): Cake\ORM\Query->_call('data', Array)
+#1 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\StudentsController.php(29): Cake\ORM\Query->__call('data', Array)
+#2 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\StudentsController.php(29): Cake\ORM\Query->data()
+#3 [internal function]: App\Controller\StudentsController->index('2')
+#4 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Controller\Controller.php(406): call_user_func_array(Array, Array)
+#5 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#6 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\StudentsController))
+#7 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#8 {main}
+
+
+2015-01-26 15:04:21 Error: [BadMethodCallException] Unknown method "last"
+Request URL: /students/index/2
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Query.php(814): Cake\ORM\Query->_call('last', Array)
+#1 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\StudentsController.php(29): Cake\ORM\Query->__call('last', Array)
+#2 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\StudentsController.php(29): Cake\ORM\Query->last()
+#3 [internal function]: App\Controller\StudentsController->index('2')
+#4 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Controller\Controller.php(406): call_user_func_array(Array, Array)
+#5 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#6 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\StudentsController))
+#7 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#8 {main}
+
+
+2015-01-26 15:04:50 Error: [Cake\Database\Exception] You cannot add values before defining columns to use.
+Request URL: /students/index/2
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\StudentsController.php(29): Cake\Database\Query->values('status_id')
+#1 [internal function]: App\Controller\StudentsController->index('2')
+#2 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Controller\Controller.php(406): call_user_func_array(Array, Array)
+#3 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#4 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\StudentsController))
+#5 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#6 {main}
+
+
+2015-01-26 15:05:01 Error: [Cake\Database\Exception] You cannot add values before defining columns to use.
+Request URL: /students/index/2
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\StudentsController.php(29): Cake\Database\Query->values('status_id')
+#1 [internal function]: App\Controller\StudentsController->index('2')
+#2 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Controller\Controller.php(406): call_user_func_array(Array, Array)
+#3 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#4 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\StudentsController))
+#5 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#6 {main}
+
+
+2015-01-26 15:05:14 Error: Fatal Error (4): syntax error, unexpected ':' in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\StudentsController.php, line 29]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 15:05:15 Error: [Cake\Error\FatalErrorException] syntax error, unexpected ':'
+Request URL: /students/index/2
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'D:\\SERVERPHP\\Op...', 29)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 15:05:52 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\StudentsController.php, line 29]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 15:05:52 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /students/index/2
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'D:\\SERVERPHP\\Op...', 29)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 15:05:59 Error: Fatal Error (4): syntax error, unexpected '=' in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\StudentsController.php, line 29]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 15:05:59 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '='
+Request URL: /students/index/2
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'D:\\SERVERPHP\\Op...', 29)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 15:06:00 Error: Fatal Error (4): syntax error, unexpected '=' in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\StudentsController.php, line 29]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 15:06:00 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '='
+Request URL: /students/index/2
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'D:\\SERVERPHP\\Op...', 29)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 15:06:05 Error: Fatal Error (4): syntax error, unexpected ':' in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\StudentsController.php, line 29]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 15:06:05 Error: [Cake\Error\FatalErrorException] syntax error, unexpected ':'
+Request URL: /students/index/2
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'D:\\SERVERPHP\\Op...', 29)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 15:06:06 Error: Fatal Error (4): syntax error, unexpected ':' in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\StudentsController.php, line 29]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 15:06:07 Error: [Cake\Error\FatalErrorException] syntax error, unexpected ':'
+Request URL: /students/index/2
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'D:\\SERVERPHP\\Op...', 29)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 15:07:32 Error: Fatal Error (1): Cannot use object of type Cake\ORM\Query as array in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\View\Widget\SelectBoxWidget.php, line 232]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 15:07:33 Error: [Cake\Error\FatalErrorException] Cannot use object of type Cake\ORM\Query as array
+Request URL: /students/index/2
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Cannot use obje...', 'D:\\SERVERPHP\\Op...', 232)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 15:08:16 Warning: Warning (4096): Argument 1 passed to Cake\ORM\Marshaller::one() must be of the type array, string given, called in D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php on line 202 and defined in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php, line 101]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 101
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 82
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 15:08:16 Warning: Warning (4096): Argument 1 passed to Cake\Validation\Validator::errors() must be of the type array, string given, called in D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php on line 185 and defined in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\Validator.php, line 86]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Validation\Validator::errors() - CORE\src\Validation\Validator.php, line 86
+Cake\ORM\Marshaller::_validate() - CORE\src\ORM\Marshaller.php, line 185
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 122
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 82
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 15:08:16 Warning: Warning (2): array_key_exists() expects parameter 2 to be array, string given in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\Validator.php, line 99]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+array_key_exists - [internal], line ??
+Cake\Validation\Validator::errors() - CORE\src\Validation\Validator.php, line 99
+Cake\ORM\Marshaller::_validate() - CORE\src\ORM\Marshaller.php, line 185
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 122
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 82
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 15:08:16 Warning: Warning (2): array_key_exists() expects parameter 2 to be array, string given in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\Validator.php, line 99]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+array_key_exists - [internal], line ??
+Cake\Validation\Validator::errors() - CORE\src\Validation\Validator.php, line 99
+Cake\ORM\Marshaller::_validate() - CORE\src\ORM\Marshaller.php, line 185
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 122
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 82
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 15:08:16 Warning: Warning (2): Invalid argument supplied for foreach() in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php, line 125]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 125
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 82
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 15:08:34 Warning: Warning (4096): Argument 1 passed to Cake\ORM\Marshaller::one() must be of the type array, string given, called in D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php on line 202 and defined in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php, line 101]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 101
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 82
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 15:08:34 Warning: Warning (4096): Argument 1 passed to Cake\Validation\Validator::errors() must be of the type array, string given, called in D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php on line 185 and defined in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\Validator.php, line 86]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Validation\Validator::errors() - CORE\src\Validation\Validator.php, line 86
+Cake\ORM\Marshaller::_validate() - CORE\src\ORM\Marshaller.php, line 185
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 122
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 82
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 15:08:34 Warning: Warning (2): array_key_exists() expects parameter 2 to be array, string given in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\Validator.php, line 99]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+array_key_exists - [internal], line ??
+Cake\Validation\Validator::errors() - CORE\src\Validation\Validator.php, line 99
+Cake\ORM\Marshaller::_validate() - CORE\src\ORM\Marshaller.php, line 185
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 122
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 82
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 15:08:34 Warning: Warning (2): array_key_exists() expects parameter 2 to be array, string given in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\Validator.php, line 99]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+array_key_exists - [internal], line ??
+Cake\Validation\Validator::errors() - CORE\src\Validation\Validator.php, line 99
+Cake\ORM\Marshaller::_validate() - CORE\src\ORM\Marshaller.php, line 185
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 122
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 82
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 15:08:34 Warning: Warning (2): Invalid argument supplied for foreach() in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php, line 125]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 125
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 82
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 15:08:48 Warning: Warning (4096): Argument 1 passed to Cake\ORM\Marshaller::one() must be of the type array, string given, called in D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php on line 202 and defined in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php, line 101]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 101
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 82
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 15:08:48 Warning: Warning (4096): Argument 1 passed to Cake\Validation\Validator::errors() must be of the type array, string given, called in D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php on line 185 and defined in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\Validator.php, line 86]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Validation\Validator::errors() - CORE\src\Validation\Validator.php, line 86
+Cake\ORM\Marshaller::_validate() - CORE\src\ORM\Marshaller.php, line 185
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 122
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 82
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 15:08:48 Warning: Warning (2): array_key_exists() expects parameter 2 to be array, string given in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\Validator.php, line 99]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+array_key_exists - [internal], line ??
+Cake\Validation\Validator::errors() - CORE\src\Validation\Validator.php, line 99
+Cake\ORM\Marshaller::_validate() - CORE\src\ORM\Marshaller.php, line 185
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 122
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 82
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 15:08:48 Warning: Warning (2): array_key_exists() expects parameter 2 to be array, string given in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\Validator.php, line 99]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+array_key_exists - [internal], line ??
+Cake\Validation\Validator::errors() - CORE\src\Validation\Validator.php, line 99
+Cake\ORM\Marshaller::_validate() - CORE\src\ORM\Marshaller.php, line 185
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 122
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 82
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 15:08:48 Warning: Warning (2): Invalid argument supplied for foreach() in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php, line 125]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 125
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 82
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 15:10:49 Warning: Warning (4096): Argument 1 passed to Cake\ORM\Marshaller::one() must be of the type array, string given, called in D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php on line 202 and defined in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php, line 101]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 101
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 82
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 15:10:49 Warning: Warning (4096): Argument 1 passed to Cake\Validation\Validator::errors() must be of the type array, string given, called in D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php on line 185 and defined in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\Validator.php, line 86]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Validation\Validator::errors() - CORE\src\Validation\Validator.php, line 86
+Cake\ORM\Marshaller::_validate() - CORE\src\ORM\Marshaller.php, line 185
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 122
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 82
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 15:10:50 Warning: Warning (2): array_key_exists() expects parameter 2 to be array, string given in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\Validator.php, line 99]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+array_key_exists - [internal], line ??
+Cake\Validation\Validator::errors() - CORE\src\Validation\Validator.php, line 99
+Cake\ORM\Marshaller::_validate() - CORE\src\ORM\Marshaller.php, line 185
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 122
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 82
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 15:10:50 Warning: Warning (2): array_key_exists() expects parameter 2 to be array, string given in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\Validator.php, line 99]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+array_key_exists - [internal], line ??
+Cake\Validation\Validator::errors() - CORE\src\Validation\Validator.php, line 99
+Cake\ORM\Marshaller::_validate() - CORE\src\ORM\Marshaller.php, line 185
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 122
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 82
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 15:10:50 Warning: Warning (2): Invalid argument supplied for foreach() in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php, line 125]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 125
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 82
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 15:10:53 Warning: Warning (4096): Argument 1 passed to Cake\ORM\Marshaller::one() must be of the type array, string given, called in D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php on line 202 and defined in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php, line 101]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 101
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 82
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 15:10:53 Warning: Warning (4096): Argument 1 passed to Cake\Validation\Validator::errors() must be of the type array, string given, called in D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php on line 185 and defined in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\Validator.php, line 86]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Validation\Validator::errors() - CORE\src\Validation\Validator.php, line 86
+Cake\ORM\Marshaller::_validate() - CORE\src\ORM\Marshaller.php, line 185
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 122
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 82
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 15:10:53 Warning: Warning (2): array_key_exists() expects parameter 2 to be array, string given in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\Validator.php, line 99]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+array_key_exists - [internal], line ??
+Cake\Validation\Validator::errors() - CORE\src\Validation\Validator.php, line 99
+Cake\ORM\Marshaller::_validate() - CORE\src\ORM\Marshaller.php, line 185
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 122
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 82
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 15:10:53 Warning: Warning (2): array_key_exists() expects parameter 2 to be array, string given in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\Validator.php, line 99]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+array_key_exists - [internal], line ??
+Cake\Validation\Validator::errors() - CORE\src\Validation\Validator.php, line 99
+Cake\ORM\Marshaller::_validate() - CORE\src\ORM\Marshaller.php, line 185
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 122
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 82
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 15:10:53 Warning: Warning (2): Invalid argument supplied for foreach() in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php, line 125]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 125
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 82
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 15:13:18 Warning: Warning (4096): Argument 1 passed to Cake\ORM\Marshaller::one() must be of the type array, string given, called in D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php on line 202 and defined in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php, line 101]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 101
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 82
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 15:13:18 Warning: Warning (4096): Argument 1 passed to Cake\Validation\Validator::errors() must be of the type array, string given, called in D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php on line 185 and defined in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\Validator.php, line 86]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Validation\Validator::errors() - CORE\src\Validation\Validator.php, line 86
+Cake\ORM\Marshaller::_validate() - CORE\src\ORM\Marshaller.php, line 185
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 122
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 82
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 15:13:18 Warning: Warning (2): array_key_exists() expects parameter 2 to be array, string given in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\Validator.php, line 99]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+array_key_exists - [internal], line ??
+Cake\Validation\Validator::errors() - CORE\src\Validation\Validator.php, line 99
+Cake\ORM\Marshaller::_validate() - CORE\src\ORM\Marshaller.php, line 185
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 122
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 82
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 15:13:18 Warning: Warning (2): array_key_exists() expects parameter 2 to be array, string given in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\Validator.php, line 99]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+array_key_exists - [internal], line ??
+Cake\Validation\Validator::errors() - CORE\src\Validation\Validator.php, line 99
+Cake\ORM\Marshaller::_validate() - CORE\src\ORM\Marshaller.php, line 185
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 122
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 82
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 15:13:18 Warning: Warning (2): Invalid argument supplied for foreach() in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php, line 125]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 125
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 82
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 15:13:24 Warning: Warning (4096): Argument 1 passed to Cake\ORM\Marshaller::one() must be of the type array, string given, called in D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php on line 202 and defined in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php, line 101]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 101
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 82
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 15:13:24 Warning: Warning (4096): Argument 1 passed to Cake\Validation\Validator::errors() must be of the type array, string given, called in D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php on line 185 and defined in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\Validator.php, line 86]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Validation\Validator::errors() - CORE\src\Validation\Validator.php, line 86
+Cake\ORM\Marshaller::_validate() - CORE\src\ORM\Marshaller.php, line 185
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 122
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 82
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 15:13:24 Warning: Warning (2): array_key_exists() expects parameter 2 to be array, string given in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\Validator.php, line 99]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+array_key_exists - [internal], line ??
+Cake\Validation\Validator::errors() - CORE\src\Validation\Validator.php, line 99
+Cake\ORM\Marshaller::_validate() - CORE\src\ORM\Marshaller.php, line 185
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 122
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 82
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 15:13:24 Warning: Warning (2): array_key_exists() expects parameter 2 to be array, string given in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\Validator.php, line 99]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+array_key_exists - [internal], line ??
+Cake\Validation\Validator::errors() - CORE\src\Validation\Validator.php, line 99
+Cake\ORM\Marshaller::_validate() - CORE\src\ORM\Marshaller.php, line 185
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 122
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 82
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 15:13:24 Warning: Warning (2): Invalid argument supplied for foreach() in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php, line 125]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 125
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 82
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 15:13:52 Warning: Warning (4096): Argument 1 passed to Cake\ORM\Marshaller::one() must be of the type array, string given, called in D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php on line 202 and defined in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php, line 101]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 101
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 82
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 15:13:52 Warning: Warning (4096): Argument 1 passed to Cake\Validation\Validator::errors() must be of the type array, string given, called in D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php on line 185 and defined in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\Validator.php, line 86]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Validation\Validator::errors() - CORE\src\Validation\Validator.php, line 86
+Cake\ORM\Marshaller::_validate() - CORE\src\ORM\Marshaller.php, line 185
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 122
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 82
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 15:13:52 Warning: Warning (2): array_key_exists() expects parameter 2 to be array, string given in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\Validator.php, line 99]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+array_key_exists - [internal], line ??
+Cake\Validation\Validator::errors() - CORE\src\Validation\Validator.php, line 99
+Cake\ORM\Marshaller::_validate() - CORE\src\ORM\Marshaller.php, line 185
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 122
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 82
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 15:13:52 Warning: Warning (2): array_key_exists() expects parameter 2 to be array, string given in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\Validator.php, line 99]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+array_key_exists - [internal], line ??
+Cake\Validation\Validator::errors() - CORE\src\Validation\Validator.php, line 99
+Cake\ORM\Marshaller::_validate() - CORE\src\ORM\Marshaller.php, line 185
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 122
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 82
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 15:13:52 Warning: Warning (2): Invalid argument supplied for foreach() in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php, line 125]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 125
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 82
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 15:14:09 Warning: Warning (4096): Argument 1 passed to Cake\ORM\Marshaller::one() must be of the type array, string given, called in D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php on line 202 and defined in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php, line 101]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 101
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 82
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 15:14:09 Warning: Warning (4096): Argument 1 passed to Cake\Validation\Validator::errors() must be of the type array, string given, called in D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php on line 185 and defined in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\Validator.php, line 86]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Validation\Validator::errors() - CORE\src\Validation\Validator.php, line 86
+Cake\ORM\Marshaller::_validate() - CORE\src\ORM\Marshaller.php, line 185
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 122
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 82
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 15:14:09 Warning: Warning (2): array_key_exists() expects parameter 2 to be array, string given in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\Validator.php, line 99]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+array_key_exists - [internal], line ??
+Cake\Validation\Validator::errors() - CORE\src\Validation\Validator.php, line 99
+Cake\ORM\Marshaller::_validate() - CORE\src\ORM\Marshaller.php, line 185
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 122
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 82
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 15:14:09 Warning: Warning (2): array_key_exists() expects parameter 2 to be array, string given in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\Validator.php, line 99]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+array_key_exists - [internal], line ??
+Cake\Validation\Validator::errors() - CORE\src\Validation\Validator.php, line 99
+Cake\ORM\Marshaller::_validate() - CORE\src\ORM\Marshaller.php, line 185
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 122
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 82
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 15:14:09 Warning: Warning (2): Invalid argument supplied for foreach() in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php, line 125]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 125
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 82
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 15:15:29 Warning: Warning (4096): Argument 1 passed to Cake\ORM\Marshaller::one() must be of the type array, string given, called in D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php on line 202 and defined in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php, line 101]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 101
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 82
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 15:15:29 Warning: Warning (4096): Argument 1 passed to Cake\Validation\Validator::errors() must be of the type array, string given, called in D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php on line 185 and defined in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\Validator.php, line 86]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Validation\Validator::errors() - CORE\src\Validation\Validator.php, line 86
+Cake\ORM\Marshaller::_validate() - CORE\src\ORM\Marshaller.php, line 185
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 122
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 82
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 15:15:29 Warning: Warning (2): array_key_exists() expects parameter 2 to be array, string given in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\Validator.php, line 99]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+array_key_exists - [internal], line ??
+Cake\Validation\Validator::errors() - CORE\src\Validation\Validator.php, line 99
+Cake\ORM\Marshaller::_validate() - CORE\src\ORM\Marshaller.php, line 185
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 122
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 82
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 15:15:29 Warning: Warning (2): array_key_exists() expects parameter 2 to be array, string given in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\Validator.php, line 99]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+array_key_exists - [internal], line ??
+Cake\Validation\Validator::errors() - CORE\src\Validation\Validator.php, line 99
+Cake\ORM\Marshaller::_validate() - CORE\src\ORM\Marshaller.php, line 185
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 122
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 82
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 15:15:29 Warning: Warning (2): Invalid argument supplied for foreach() in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php, line 125]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 125
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 82
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 15:16:53 Warning: Warning (4096): Argument 1 passed to Cake\ORM\Table::save() must implement interface Cake\Datasource\EntityInterface, array given, called in D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\StudentsController.php on line 83 and defined in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Table.php, line 1266]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\ORM\Table::save() - CORE\src\ORM\Table.php, line 1266
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 83
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 15:16:53 Error: Fatal Error (1): Call to a member function errors() on a non-object in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Table.php, line 1274]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 15:16:54 Error: [Cake\Error\FatalErrorException] Call to a member function errors() on a non-object
+Request URL: /students/edit/1
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', 'D:\\SERVERPHP\\Op...', 1274)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 15:19:15 Warning: Warning (4096): Argument 1 passed to Cake\ORM\Table::save() must implement interface Cake\Datasource\EntityInterface, array given, called in D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\StudentsController.php on line 83 and defined in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Table.php, line 1266]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\ORM\Table::save() - CORE\src\ORM\Table.php, line 1266
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 83
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 15:19:15 Error: Fatal Error (1): Call to a member function errors() on a non-object in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Table.php, line 1274]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 15:19:16 Error: [Cake\Error\FatalErrorException] Call to a member function errors() on a non-object
+Request URL: /students/edit/1
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', 'D:\\SERVERPHP\\Op...', 1274)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 15:19:47 Warning: Warning (4096): Argument 1 passed to Cake\ORM\Marshaller::one() must be of the type array, string given, called in D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php on line 202 and defined in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php, line 101]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 101
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 82
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 15:19:47 Warning: Warning (4096): Argument 1 passed to Cake\Validation\Validator::errors() must be of the type array, string given, called in D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php on line 185 and defined in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\Validator.php, line 86]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Validation\Validator::errors() - CORE\src\Validation\Validator.php, line 86
+Cake\ORM\Marshaller::_validate() - CORE\src\ORM\Marshaller.php, line 185
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 122
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 82
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 15:19:47 Warning: Warning (2): array_key_exists() expects parameter 2 to be array, string given in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\Validator.php, line 99]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+array_key_exists - [internal], line ??
+Cake\Validation\Validator::errors() - CORE\src\Validation\Validator.php, line 99
+Cake\ORM\Marshaller::_validate() - CORE\src\ORM\Marshaller.php, line 185
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 122
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 82
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 15:19:47 Warning: Warning (2): array_key_exists() expects parameter 2 to be array, string given in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\Validator.php, line 99]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+array_key_exists - [internal], line ??
+Cake\Validation\Validator::errors() - CORE\src\Validation\Validator.php, line 99
+Cake\ORM\Marshaller::_validate() - CORE\src\ORM\Marshaller.php, line 185
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 122
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 82
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 15:19:47 Warning: Warning (2): Invalid argument supplied for foreach() in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php, line 125]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 125
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 82
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 15:20:03 Warning: Warning (4096): Argument 1 passed to Cake\ORM\Marshaller::one() must be of the type array, string given, called in D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php on line 202 and defined in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php, line 101]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 101
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 82
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 15:20:03 Warning: Warning (4096): Argument 1 passed to Cake\Validation\Validator::errors() must be of the type array, string given, called in D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php on line 185 and defined in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\Validator.php, line 86]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Validation\Validator::errors() - CORE\src\Validation\Validator.php, line 86
+Cake\ORM\Marshaller::_validate() - CORE\src\ORM\Marshaller.php, line 185
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 122
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 82
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 15:20:03 Warning: Warning (2): array_key_exists() expects parameter 2 to be array, string given in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\Validator.php, line 99]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+array_key_exists - [internal], line ??
+Cake\Validation\Validator::errors() - CORE\src\Validation\Validator.php, line 99
+Cake\ORM\Marshaller::_validate() - CORE\src\ORM\Marshaller.php, line 185
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 122
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 82
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 15:20:03 Warning: Warning (2): array_key_exists() expects parameter 2 to be array, string given in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\Validator.php, line 99]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+array_key_exists - [internal], line ??
+Cake\Validation\Validator::errors() - CORE\src\Validation\Validator.php, line 99
+Cake\ORM\Marshaller::_validate() - CORE\src\ORM\Marshaller.php, line 185
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 122
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 82
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 15:20:03 Warning: Warning (2): Invalid argument supplied for foreach() in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php, line 125]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 125
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 82
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 15:20:16 Warning: Warning (4096): Argument 1 passed to Cake\ORM\Marshaller::one() must be of the type array, string given, called in D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php on line 202 and defined in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php, line 101]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 101
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 82
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 15:20:16 Warning: Warning (4096): Argument 1 passed to Cake\Validation\Validator::errors() must be of the type array, string given, called in D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php on line 185 and defined in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\Validator.php, line 86]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Validation\Validator::errors() - CORE\src\Validation\Validator.php, line 86
+Cake\ORM\Marshaller::_validate() - CORE\src\ORM\Marshaller.php, line 185
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 122
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 82
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 15:20:16 Warning: Warning (2): array_key_exists() expects parameter 2 to be array, string given in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\Validator.php, line 99]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+array_key_exists - [internal], line ??
+Cake\Validation\Validator::errors() - CORE\src\Validation\Validator.php, line 99
+Cake\ORM\Marshaller::_validate() - CORE\src\ORM\Marshaller.php, line 185
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 122
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 82
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 15:20:16 Warning: Warning (2): array_key_exists() expects parameter 2 to be array, string given in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\Validator.php, line 99]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+array_key_exists - [internal], line ??
+Cake\Validation\Validator::errors() - CORE\src\Validation\Validator.php, line 99
+Cake\ORM\Marshaller::_validate() - CORE\src\ORM\Marshaller.php, line 185
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 122
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 82
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 15:20:16 Warning: Warning (2): Invalid argument supplied for foreach() in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php, line 125]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 125
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 82
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 15:20:35 Warning: Warning (4096): Argument 1 passed to Cake\ORM\Marshaller::one() must be of the type array, string given, called in D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php on line 202 and defined in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php, line 101]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 101
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 82
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 15:20:35 Warning: Warning (4096): Argument 1 passed to Cake\Validation\Validator::errors() must be of the type array, string given, called in D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php on line 185 and defined in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\Validator.php, line 86]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Validation\Validator::errors() - CORE\src\Validation\Validator.php, line 86
+Cake\ORM\Marshaller::_validate() - CORE\src\ORM\Marshaller.php, line 185
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 122
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 82
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 15:20:35 Warning: Warning (2): array_key_exists() expects parameter 2 to be array, string given in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\Validator.php, line 99]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+array_key_exists - [internal], line ??
+Cake\Validation\Validator::errors() - CORE\src\Validation\Validator.php, line 99
+Cake\ORM\Marshaller::_validate() - CORE\src\ORM\Marshaller.php, line 185
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 122
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 82
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 15:20:35 Warning: Warning (2): array_key_exists() expects parameter 2 to be array, string given in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\Validator.php, line 99]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+array_key_exists - [internal], line ??
+Cake\Validation\Validator::errors() - CORE\src\Validation\Validator.php, line 99
+Cake\ORM\Marshaller::_validate() - CORE\src\ORM\Marshaller.php, line 185
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 122
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 82
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 15:20:35 Warning: Warning (2): Invalid argument supplied for foreach() in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php, line 125]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\ORM\Marshaller::one() - CORE\src\ORM\Marshaller.php, line 125
+Cake\ORM\Marshaller::_marshalAssociation() - CORE\src\ORM\Marshaller.php, line 202
+Cake\ORM\Marshaller::_mergeAssociation() - CORE\src\ORM\Marshaller.php, line 487
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 354
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 82
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+

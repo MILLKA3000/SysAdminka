@@ -21,7 +21,7 @@ class SchoolsTable extends Table
     public function initialize(array $config)
     {
         $this->table('schools');
-        $this->displayField('school_id');
+        $this->displayField('name');
         $this->primaryKey('school_id');
 
     }
@@ -43,5 +43,9 @@ class SchoolsTable extends Table
         return $validator;
     }
 
-
+    public function buildRules(RulesChecker $rules)
+    {
+        $rules->add($rules->existsIn(['school_id'], 'Schools'));
+        return $rules;
+    }
 }
