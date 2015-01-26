@@ -30,11 +30,8 @@
             <td><?= $this->Text->autoParagraph(h($student->first_name)); ?></td>
             <td><?= $this->Text->autoParagraph(h($student->last_name)); ?></td>
             <td><?= $this->Text->autoParagraph(h($student->user_name)); ?></td>
-<!--            <td>--><?//= $student->grade_level ?><!--</td>-->
-<!--            <td>--><?//= $student->password ?><!--</td>-->
             <td>
                 <?= $student->has('status') ?  $student->status->name:'' ?>
-<!--                --><?// print_r($student->status_id)?><!--</td>-->
             <td class="actions">
                 <?= $this->Html->link(__('Edit'), ['action' => 'edit', $student->id],['class'=>'btn btn-warning']) ?>
             </td>

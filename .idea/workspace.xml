@@ -2,22 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f1f1f89-f03c-4650-94cd-3a0807349563" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/Entity/School.php" afterPath="$PROJECT_DIR$/src/Model/Entity/School.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/SchoolsController.php" afterPath="$PROJECT_DIR$/src/Controller/SchoolsController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/Table/SchoolsTable.php" afterPath="$PROJECT_DIR$/src/Model/Table/SchoolsTable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/StudentsController.php" afterPath="$PROJECT_DIR$/src/Controller/StudentsController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/Table/StudentsTable.php" afterPath="$PROJECT_DIR$/src/Model/Table/StudentsTable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Template/Schools/add.ctp" afterPath="$PROJECT_DIR$/src/Template/Schools/add.ctp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webroot/css/bootstrap.css" afterPath="$PROJECT_DIR$/webroot/css/bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/debug.log" afterPath="$PROJECT_DIR$/logs/debug.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Template/Layout/default.ctp" afterPath="$PROJECT_DIR$/src/Template/Layout/default.ctp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Template/Schools/edit.ctp" afterPath="$PROJECT_DIR$/src/Template/Schools/edit.ctp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Template/Students/edit.ctp" afterPath="$PROJECT_DIR$/src/Template/Students/edit.ctp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/error.log" afterPath="$PROJECT_DIR$/logs/error.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Template/Schools/index.ctp" afterPath="$PROJECT_DIR$/src/Template/Schools/index.ctp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Template/Students/index.ctp" afterPath="$PROJECT_DIR$/src/Template/Students/index.ctp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Template/Element/menu/topmenu.ctp" afterPath="$PROJECT_DIR$/src/Template/Element/menu/topmenu.ctp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SysAdminka.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -67,10 +52,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SchoolsTable.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="SchoolsTable.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Model/Table/SchoolsTable.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="31" selection-start="1302" selection-end="1302" vertical-scroll-proportion="0.7983491" vertical-offset="235" max-vertical-offset="1273">
+            <state line="51" column="31" selection-start="1302" selection-end="1302" vertical-scroll-proportion="-27.08" vertical-offset="235" max-vertical-offset="1273">
               <folding />
             </state>
           </provider>
@@ -83,15 +68,6 @@
               <folding>
                 <element signature="e#34#53#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StudentsTable.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Model/Table/StudentsTable.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="14" selection-start="1171" selection-end="1520" vertical-scroll-proportion="-17.2" vertical-offset="615" max-vertical-offset="2071">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -119,6 +95,20 @@
           <provider selected="true" editor-type-id="text-editor">
             <state line="14" column="35" selection-start="355" selection-end="355" vertical-scroll-proportion="-9.08" vertical-offset="39" max-vertical-offset="1292">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.ctp" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Template/Students/index.ctp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="33" column="75" selection-start="1976" selection-end="1976" vertical-scroll-proportion="0.7393868" vertical-offset="0" max-vertical-offset="1121">
+              <folding>
+                <element signature="n#style#0;n#th#2;n#tr#0;n#thead#0;n#table#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#th#3;n#tr#0;n#thead#0;n#table#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#th#4;n#tr#0;n#thead#0;n#table#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#th#5;n#tr#0;n#thead#0;n#table#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -165,12 +155,12 @@
         <option value="$PROJECT_DIR$/src/Controller/StudentsController.php" />
         <option value="$PROJECT_DIR$/webroot/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/src/Template/Schools/edit.ctp" />
-        <option value="$PROJECT_DIR$/src/Template/Students/index.ctp" />
         <option value="$PROJECT_DIR$/src/Template/Schools/add.ctp" />
         <option value="$PROJECT_DIR$/src/Model/Entity/School.php" />
         <option value="$PROJECT_DIR$/src/Controller/SchoolsController.php" />
         <option value="$PROJECT_DIR$/src/Template/Schools/index.ctp" />
         <option value="$PROJECT_DIR$/src/Model/Table/SchoolsTable.php" />
+        <option value="$PROJECT_DIR$/src/Template/Students/index.ctp" />
       </list>
     </option>
   </component>
@@ -897,13 +887,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Template/Students/index.ctp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="154" selection-start="1503" selection-end="1503" vertical-scroll-proportion="0.5825472" vertical-offset="0" max-vertical-offset="1178">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Template/Schools/edit.ctp">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="10" selection-start="166" selection-end="369" vertical-scroll-proportion="0.20165095" vertical-offset="0" max-vertical-offset="848">
@@ -948,8 +931,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Model/Table/SchoolsTable.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="31" selection-start="1302" selection-end="1302" vertical-scroll-proportion="0.7983491" vertical-offset="235" max-vertical-offset="1273">
+        <state line="51" column="31" selection-start="1302" selection-end="1302" vertical-scroll-proportion="-27.08" vertical-offset="235" max-vertical-offset="1273">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Template/Students/index.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="75" selection-start="1976" selection-end="1976" vertical-scroll-proportion="0.7393868" vertical-offset="0" max-vertical-offset="1121">
+          <folding>
+            <element signature="n#style#0;n#th#2;n#tr#0;n#thead#0;n#table#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#3;n#tr#0;n#thead#0;n#table#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#4;n#tr#0;n#thead#0;n#table#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#5;n#tr#0;n#thead#0;n#table#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
