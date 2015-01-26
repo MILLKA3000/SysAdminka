@@ -64,9 +64,9 @@ class SchoolsController extends AppController
      */
     public function edit($id = null)
     {
-        $school = $this->Schools->get($id, [
-            'contain' => []
-        ]);
+        $school = $this->Schools->find()
+            ->where(['id' => $id])
+            ->first();
         if ($this->request->is(['patch', 'post', 'put'])) {
             $school = $this->Schools->patchEntity($school, $this->request->data);
             if ($this->Schools->save($school)) {
@@ -97,4 +97,7 @@ class SchoolsController extends AppController
         }
         return $this->redirect(['action' => 'index']);
     }
+
+
+
 }

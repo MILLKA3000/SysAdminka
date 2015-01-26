@@ -13754,3 +13754,2916 @@ Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
 
 
 
+2015-01-26 15:48:11 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ']' in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Template\Students\edit.ctp, line 18]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 15:48:12 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ']'
+Request URL: /students/edit/7
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'D:\\SERVERPHP\\Op...', 18)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 15:53:09 Error: [RuntimeException] Table "App\Model\Table\SchoolsTable" is not associated with "request"
+Request URL: /schools/edit/1
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Model\Table\SchoolsTable.php(54): Cake\ORM\Table->__get('request')
+#1 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Event\EventManager.php(276): App\Model\Table\SchoolsTable->beforeSave(Object(Cake\Event\Event), Object(App\Model\Entity\School), Object(ArrayObject))
+#2 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Event\EventManager.php(242): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#3 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Event\EventManagerTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#4 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Table.php(1321): Cake\ORM\Table->dispatchEvent('Model.beforeSav...', Array)
+#5 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Table.php(1285): Cake\ORM\Table->_processSave(Object(App\Model\Entity\School), Object(ArrayObject))
+#6 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Database\Connection.php(562): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#7 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Table.php(1286): Cake\Database\Connection->transactional(Object(Closure))
+#8 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\SchoolsController.php(72): Cake\ORM\Table->save(Object(App\Model\Entity\School))
+#9 [internal function]: App\Controller\SchoolsController->edit('1')
+#10 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Controller\Controller.php(406): call_user_func_array(Array, Array)
+#11 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#12 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\SchoolsController))
+#13 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#14 {main}
+
+
+2015-01-26 15:53:50 Error: [RuntimeException] Table "App\Model\Table\SchoolsTable" is not associated with "data"
+Request URL: /schools/edit/1
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Model\Table\SchoolsTable.php(54): Cake\ORM\Table->__get('data')
+#1 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Event\EventManager.php(276): App\Model\Table\SchoolsTable->beforeSave(Object(Cake\Event\Event), Object(App\Model\Entity\School), Object(ArrayObject))
+#2 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Event\EventManager.php(242): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#3 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Event\EventManagerTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#4 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Table.php(1321): Cake\ORM\Table->dispatchEvent('Model.beforeSav...', Array)
+#5 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Table.php(1285): Cake\ORM\Table->_processSave(Object(App\Model\Entity\School), Object(ArrayObject))
+#6 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Database\Connection.php(562): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#7 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Table.php(1286): Cake\Database\Connection->transactional(Object(Closure))
+#8 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\SchoolsController.php(72): Cake\ORM\Table->save(Object(App\Model\Entity\School))
+#9 [internal function]: App\Controller\SchoolsController->edit('1')
+#10 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Controller\Controller.php(406): call_user_func_array(Array, Array)
+#11 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#12 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\SchoolsController))
+#13 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#14 {main}
+
+
+2015-01-26 15:53:59 Error: [BadMethodCallException] Unknown method "data"
+Request URL: /schools/edit/1
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Model\Table\SchoolsTable.php(54): Cake\ORM\Table->__call('data', Array)
+#1 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Model\Table\SchoolsTable.php(54): App\Model\Table\SchoolsTable->data()
+#2 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Event\EventManager.php(276): App\Model\Table\SchoolsTable->beforeSave(Object(Cake\Event\Event), Object(App\Model\Entity\School), Object(ArrayObject))
+#3 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Event\EventManager.php(242): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#4 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Event\EventManagerTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#5 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Table.php(1321): Cake\ORM\Table->dispatchEvent('Model.beforeSav...', Array)
+#6 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Table.php(1285): Cake\ORM\Table->_processSave(Object(App\Model\Entity\School), Object(ArrayObject))
+#7 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Database\Connection.php(562): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#8 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Table.php(1286): Cake\Database\Connection->transactional(Object(Closure))
+#9 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\SchoolsController.php(72): Cake\ORM\Table->save(Object(App\Model\Entity\School))
+#10 [internal function]: App\Controller\SchoolsController->edit('1')
+#11 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Controller\Controller.php(406): call_user_func_array(Array, Array)
+#12 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#13 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\SchoolsController))
+#14 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#15 {main}
+
+
+2015-01-26 15:54:20 Error: [RuntimeException] Table "App\Model\Table\SchoolsTable" is not associated with "alias"
+Request URL: /schools/edit/1
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Model\Table\SchoolsTable.php(54): Cake\ORM\Table->__get('alias')
+#1 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Event\EventManager.php(276): App\Model\Table\SchoolsTable->beforeSave(Object(Cake\Event\Event), Object(App\Model\Entity\School), Object(ArrayObject))
+#2 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Event\EventManager.php(242): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#3 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Event\EventManagerTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#4 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Table.php(1321): Cake\ORM\Table->dispatchEvent('Model.beforeSav...', Array)
+#5 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Table.php(1285): Cake\ORM\Table->_processSave(Object(App\Model\Entity\School), Object(ArrayObject))
+#6 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Database\Connection.php(562): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#7 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Table.php(1286): Cake\Database\Connection->transactional(Object(Closure))
+#8 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\SchoolsController.php(72): Cake\ORM\Table->save(Object(App\Model\Entity\School))
+#9 [internal function]: App\Controller\SchoolsController->edit('1')
+#10 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Controller\Controller.php(406): call_user_func_array(Array, Array)
+#11 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#12 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\SchoolsController))
+#13 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#14 {main}
+
+
+2015-01-26 15:54:39 Error: [RuntimeException] Table "App\Model\Table\SchoolsTable" is not associated with "data"
+Request URL: /schools/edit/1
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Model\Table\SchoolsTable.php(54): Cake\ORM\Table->__get('data')
+#1 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Event\EventManager.php(276): App\Model\Table\SchoolsTable->beforeSave(Object(Cake\Event\Event), Object(App\Model\Entity\School), Object(ArrayObject))
+#2 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Event\EventManager.php(242): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#3 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Event\EventManagerTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#4 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Table.php(1321): Cake\ORM\Table->dispatchEvent('Model.beforeSav...', Array)
+#5 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Table.php(1285): Cake\ORM\Table->_processSave(Object(App\Model\Entity\School), Object(ArrayObject))
+#6 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Database\Connection.php(562): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#7 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Table.php(1286): Cake\Database\Connection->transactional(Object(Closure))
+#8 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\SchoolsController.php(72): Cake\ORM\Table->save(Object(App\Model\Entity\School))
+#9 [internal function]: App\Controller\SchoolsController->edit('1')
+#10 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Controller\Controller.php(406): call_user_func_array(Array, Array)
+#11 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#12 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\SchoolsController))
+#13 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#14 {main}
+
+
+2015-01-26 15:55:46 Error: [RuntimeException] Table "App\Model\Table\SchoolsTable" is not associated with "alias"
+Request URL: /schools/edit/1
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Model\Table\SchoolsTable.php(54): Cake\ORM\Table->__get('alias')
+#1 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Event\EventManager.php(276): App\Model\Table\SchoolsTable->beforeSave(Object(Cake\Event\Event), Object(App\Model\Entity\School), Object(ArrayObject))
+#2 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Event\EventManager.php(242): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#3 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Event\EventManagerTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#4 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Table.php(1321): Cake\ORM\Table->dispatchEvent('Model.beforeSav...', Array)
+#5 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Table.php(1285): Cake\ORM\Table->_processSave(Object(App\Model\Entity\School), Object(ArrayObject))
+#6 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Database\Connection.php(562): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#7 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Table.php(1286): Cake\Database\Connection->transactional(Object(Closure))
+#8 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\SchoolsController.php(72): Cake\ORM\Table->save(Object(App\Model\Entity\School))
+#9 [internal function]: App\Controller\SchoolsController->edit('1')
+#10 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Controller\Controller.php(406): call_user_func_array(Array, Array)
+#11 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#12 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\SchoolsController))
+#13 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#14 {main}
+
+
+2015-01-26 16:04:03 Warning: Warning (4096): Argument 2 passed to Cake\View\Helper\FormHelper::input() must be of the type array, string given, called in D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Template\Schools\edit.ctp on line 6 and defined in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\View\Helper\FormHelper.php, line 957]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\View\Helper\FormHelper::input() - CORE\src\View\Helper\FormHelper.php, line 957
+include - APP/Template\Schools\edit.ctp, line 6
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 815
+Cake\View\View::_render() - CORE\src\View\View.php, line 775
+Cake\View\View::render() - CORE\src\View\View.php, line 463
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 577
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 16:04:03 Error: Fatal Error (1): Unsupported operand types in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\View\Helper\FormHelper.php, line 966]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 16:04:03 Error: [Cake\Error\FatalErrorException] Unsupported operand types
+Request URL: /schools/edit/1
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Unsupported ope...', 'D:\\SERVERPHP\\Op...', 966)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 16:04:13 Warning: Warning (4096): Argument 2 passed to Cake\View\Helper\FormHelper::input() must be of the type array, string given, called in D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Template\Schools\edit.ctp on line 6 and defined in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\View\Helper\FormHelper.php, line 957]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\View\Helper\FormHelper::input() - CORE\src\View\Helper\FormHelper.php, line 957
+include - APP/Template\Schools\edit.ctp, line 6
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 815
+Cake\View\View::_render() - CORE\src\View\View.php, line 775
+Cake\View\View::render() - CORE\src\View\View.php, line 463
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 577
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 16:04:13 Error: Fatal Error (1): Unsupported operand types in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\View\Helper\FormHelper.php, line 966]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 16:04:14 Error: [Cake\Error\FatalErrorException] Unsupported operand types
+Request URL: /schools/edit/1
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Unsupported ope...', 'D:\\SERVERPHP\\Op...', 966)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 16:04:15 Warning: Warning (4096): Argument 2 passed to Cake\View\Helper\FormHelper::input() must be of the type array, string given, called in D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Template\Schools\edit.ctp on line 6 and defined in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\View\Helper\FormHelper.php, line 957]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\View\Helper\FormHelper::input() - CORE\src\View\Helper\FormHelper.php, line 957
+include - APP/Template\Schools\edit.ctp, line 6
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 815
+Cake\View\View::_render() - CORE\src\View\View.php, line 775
+Cake\View\View::render() - CORE\src\View\View.php, line 463
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 577
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 16:04:15 Error: Fatal Error (1): Unsupported operand types in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\View\Helper\FormHelper.php, line 966]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 16:04:15 Error: [Cake\Error\FatalErrorException] Unsupported operand types
+Request URL: /schools/edit/1
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Unsupported ope...', 'D:\\SERVERPHP\\Op...', 966)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 16:06:16 Error: Fatal Error (4): syntax error, unexpected '->' (T_OBJECT_OPERATOR) in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Model\Table\SchoolsTable.php, line 42]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 16:06:16 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+Request URL: /schools/edit/1
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'D:\\SERVERPHP\\Op...', 42)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 16:07:03 Warning: Warning (4096): Argument 1 passed to Cake\Validation\ValidationRule::__construct() must be of the type array, string given, called in D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\ValidationSet.php on line 119 and defined in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\ValidationRule.php, line 76]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Validation\ValidationRule::__construct() - CORE\src\Validation\ValidationRule.php, line 76
+Cake\Validation\ValidationSet::add() - CORE\src\Validation\ValidationSet.php, line 119
+Cake\Validation\Validator::add() - CORE\src\Validation\Validator.php, line 299
+App\Model\Table\SchoolsTable::validationDefault() - APP/Model\Table\SchoolsTable.php, line 42
+Cake\ORM\Table::validator() - CORE\src\ORM\Table.php, line 1139
+Cake\ORM\Marshaller::_validate() - CORE\src\ORM\Marshaller.php, line 174
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 341
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\SchoolsController::edit() - APP/Controller\SchoolsController.php, line 71
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 16:07:03 Warning: Warning (2): Invalid argument supplied for foreach() in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\ValidationRule.php, line 183]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Validation\ValidationRule::_addValidatorProps() - CORE\src\Validation\ValidationRule.php, line 183
+Cake\Validation\ValidationRule::__construct() - CORE\src\Validation\ValidationRule.php, line 78
+Cake\Validation\ValidationSet::add() - CORE\src\Validation\ValidationSet.php, line 119
+Cake\Validation\Validator::add() - CORE\src\Validation\Validator.php, line 299
+App\Model\Table\SchoolsTable::validationDefault() - APP/Model\Table\SchoolsTable.php, line 42
+Cake\ORM\Table::validator() - CORE\src\ORM\Table.php, line 1139
+Cake\ORM\Marshaller::_validate() - CORE\src\ORM\Marshaller.php, line 174
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 341
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\SchoolsController::edit() - APP/Controller\SchoolsController.php, line 71
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 16:07:04 Error: [InvalidArgumentException] Unable to call method "" in "default" provider for field "new_id"
+Request URL: /schools/edit/1
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\Validator.php(554): Cake\Validation\ValidationRule->process('1', Array, Array)
+#1 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\Validator.php(128): Cake\Validation\Validator->_processRules('new_id', Object(Cake\Validation\ValidationSet), Array, false)
+#2 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php(185): Cake\Validation\Validator->errors(Array, false)
+#3 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php(341): Cake\ORM\Marshaller->_validate(Array, Array, false)
+#4 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Table.php(1899): Cake\ORM\Marshaller->merge(Object(App\Model\Entity\School), Array, Array)
+#5 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\SchoolsController.php(71): Cake\ORM\Table->patchEntity(Object(App\Model\Entity\School), Array)
+#6 [internal function]: App\Controller\SchoolsController->edit('1')
+#7 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Controller\Controller.php(406): call_user_func_array(Array, Array)
+#8 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#9 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\SchoolsController))
+#10 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#11 {main}
+
+
+2015-01-26 16:44:08 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'user name is cloning NULL AND NOT (id = 1)) LIMIT 1' at line 1
+Request URL: /students/edit/1
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(161): PDOStatement->execute(NULL)
+#1 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(161): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#2 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(55): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Database\Connection.php(275): Cake\Database\Log\LoggingStatement->execute()
+#4 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Database\Query.php(166): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Query.php(671): Cake\Database\Query->execute()
+#6 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(218): Cake\ORM\Query->_execute()
+#7 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Query.php(626): Cake\ORM\Query->_all()
+#8 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(234): Cake\ORM\Query->all()
+#9 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Table.php(1184): Cake\ORM\Query->toArray()
+#10 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Rule\IsUnique.php(65): Cake\ORM\Table->exists(Array)
+#11 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\RulesChecker.php(344): Cake\ORM\Rule\IsUnique->__invoke(Object(App\Model\Entity\Student), Array)
+#12 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\RulesChecker.php(344): Cake\ORM\RulesChecker->Cake\ORM\{closure}(Object(App\Model\Entity\Student), Array)
+#13 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\RulesChecker.php(264): Cake\ORM\RulesChecker->Cake\ORM\{closure}(Object(App\Model\Entity\Student), Array)
+#14 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\RulesChecker.php(223): Cake\ORM\RulesChecker->checkUpdate(Object(App\Model\Entity\Student), Array)
+#15 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Table.php(2003): Cake\ORM\RulesChecker->check(Object(App\Model\Entity\Student), 'update', Array)
+#16 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Table.php(1316): Cake\ORM\Table->checkRules(Object(App\Model\Entity\Student), 'update', Object(ArrayObject))
+#17 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Table.php(1285): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Student), Object(ArrayObject))
+#18 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Database\Connection.php(562): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#19 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Table.php(1286): Cake\Database\Connection->transactional(Object(Closure))
+#20 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\StudentsController.php(84): Cake\ORM\Table->save(Object(App\Model\Entity\Student))
+#21 [internal function]: App\Controller\StudentsController->edit('1')
+#22 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Controller\Controller.php(406): call_user_func_array(Array, Array)
+#23 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#24 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\StudentsController))
+#25 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#26 {main}
+
+
+2015-01-26 16:44:49 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'user name is cloning NULL AND NOT (id = 1)) LIMIT 1' at line 1
+Request URL: /students/edit/1
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(161): PDOStatement->execute(NULL)
+#1 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(161): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#2 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(55): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Database\Connection.php(275): Cake\Database\Log\LoggingStatement->execute()
+#4 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Database\Query.php(166): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Query.php(671): Cake\Database\Query->execute()
+#6 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(218): Cake\ORM\Query->_execute()
+#7 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Query.php(626): Cake\ORM\Query->_all()
+#8 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(234): Cake\ORM\Query->all()
+#9 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Table.php(1184): Cake\ORM\Query->toArray()
+#10 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Rule\IsUnique.php(65): Cake\ORM\Table->exists(Array)
+#11 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\RulesChecker.php(344): Cake\ORM\Rule\IsUnique->__invoke(Object(App\Model\Entity\Student), Array)
+#12 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\RulesChecker.php(344): Cake\ORM\RulesChecker->Cake\ORM\{closure}(Object(App\Model\Entity\Student), Array)
+#13 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\RulesChecker.php(264): Cake\ORM\RulesChecker->Cake\ORM\{closure}(Object(App\Model\Entity\Student), Array)
+#14 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\RulesChecker.php(223): Cake\ORM\RulesChecker->checkUpdate(Object(App\Model\Entity\Student), Array)
+#15 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Table.php(2003): Cake\ORM\RulesChecker->check(Object(App\Model\Entity\Student), 'update', Array)
+#16 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Table.php(1316): Cake\ORM\Table->checkRules(Object(App\Model\Entity\Student), 'update', Object(ArrayObject))
+#17 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Table.php(1285): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Student), Object(ArrayObject))
+#18 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Database\Connection.php(562): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#19 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Table.php(1286): Cake\Database\Connection->transactional(Object(Closure))
+#20 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\StudentsController.php(84): Cake\ORM\Table->save(Object(App\Model\Entity\Student))
+#21 [internal function]: App\Controller\StudentsController->edit('1')
+#22 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Controller\Controller.php(406): call_user_func_array(Array, Array)
+#23 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#24 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\StudentsController))
+#25 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#26 {main}
+
+
+2015-01-26 17:00:06 Error: Fatal Error (4): syntax error, unexpected ']' in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Model\Table\StudentsTable.php, line 50]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 17:00:06 Error: [Cake\Error\FatalErrorException] syntax error, unexpected ']'
+Request URL: /students/edit/1
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'D:\\SERVERPHP\\Op...', 50)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 17:05:30 Warning: Warning (4096): Argument 1 passed to Cake\Validation\ValidationRule::__construct() must be of the type array, string given, called in D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\ValidationSet.php on line 119 and defined in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\ValidationRule.php, line 76]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Validation\ValidationRule::__construct() - CORE\src\Validation\ValidationRule.php, line 76
+Cake\Validation\ValidationSet::add() - CORE\src\Validation\ValidationSet.php, line 119
+Cake\Validation\Validator::add() - CORE\src\Validation\Validator.php, line 299
+App\Model\Table\StudentsTable::validationDefault() - APP/Model\Table\StudentsTable.php, line 50
+Cake\ORM\Table::validator() - CORE\src\ORM\Table.php, line 1139
+Cake\ORM\Marshaller::_validate() - CORE\src\ORM\Marshaller.php, line 174
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 341
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 83
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 17:05:30 Warning: Warning (2): Invalid argument supplied for foreach() in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\ValidationRule.php, line 183]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Validation\ValidationRule::_addValidatorProps() - CORE\src\Validation\ValidationRule.php, line 183
+Cake\Validation\ValidationRule::__construct() - CORE\src\Validation\ValidationRule.php, line 78
+Cake\Validation\ValidationSet::add() - CORE\src\Validation\ValidationSet.php, line 119
+Cake\Validation\Validator::add() - CORE\src\Validation\Validator.php, line 299
+App\Model\Table\StudentsTable::validationDefault() - APP/Model\Table\StudentsTable.php, line 50
+Cake\ORM\Table::validator() - CORE\src\ORM\Table.php, line 1139
+Cake\ORM\Marshaller::_validate() - CORE\src\ORM\Marshaller.php, line 174
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 341
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 83
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 17:05:31 Error: [InvalidArgumentException] Unable to call method "" in "default" provider for field "student_id"
+Request URL: /students/edit/1
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\Validator.php(554): Cake\Validation\ValidationRule->process('rtttt', Array, Array)
+#1 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\Validator.php(128): Cake\Validation\Validator->_processRules('student_id', Object(Cake\Validation\ValidationSet), Array, false)
+#2 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php(185): Cake\Validation\Validator->errors(Array, false)
+#3 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php(341): Cake\ORM\Marshaller->_validate(Array, Array, false)
+#4 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Table.php(1899): Cake\ORM\Marshaller->merge(Object(App\Model\Entity\Student), Array, Array)
+#5 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\StudentsController.php(83): Cake\ORM\Table->patchEntity(Object(App\Model\Entity\Student), Array)
+#6 [internal function]: App\Controller\StudentsController->edit('1')
+#7 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Controller\Controller.php(406): call_user_func_array(Array, Array)
+#8 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#9 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\StudentsController))
+#10 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#11 {main}
+
+
+2015-01-26 17:05:43 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Model\Table\StudentsTable.php, line 50]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 17:05:43 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /students/edit/1
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'D:\\SERVERPHP\\Op...', 50)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 17:14:30 Warning: Warning (2): call_user_func_array() expects parameter 1 to be a valid callback, class 'Cake\Validation\Validation' does not have a method 'isUnique' in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\RulesProvider.php, line 53]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Validation\RulesProvider::__call() - CORE\src\Validation\RulesProvider.php, line 53
+Cake\Validation\RulesProvider::isUnique() - CORE\src\Validation\ValidationRule.php, line 138
+Cake\Validation\ValidationRule::process() - CORE\src\Validation\ValidationRule.php, line 138
+Cake\Validation\Validator::_processRules() - CORE\src\Validation\Validator.php, line 554
+Cake\Validation\Validator::errors() - CORE\src\Validation\Validator.php, line 128
+Cake\ORM\Marshaller::_validate() - CORE\src\ORM\Marshaller.php, line 185
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 341
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 83
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 17:14:58 Warning: Warning (2): call_user_func_array() expects parameter 1 to be a valid callback, class 'Cake\Validation\Validation' does not have a method 'isUnique' in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\RulesProvider.php, line 53]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Validation\RulesProvider::__call() - CORE\src\Validation\RulesProvider.php, line 53
+Cake\Validation\RulesProvider::isUnique() - CORE\src\Validation\ValidationRule.php, line 138
+Cake\Validation\ValidationRule::process() - CORE\src\Validation\ValidationRule.php, line 138
+Cake\Validation\Validator::_processRules() - CORE\src\Validation\Validator.php, line 554
+Cake\Validation\Validator::errors() - CORE\src\Validation\Validator.php, line 128
+Cake\ORM\Marshaller::_validate() - CORE\src\ORM\Marshaller.php, line 185
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 341
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 83
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 17:15:18 Warning: Warning (2): call_user_func_array() expects parameter 1 to be a valid callback, class 'Cake\Validation\Validation' does not have a method 'validateUnique' in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\RulesProvider.php, line 53]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Validation\RulesProvider::__call() - CORE\src\Validation\RulesProvider.php, line 53
+Cake\Validation\RulesProvider::validateUnique() - CORE\src\Validation\ValidationRule.php, line 138
+Cake\Validation\ValidationRule::process() - CORE\src\Validation\ValidationRule.php, line 138
+Cake\Validation\Validator::_processRules() - CORE\src\Validation\Validator.php, line 554
+Cake\Validation\Validator::errors() - CORE\src\Validation\Validator.php, line 128
+Cake\ORM\Marshaller::_validate() - CORE\src\ORM\Marshaller.php, line 185
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 341
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 83
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 17:15:36 Warning: Warning (2): call_user_func_array() expects parameter 1 to be a valid callback, class 'Cake\Validation\Validation' does not have a method 'validateUnique' in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\RulesProvider.php, line 53]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Validation\RulesProvider::__call() - CORE\src\Validation\RulesProvider.php, line 53
+Cake\Validation\RulesProvider::validateUnique() - CORE\src\Validation\ValidationRule.php, line 138
+Cake\Validation\ValidationRule::process() - CORE\src\Validation\ValidationRule.php, line 138
+Cake\Validation\Validator::_processRules() - CORE\src\Validation\Validator.php, line 554
+Cake\Validation\Validator::errors() - CORE\src\Validation\Validator.php, line 128
+Cake\ORM\Marshaller::_validate() - CORE\src\ORM\Marshaller.php, line 185
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 341
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 83
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 17:16:13 Error: Fatal Error (4): syntax error, unexpected ')', expecting ']' in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Model\Table\StudentsTable.php, line 69]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 17:16:14 Error: [Cake\Error\FatalErrorException] syntax error, unexpected ')', expecting ']'
+Request URL: /students/edit/1
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'D:\\SERVERPHP\\Op...', 69)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 17:16:23 Warning: Warning (2): call_user_func_array() expects parameter 1 to be a valid callback, class 'Cake\Validation\Validation' does not have a method 'validateUnique' in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\RulesProvider.php, line 53]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Validation\RulesProvider::__call() - CORE\src\Validation\RulesProvider.php, line 53
+Cake\Validation\RulesProvider::validateUnique() - [internal], line ??
+Cake\Validation\ValidationRule::process() - CORE\src\Validation\ValidationRule.php, line 136
+Cake\Validation\Validator::_processRules() - CORE\src\Validation\Validator.php, line 554
+Cake\Validation\Validator::errors() - CORE\src\Validation\Validator.php, line 128
+Cake\ORM\Marshaller::_validate() - CORE\src\ORM\Marshaller.php, line 185
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 341
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 83
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 17:17:20 Warning: Warning (2): call_user_func_array() expects parameter 1 to be a valid callback, class 'Cake\Validation\Validation' does not have a method 'unique' in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\RulesProvider.php, line 53]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Validation\RulesProvider::__call() - CORE\src\Validation\RulesProvider.php, line 53
+Cake\Validation\RulesProvider::unique() - CORE\src\Validation\ValidationRule.php, line 138
+Cake\Validation\ValidationRule::process() - CORE\src\Validation\ValidationRule.php, line 138
+Cake\Validation\Validator::_processRules() - CORE\src\Validation\Validator.php, line 554
+Cake\Validation\Validator::errors() - CORE\src\Validation\Validator.php, line 128
+Cake\ORM\Marshaller::_validate() - CORE\src\ORM\Marshaller.php, line 185
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 341
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 83
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 17:18:32 Error: [InvalidArgumentException] Unable to call method "unique" in "custom" provider for field "user_name"
+Request URL: /students/edit/1
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\Validator.php(554): Cake\Validation\ValidationRule->process('Deren_LB', Array, Array)
+#1 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\Validator.php(128): Cake\Validation\Validator->_processRules('user_name', Object(Cake\Validation\ValidationSet), Array, false)
+#2 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php(185): Cake\Validation\Validator->errors(Array, false)
+#3 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php(341): Cake\ORM\Marshaller->_validate(Array, Array, false)
+#4 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Table.php(1899): Cake\ORM\Marshaller->merge(Object(App\Model\Entity\Student), Array, Array)
+#5 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\StudentsController.php(83): Cake\ORM\Table->patchEntity(Object(App\Model\Entity\Student), Array)
+#6 [internal function]: App\Controller\StudentsController->edit('1')
+#7 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Controller\Controller.php(406): call_user_func_array(Array, Array)
+#8 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#9 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\StudentsController))
+#10 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#11 {main}
+
+
+2015-01-26 17:18:55 Error: [InvalidArgumentException] Unable to call method "uniqueTitle" in "custom" provider for field "user_name"
+Request URL: /students/edit/1
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\Validator.php(554): Cake\Validation\ValidationRule->process('Deren_LB', Array, Array)
+#1 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\Validator.php(128): Cake\Validation\Validator->_processRules('user_name', Object(Cake\Validation\ValidationSet), Array, false)
+#2 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php(185): Cake\Validation\Validator->errors(Array, false)
+#3 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php(341): Cake\ORM\Marshaller->_validate(Array, Array, false)
+#4 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Table.php(1899): Cake\ORM\Marshaller->merge(Object(App\Model\Entity\Student), Array, Array)
+#5 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\StudentsController.php(83): Cake\ORM\Table->patchEntity(Object(App\Model\Entity\Student), Array)
+#6 [internal function]: App\Controller\StudentsController->edit('1')
+#7 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Controller\Controller.php(406): call_user_func_array(Array, Array)
+#8 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#9 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\StudentsController))
+#10 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#11 {main}
+
+
+2015-01-26 17:20:52 Warning: Warning (2): call_user_func_array() expects parameter 1 to be a valid callback, class 'Cake\Validation\Validation' does not have a method 'uniqueTitle' in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\RulesProvider.php, line 53]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Validation\RulesProvider::__call() - CORE\src\Validation\RulesProvider.php, line 53
+Cake\Validation\RulesProvider::uniqueTitle() - CORE\src\Validation\ValidationRule.php, line 138
+Cake\Validation\ValidationRule::process() - CORE\src\Validation\ValidationRule.php, line 138
+Cake\Validation\Validator::_processRules() - CORE\src\Validation\Validator.php, line 554
+Cake\Validation\Validator::errors() - CORE\src\Validation\Validator.php, line 128
+Cake\ORM\Marshaller::_validate() - CORE\src\ORM\Marshaller.php, line 185
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 341
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 83
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 17:21:19 Warning: Warning (2): call_user_func_array() expects parameter 1 to be a valid callback, class 'Cake\Validation\Validation' does not have a method 'uniqueTitle' in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\RulesProvider.php, line 53]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Validation\RulesProvider::__call() - CORE\src\Validation\RulesProvider.php, line 53
+Cake\Validation\RulesProvider::uniqueTitle() - CORE\src\Validation\ValidationRule.php, line 138
+Cake\Validation\ValidationRule::process() - CORE\src\Validation\ValidationRule.php, line 138
+Cake\Validation\Validator::_processRules() - CORE\src\Validation\Validator.php, line 554
+Cake\Validation\Validator::errors() - CORE\src\Validation\Validator.php, line 128
+Cake\ORM\Marshaller::_validate() - CORE\src\ORM\Marshaller.php, line 185
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 341
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 83
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 17:21:36 Warning: Warning (2): call_user_func_array() expects parameter 1 to be a valid callback, class 'Cake\Validation\Validation' does not have a method 'uniqueTitle' in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\RulesProvider.php, line 53]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Validation\RulesProvider::__call() - CORE\src\Validation\RulesProvider.php, line 53
+Cake\Validation\RulesProvider::uniqueTitle() - CORE\src\Validation\ValidationRule.php, line 138
+Cake\Validation\ValidationRule::process() - CORE\src\Validation\ValidationRule.php, line 138
+Cake\Validation\Validator::_processRules() - CORE\src\Validation\Validator.php, line 554
+Cake\Validation\Validator::errors() - CORE\src\Validation\Validator.php, line 128
+Cake\ORM\Marshaller::_validate() - CORE\src\ORM\Marshaller.php, line 185
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 341
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 83
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 17:21:36 Warning: Warning (2): Invalid argument supplied for foreach() in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Template\Element\Flash\error_form.ctp, line 5]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+include - APP/Template\Element\Flash\error_form.ctp, line 5
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 815
+Cake\View\View::_render() - CORE\src\View\View.php, line 775
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1118
+Cake\View\View::element() - CORE\src\View\View.php, line 374
+Cake\View\Helper\FlashHelper::render() - CORE\src\View\Helper\FlashHelper.php, line 83
+include - APP/Template\Layout\default.ctp, line 41
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 815
+Cake\View\View::_render() - CORE\src\View\View.php, line 775
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 509
+Cake\View\View::render() - CORE\src\View\View.php, line 471
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 577
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 17:22:21 Warning: Warning (2): call_user_func_array() expects parameter 1 to be a valid callback, class 'Cake\Validation\Validation' does not have a method 'uniqueTitle' in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\RulesProvider.php, line 53]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Validation\RulesProvider::__call() - CORE\src\Validation\RulesProvider.php, line 53
+Cake\Validation\RulesProvider::uniqueTitle() - CORE\src\Validation\ValidationRule.php, line 138
+Cake\Validation\ValidationRule::process() - CORE\src\Validation\ValidationRule.php, line 138
+Cake\Validation\Validator::_processRules() - CORE\src\Validation\Validator.php, line 554
+Cake\Validation\Validator::errors() - CORE\src\Validation\Validator.php, line 128
+Cake\ORM\Marshaller::_validate() - CORE\src\ORM\Marshaller.php, line 185
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 341
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 83
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 17:26:11 Error: Fatal Error (4): syntax error, unexpected ',' in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Model\Table\StudentsTable.php, line 64]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 17:26:12 Error: [Cake\Error\FatalErrorException] syntax error, unexpected ','
+Request URL: /students/edit/1
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'D:\\SERVERPHP\\Op...', 64)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 17:26:14 Error: Fatal Error (4): syntax error, unexpected ',' in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Model\Table\StudentsTable.php, line 64]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 17:26:14 Error: [Cake\Error\FatalErrorException] syntax error, unexpected ','
+Request URL: /students/edit/1
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'D:\\SERVERPHP\\Op...', 64)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 17:26:58 Error: [InvalidArgumentException] Unable to call method "" in "default" provider for field "user_name"
+Request URL: /students/edit/1
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\Validator.php(554): Cake\Validation\ValidationRule->process('Deren_LB', Array, Array)
+#1 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\Validator.php(128): Cake\Validation\Validator->_processRules('user_name', Object(Cake\Validation\ValidationSet), Array, false)
+#2 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php(185): Cake\Validation\Validator->errors(Array, false)
+#3 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php(341): Cake\ORM\Marshaller->_validate(Array, Array, false)
+#4 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Table.php(1899): Cake\ORM\Marshaller->merge(Object(App\Model\Entity\Student), Array, Array)
+#5 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\StudentsController.php(83): Cake\ORM\Table->patchEntity(Object(App\Model\Entity\Student), Array)
+#6 [internal function]: App\Controller\StudentsController->edit('1')
+#7 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Controller\Controller.php(406): call_user_func_array(Array, Array)
+#8 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#9 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\StudentsController))
+#10 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#11 {main}
+
+
+2015-01-26 17:27:34 Error: [InvalidArgumentException] Unable to call method "" in "default" provider for field "user_name"
+Request URL: /students/edit/1
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\Validator.php(554): Cake\Validation\ValidationRule->process('Deren_LB', Array, Array)
+#1 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\Validator.php(128): Cake\Validation\Validator->_processRules('user_name', Object(Cake\Validation\ValidationSet), Array, false)
+#2 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php(185): Cake\Validation\Validator->errors(Array, false)
+#3 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php(341): Cake\ORM\Marshaller->_validate(Array, Array, false)
+#4 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Table.php(1899): Cake\ORM\Marshaller->merge(Object(App\Model\Entity\Student), Array, Array)
+#5 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\StudentsController.php(83): Cake\ORM\Table->patchEntity(Object(App\Model\Entity\Student), Array)
+#6 [internal function]: App\Controller\StudentsController->edit('1')
+#7 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Controller\Controller.php(406): call_user_func_array(Array, Array)
+#8 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#9 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\StudentsController))
+#10 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#11 {main}
+
+
+2015-01-26 17:27:37 Error: [InvalidArgumentException] Unable to call method "" in "default" provider for field "user_name"
+Request URL: /students/edit/1
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\Validator.php(554): Cake\Validation\ValidationRule->process('Deren_LB', Array, Array)
+#1 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\Validator.php(128): Cake\Validation\Validator->_processRules('user_name', Object(Cake\Validation\ValidationSet), Array, false)
+#2 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php(185): Cake\Validation\Validator->errors(Array, false)
+#3 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php(341): Cake\ORM\Marshaller->_validate(Array, Array, false)
+#4 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Table.php(1899): Cake\ORM\Marshaller->merge(Object(App\Model\Entity\Student), Array, Array)
+#5 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\StudentsController.php(83): Cake\ORM\Table->patchEntity(Object(App\Model\Entity\Student), Array)
+#6 [internal function]: App\Controller\StudentsController->edit('1')
+#7 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Controller\Controller.php(406): call_user_func_array(Array, Array)
+#8 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#9 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\StudentsController))
+#10 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#11 {main}
+
+
+2015-01-26 17:27:52 Error: [InvalidArgumentException] Unable to call method "" in "default" provider for field "user_name"
+Request URL: /students/edit/1
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\Validator.php(554): Cake\Validation\ValidationRule->process('Deren_LB', Array, Array)
+#1 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\Validator.php(128): Cake\Validation\Validator->_processRules('user_name', Object(Cake\Validation\ValidationSet), Array, false)
+#2 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php(185): Cake\Validation\Validator->errors(Array, false)
+#3 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php(341): Cake\ORM\Marshaller->_validate(Array, Array, false)
+#4 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Table.php(1899): Cake\ORM\Marshaller->merge(Object(App\Model\Entity\Student), Array, Array)
+#5 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\StudentsController.php(83): Cake\ORM\Table->patchEntity(Object(App\Model\Entity\Student), Array)
+#6 [internal function]: App\Controller\StudentsController->edit('1')
+#7 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Controller\Controller.php(406): call_user_func_array(Array, Array)
+#8 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#9 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\StudentsController))
+#10 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#11 {main}
+
+
+2015-01-26 17:28:10 Error: [InvalidArgumentException] Unable to call method "" in "default" provider for field "user_name"
+Request URL: /students/edit/1
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\Validator.php(554): Cake\Validation\ValidationRule->process('Deren_LB', Array, Array)
+#1 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\Validator.php(128): Cake\Validation\Validator->_processRules('user_name', Object(Cake\Validation\ValidationSet), Array, false)
+#2 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php(185): Cake\Validation\Validator->errors(Array, false)
+#3 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php(341): Cake\ORM\Marshaller->_validate(Array, Array, false)
+#4 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Table.php(1899): Cake\ORM\Marshaller->merge(Object(App\Model\Entity\Student), Array, Array)
+#5 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\StudentsController.php(83): Cake\ORM\Table->patchEntity(Object(App\Model\Entity\Student), Array)
+#6 [internal function]: App\Controller\StudentsController->edit('1')
+#7 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Controller\Controller.php(406): call_user_func_array(Array, Array)
+#8 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#9 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\StudentsController))
+#10 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#11 {main}
+
+
+2015-01-26 17:28:12 Error: [InvalidArgumentException] Unable to call method "" in "default" provider for field "user_name"
+Request URL: /students/edit/1
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\Validator.php(554): Cake\Validation\ValidationRule->process('Deren_LB', Array, Array)
+#1 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\Validator.php(128): Cake\Validation\Validator->_processRules('user_name', Object(Cake\Validation\ValidationSet), Array, false)
+#2 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php(185): Cake\Validation\Validator->errors(Array, false)
+#3 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php(341): Cake\ORM\Marshaller->_validate(Array, Array, false)
+#4 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Table.php(1899): Cake\ORM\Marshaller->merge(Object(App\Model\Entity\Student), Array, Array)
+#5 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\StudentsController.php(83): Cake\ORM\Table->patchEntity(Object(App\Model\Entity\Student), Array)
+#6 [internal function]: App\Controller\StudentsController->edit('1')
+#7 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Controller\Controller.php(406): call_user_func_array(Array, Array)
+#8 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#9 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\StudentsController))
+#10 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#11 {main}
+
+
+2015-01-26 17:28:48 Warning: Warning (2): call_user_func_array() expects parameter 1 to be a valid callback, class 'Cake\Validation\Validation' does not have a method 'unique' in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\RulesProvider.php, line 53]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Validation\RulesProvider::__call() - CORE\src\Validation\RulesProvider.php, line 53
+Cake\Validation\RulesProvider::unique() - CORE\src\Validation\ValidationRule.php, line 138
+Cake\Validation\ValidationRule::process() - CORE\src\Validation\ValidationRule.php, line 138
+Cake\Validation\Validator::_processRules() - CORE\src\Validation\Validator.php, line 554
+Cake\Validation\Validator::errors() - CORE\src\Validation\Validator.php, line 128
+Cake\ORM\Marshaller::_validate() - CORE\src\ORM\Marshaller.php, line 185
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 341
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 83
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 17:29:53 Error: [InvalidArgumentException] Unable to call method "" in "default" provider for field "user_name"
+Request URL: /students/edit/1
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\Validator.php(554): Cake\Validation\ValidationRule->process('Deren_LB', Array, Array)
+#1 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\Validator.php(128): Cake\Validation\Validator->_processRules('user_name', Object(Cake\Validation\ValidationSet), Array, false)
+#2 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php(185): Cake\Validation\Validator->errors(Array, false)
+#3 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php(341): Cake\ORM\Marshaller->_validate(Array, Array, false)
+#4 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Table.php(1899): Cake\ORM\Marshaller->merge(Object(App\Model\Entity\Student), Array, Array)
+#5 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\StudentsController.php(83): Cake\ORM\Table->patchEntity(Object(App\Model\Entity\Student), Array)
+#6 [internal function]: App\Controller\StudentsController->edit('1')
+#7 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Controller\Controller.php(406): call_user_func_array(Array, Array)
+#8 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#9 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\StudentsController))
+#10 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#11 {main}
+
+
+2015-01-26 17:30:15 Error: [InvalidArgumentException] Unable to call method "uniqueTitle" in "custom" provider for field "user_name"
+Request URL: /students/edit/1
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\Validator.php(554): Cake\Validation\ValidationRule->process('Deren_LB', Array, Array)
+#1 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\Validator.php(128): Cake\Validation\Validator->_processRules('user_name', Object(Cake\Validation\ValidationSet), Array, false)
+#2 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php(185): Cake\Validation\Validator->errors(Array, false)
+#3 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php(341): Cake\ORM\Marshaller->_validate(Array, Array, false)
+#4 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Table.php(1899): Cake\ORM\Marshaller->merge(Object(App\Model\Entity\Student), Array, Array)
+#5 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\StudentsController.php(83): Cake\ORM\Table->patchEntity(Object(App\Model\Entity\Student), Array)
+#6 [internal function]: App\Controller\StudentsController->edit('1')
+#7 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Controller\Controller.php(406): call_user_func_array(Array, Array)
+#8 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#9 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\StudentsController))
+#10 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#11 {main}
+
+
+2015-01-26 17:30:17 Error: [InvalidArgumentException] Unable to call method "uniqueTitle" in "custom" provider for field "user_name"
+Request URL: /students/edit/1
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\Validator.php(554): Cake\Validation\ValidationRule->process('Deren_LB', Array, Array)
+#1 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\Validator.php(128): Cake\Validation\Validator->_processRules('user_name', Object(Cake\Validation\ValidationSet), Array, false)
+#2 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php(185): Cake\Validation\Validator->errors(Array, false)
+#3 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php(341): Cake\ORM\Marshaller->_validate(Array, Array, false)
+#4 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Table.php(1899): Cake\ORM\Marshaller->merge(Object(App\Model\Entity\Student), Array, Array)
+#5 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\StudentsController.php(83): Cake\ORM\Table->patchEntity(Object(App\Model\Entity\Student), Array)
+#6 [internal function]: App\Controller\StudentsController->edit('1')
+#7 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Controller\Controller.php(406): call_user_func_array(Array, Array)
+#8 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#9 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\StudentsController))
+#10 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#11 {main}
+
+
+2015-01-26 17:31:01 Warning: Warning (2): call_user_func_array() expects parameter 1 to be a valid callback, class 'Cake\Validation\Validation' does not have a method 'uniqueTitle' in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\RulesProvider.php, line 53]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Validation\RulesProvider::__call() - CORE\src\Validation\RulesProvider.php, line 53
+Cake\Validation\RulesProvider::uniqueTitle() - CORE\src\Validation\ValidationRule.php, line 138
+Cake\Validation\ValidationRule::process() - CORE\src\Validation\ValidationRule.php, line 138
+Cake\Validation\Validator::_processRules() - CORE\src\Validation\Validator.php, line 554
+Cake\Validation\Validator::errors() - CORE\src\Validation\Validator.php, line 128
+Cake\ORM\Marshaller::_validate() - CORE\src\ORM\Marshaller.php, line 185
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 341
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 1899
+App\Controller\StudentsController::edit() - APP/Controller\StudentsController.php, line 83
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 17:44:53 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 17:45:44 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 17:46:27 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 17:46:48 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 17:47:03 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 17:47:28 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 17:47:34 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 17:48:32 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 17:48:36 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 17:49:08 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 17:49:17 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 17:49:21 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 17:49:23 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 17:49:25 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 17:50:27 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 17:50:32 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 17:50:36 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 17:51:01 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 17:51:04 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 17:51:07 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 17:51:55 Error: Fatal Error (4): syntax error, unexpected ')', expecting ']' in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Model\Table\StudentsTable.php, line 56]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 17:51:56 Error: [Cake\Error\FatalErrorException] syntax error, unexpected ')', expecting ']'
+Request URL: /students/edit/7
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'D:\\SERVERPHP\\Op...', 56)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 17:52:09 Error: Fatal Error (4): syntax error, unexpected ')', expecting ']' in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Model\Table\StudentsTable.php, line 56]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 17:52:10 Error: [Cake\Error\FatalErrorException] syntax error, unexpected ')', expecting ']'
+Request URL: /students/edit/7
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'D:\\SERVERPHP\\Op...', 56)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 17:52:31 Error: [InvalidArgumentException] Unable to call method "" in "default" provider for field "student_id"
+Request URL: /students/edit/7
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\Validator.php(554): Cake\Validation\ValidationRule->process('12010000001050', Array, Array)
+#1 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\Validator.php(128): Cake\Validation\Validator->_processRules('student_id', Object(Cake\Validation\ValidationSet), Array, false)
+#2 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php(185): Cake\Validation\Validator->errors(Array, false)
+#3 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php(341): Cake\ORM\Marshaller->_validate(Array, Array, false)
+#4 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Table.php(1899): Cake\ORM\Marshaller->merge(Object(App\Model\Entity\Student), Array, Array)
+#5 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\StudentsController.php(83): Cake\ORM\Table->patchEntity(Object(App\Model\Entity\Student), Array)
+#6 [internal function]: App\Controller\StudentsController->edit('7')
+#7 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Controller\Controller.php(406): call_user_func_array(Array, Array)
+#8 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#9 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\StudentsController))
+#10 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#11 {main}
+
+
+2015-01-26 17:53:01 Error: Fatal Error (4): syntax error, unexpected ')', expecting ']' in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Model\Table\StudentsTable.php, line 57]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 17:53:01 Error: [Cake\Error\FatalErrorException] syntax error, unexpected ')', expecting ']'
+Request URL: /students/edit/7
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'D:\\SERVERPHP\\Op...', 57)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 17:53:36 Error: [InvalidArgumentException] Unable to call method "" in "default" provider for field "student_id"
+Request URL: /students/edit/7
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\Validator.php(554): Cake\Validation\ValidationRule->process('12010000001050', Array, Array)
+#1 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Validation\Validator.php(128): Cake\Validation\Validator->_processRules('student_id', Object(Cake\Validation\ValidationSet), Array, false)
+#2 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php(185): Cake\Validation\Validator->errors(Array, false)
+#3 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Marshaller.php(341): Cake\ORM\Marshaller->_validate(Array, Array, false)
+#4 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Table.php(1899): Cake\ORM\Marshaller->merge(Object(App\Model\Entity\Student), Array, Array)
+#5 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\StudentsController.php(83): Cake\ORM\Table->patchEntity(Object(App\Model\Entity\Student), Array)
+#6 [internal function]: App\Controller\StudentsController->edit('7')
+#7 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Controller\Controller.php(406): call_user_func_array(Array, Array)
+#8 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#9 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\StudentsController))
+#10 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#11 {main}
+
+
+2015-01-26 17:55:01 Error: Fatal Error (4): syntax error, unexpected ']' in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Model\Table\StudentsTable.php, line 59]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 17:55:02 Error: [Cake\Error\FatalErrorException] syntax error, unexpected ']'
+Request URL: /students/edit/7
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'D:\\SERVERPHP\\Op...', 59)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 17:55:11 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 17:55:18 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 17:57:07 Warning: Warning (2): Creating default object from empty value in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Template\Element\Flash\error_form.ctp, line 5]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+include - APP/Template\Element\Flash\error_form.ctp, line 5
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 815
+Cake\View\View::_render() - CORE\src\View\View.php, line 775
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1118
+Cake\View\View::element() - CORE\src\View\View.php, line 374
+Cake\View\Helper\FlashHelper::render() - CORE\src\View\Helper\FlashHelper.php, line 83
+include - APP/Template\Layout\default.ctp, line 41
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 815
+Cake\View\View::_render() - CORE\src\View\View.php, line 775
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 509
+Cake\View\View::render() - CORE\src\View\View.php, line 471
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 577
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 17:57:07 Error: Fatal Error (1): Cannot access empty property in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Template\Element\Flash\error_form.ctp, line 5]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 17:57:08 Error: [Cake\Error\FatalErrorException] Cannot access empty property
+Request URL: /students/edit/7
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Cannot access e...', 'D:\\SERVERPHP\\Op...', 5)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 17:57:17 Warning: Warning (2): Creating default object from empty value in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Template\Element\Flash\error_form.ctp, line 5]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+include - APP/Template\Element\Flash\error_form.ctp, line 5
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 815
+Cake\View\View::_render() - CORE\src\View\View.php, line 775
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1118
+Cake\View\View::element() - CORE\src\View\View.php, line 374
+Cake\View\Helper\FlashHelper::render() - CORE\src\View\Helper\FlashHelper.php, line 83
+include - APP/Template\Layout\default.ctp, line 41
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 815
+Cake\View\View::_render() - CORE\src\View\View.php, line 775
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 509
+Cake\View\View::render() - CORE\src\View\View.php, line 471
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 577
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 17:57:17 Error: Fatal Error (1): Cannot access empty property in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Template\Element\Flash\error_form.ctp, line 5]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 17:57:17 Error: [Cake\Error\FatalErrorException] Cannot access empty property
+Request URL: /students/edit/7
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Cannot access e...', 'D:\\SERVERPHP\\Op...', 5)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 17:57:39 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 17:59:22 Warning: Warning (2): Creating default object from empty value in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Template\Element\Flash\error_form.ctp, line 5]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+include - APP/Template\Element\Flash\error_form.ctp, line 5
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 815
+Cake\View\View::_render() - CORE\src\View\View.php, line 775
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1118
+Cake\View\View::element() - CORE\src\View\View.php, line 374
+Cake\View\Helper\FlashHelper::render() - CORE\src\View\Helper\FlashHelper.php, line 83
+include - APP/Template\Layout\default.ctp, line 41
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 815
+Cake\View\View::_render() - CORE\src\View\View.php, line 775
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 509
+Cake\View\View::render() - CORE\src\View\View.php, line 471
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 577
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 17:59:23 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:00:38 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:01:54 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:02:17 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:02:44 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:02:53 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:03:03 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:03:11 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:03:18 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:03:27 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:03:30 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:03:31 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:03:41 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:03:46 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:03:52 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:03:55 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:04:04 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:04:06 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:04:09 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:04:11 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:04:17 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:04:22 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:04:37 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:04:41 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:04:44 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:04:48 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:04:52 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:05:30 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:05:34 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:05:40 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:05:42 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:06:04 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:06:08 Warning: Warning (4096): Argument 1 passed to Cake\ORM\Table::save() must implement interface Cake\Datasource\EntityInterface, array given, called in D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\SchoolsController.php on line 72 and defined in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Table.php, line 1266]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\ORM\Table::save() - CORE\src\ORM\Table.php, line 1266
+App\Controller\SchoolsController::edit() - APP/Controller\SchoolsController.php, line 72
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 406
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-01-26 18:06:08 Error: Fatal Error (1): Call to a member function errors() on a non-object in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Table.php, line 1274]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 18:06:08 Error: [Cake\Error\FatalErrorException] Call to a member function errors() on a non-object
+Request URL: /schools/edit/1
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', 'D:\\SERVERPHP\\Op...', 1274)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 18:11:11 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:11:50 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:11:51 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:14:19 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:14:25 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:15:03 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:15:24 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:15:28 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:15:30 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "schools"
+Request URL: /schools/edit/444
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Table.php(1036): Cake\ORM\Query->firstOrFail()
+#1 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\SchoolsController.php(69): Cake\ORM\Table->get('444', Array)
+#2 [internal function]: App\Controller\SchoolsController->edit('444')
+#3 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Controller\Controller.php(406): call_user_func_array(Array, Array)
+#4 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#5 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\SchoolsController))
+#6 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 {main}
+
+
+2015-01-26 18:15:36 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:15:41 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:15:43 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:16:58 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:17:00 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:17:06 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:17:20 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:17:21 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:17:23 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:17:27 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:18:15 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:18:17 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:18:20 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:18:31 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:18:36 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:18:43 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:18:46 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:19:29 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:19:30 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:19:34 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:19:40 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:19:43 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:19:51 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:19:54 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:19:56 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:19:59 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:20:37 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:20:40 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:20:42 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:20:46 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:21:53 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:21:55 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:21:58 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:22:07 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:22:09 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "schools"
+Request URL: /schools/edit/444
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Table.php(1036): Cake\ORM\Query->firstOrFail()
+#1 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\SchoolsController.php(69): Cake\ORM\Table->get('444', Array)
+#2 [internal function]: App\Controller\SchoolsController->edit('444')
+#3 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Controller\Controller.php(406): call_user_func_array(Array, Array)
+#4 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#5 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\SchoolsController))
+#6 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 {main}
+
+
+2015-01-26 18:22:17 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:22:19 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:22:52 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:22:54 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:22:59 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:23:22 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:23:24 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:23:25 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:23:28 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:23:32 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:23:42 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:23:45 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:24:14 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:24:41 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:24:48 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:25:40 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:25:42 Error: Fatal Error (1): Call to a member function primaryKey() on a non-object in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Rule\ExistsIn.php, line 82]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 18:25:42 Error: [Cake\Error\FatalErrorException] Call to a member function primaryKey() on a non-object
+Request URL: /schools/edit/6
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', 'D:\\SERVERPHP\\Op...', 82)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 18:26:01 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:26:03 Error: Fatal Error (1): Call to a member function primaryKey() on a non-object in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Rule\ExistsIn.php, line 82]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 18:26:03 Error: [Cake\Error\FatalErrorException] Call to a member function primaryKey() on a non-object
+Request URL: /schools/edit/6
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', 'D:\\SERVERPHP\\Op...', 82)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 18:26:06 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:26:13 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:26:15 Error: Fatal Error (1): Call to a member function primaryKey() on a non-object in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Rule\ExistsIn.php, line 82]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 18:26:16 Error: [Cake\Error\FatalErrorException] Call to a member function primaryKey() on a non-object
+Request URL: /schools/edit/6
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', 'D:\\SERVERPHP\\Op...', 82)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 18:26:25 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/bootstrap.css.map
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-01-26 18:29:15 Error: Fatal Error (1): Call to a member function primaryKey() on a non-object in [D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Rule\ExistsIn.php, line 82]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-01-26 18:29:16 Error: [Cake\Error\FatalErrorException] Call to a member function primaryKey() on a non-object
+Request URL: /schools/edit/6
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', 'D:\\SERVERPHP\\Op...', 82)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-01-26 18:33:10 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "schools"
+Request URL: /schools/edit/1
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Table.php(1036): Cake\ORM\Query->firstOrFail()
+#1 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\SchoolsController.php(69): Cake\ORM\Table->get('1', Array)
+#2 [internal function]: App\Controller\SchoolsController->edit('1')
+#3 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Controller\Controller.php(406): call_user_func_array(Array, Array)
+#4 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#5 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\SchoolsController))
+#6 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 {main}
+
+
+2015-01-26 18:33:15 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "schools"
+Request URL: /schools/edit/6
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Table.php(1036): Cake\ORM\Query->firstOrFail()
+#1 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\SchoolsController.php(69): Cake\ORM\Table->get('6', Array)
+#2 [internal function]: App\Controller\SchoolsController->edit('6')
+#3 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Controller\Controller.php(406): call_user_func_array(Array, Array)
+#4 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#5 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\SchoolsController))
+#6 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 {main}
+
+
+2015-01-26 18:33:22 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "schools"
+Request URL: /schools/edit/1
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Table.php(1036): Cake\ORM\Query->firstOrFail()
+#1 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\SchoolsController.php(69): Cake\ORM\Table->get('1', Array)
+#2 [internal function]: App\Controller\SchoolsController->edit('1')
+#3 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Controller\Controller.php(406): call_user_func_array(Array, Array)
+#4 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#5 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\SchoolsController))
+#6 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 {main}
+
+
+2015-01-26 18:33:41 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "schools"
+Request URL: /schools/edit/1
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Table.php(1036): Cake\ORM\Query->firstOrFail()
+#1 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\SchoolsController.php(69): Cake\ORM\Table->get('1', Array)
+#2 [internal function]: App\Controller\SchoolsController->edit('1')
+#3 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Controller\Controller.php(406): call_user_func_array(Array, Array)
+#4 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#5 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\SchoolsController))
+#6 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 {main}
+
+
+2015-01-26 18:33:48 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "schools"
+Request URL: /schools/edit/1
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Table.php(1036): Cake\ORM\Query->firstOrFail()
+#1 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\SchoolsController.php(69): Cake\ORM\Table->get('1', Array)
+#2 [internal function]: App\Controller\SchoolsController->edit('1')
+#3 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Controller\Controller.php(406): call_user_func_array(Array, Array)
+#4 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#5 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\SchoolsController))
+#6 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 {main}
+
+
+2015-01-26 18:34:08 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "schools"
+Request URL: /schools/edit/1
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Table.php(1036): Cake\ORM\Query->firstOrFail()
+#1 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\SchoolsController.php(69): Cake\ORM\Table->get('1', Array)
+#2 [internal function]: App\Controller\SchoolsController->edit('1')
+#3 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Controller\Controller.php(406): call_user_func_array(Array, Array)
+#4 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#5 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\SchoolsController))
+#6 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 {main}
+
+
+2015-01-26 18:34:19 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "schools"
+Request URL: /schools/edit/1
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Table.php(1036): Cake\ORM\Query->firstOrFail()
+#1 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\SchoolsController.php(69): Cake\ORM\Table->get('1', Array)
+#2 [internal function]: App\Controller\SchoolsController->edit('1')
+#3 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Controller\Controller.php(406): call_user_func_array(Array, Array)
+#4 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#5 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\SchoolsController))
+#6 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 {main}
+
+
+2015-01-26 18:34:27 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "schools"
+Request URL: /schools/edit/6
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Table.php(1036): Cake\ORM\Query->firstOrFail()
+#1 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\SchoolsController.php(69): Cake\ORM\Table->get('6', Array)
+#2 [internal function]: App\Controller\SchoolsController->edit('6')
+#3 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Controller\Controller.php(406): call_user_func_array(Array, Array)
+#4 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#5 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\SchoolsController))
+#6 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 {main}
+
+
+2015-01-26 18:37:35 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "schools"
+Request URL: /schools/edit/1
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Table.php(1036): Cake\ORM\Query->firstOrFail()
+#1 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\SchoolsController.php(69): Cake\ORM\Table->get('1', Array)
+#2 [internal function]: App\Controller\SchoolsController->edit('1')
+#3 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Controller\Controller.php(406): call_user_func_array(Array, Array)
+#4 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#5 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\SchoolsController))
+#6 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 {main}
+
+
+2015-01-26 18:37:54 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "schools"
+Request URL: /schools/edit/6
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Table.php(1036): Cake\ORM\Query->firstOrFail()
+#1 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\SchoolsController.php(69): Cake\ORM\Table->get('6', Array)
+#2 [internal function]: App\Controller\SchoolsController->edit('6')
+#3 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Controller\Controller.php(406): call_user_func_array(Array, Array)
+#4 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#5 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\SchoolsController))
+#6 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 {main}
+
+
+2015-01-26 18:38:12 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "schools"
+Request URL: /schools/edit/1
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Table.php(1036): Cake\ORM\Query->firstOrFail()
+#1 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\SchoolsController.php(69): Cake\ORM\Table->get('1', Array)
+#2 [internal function]: App\Controller\SchoolsController->edit('1')
+#3 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Controller\Controller.php(406): call_user_func_array(Array, Array)
+#4 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#5 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\SchoolsController))
+#6 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 {main}
+
+

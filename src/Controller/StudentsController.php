@@ -86,6 +86,7 @@ class StudentsController extends AppController
                $this->Flash->success('The student has been saved.');
                return $this->redirect(['action' => 'index']);
             } else {
+
                 $this->Flash->error('The student could not be saved. Please, try again.');
             }
         }
@@ -113,8 +114,6 @@ class StudentsController extends AppController
 //        return $this->redirect(['action' => 'index']);
 //    }
 
-    function beforeSave() {
-        die;
-    }
+
 
 }

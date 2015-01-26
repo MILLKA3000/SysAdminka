@@ -22,7 +22,7 @@ class SchoolsTable extends Table
     {
         $this->table('schools');
         $this->displayField('name');
-        $this->primaryKey('school_id');
+        $this->primaryKey('id');
 
     }
 
@@ -35,17 +35,30 @@ class SchoolsTable extends Table
     public function validationDefault(Validator $validator)
     {
         $validator
-            ->add('school_id', 'valid', ['rule' => 'numeric'])
+            ->add('id', 'valid', ['rule' => 'numeric'])
+            ->allowEmpty('id', 'create')
+            ->add('school_id', [
+                'valid' => [
+                    'rule' => 'validateUnique',
+                    'provider' => 'table',
+                    'message' => 'ID is cloning'],
+                'valid_num' => [
+                    'rule' => 'numeric',
+                    'message' => 'ID isn\'t numeric']
+
+            ])
             ->allowEmpty('school_id', 'create')
             ->requirePresence('name', 'create')
             ->notEmpty('name');
+
 
         return $validator;
     }
 
     public function buildRules(RulesChecker $rules)
     {
-        $rules->add($rules->existsIn(['school_id'], 'Schools'));
+        $rules->add($rules->existsIn(['id'], 'Schools'));
         return $rules;
     }
+
 }

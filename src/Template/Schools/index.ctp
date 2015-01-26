@@ -1,4 +1,5 @@
 <div class="schools index large-10 medium-9 columns">
+    <?= $this->Html->link(__('Add'), ['action' => 'add'],['class'=>'btn btn-success pull-right']) ?>
     <table cellpadding="0" cellspacing="0" class="table table-hover">
     <thead>
         <tr>
@@ -13,8 +14,8 @@
             <td><?= $this->Number->format($school->school_id) ?></td>
             <td><?= $this->Text->autoParagraph(h($school->name)) ?></td>
             <td class="actions">
-                <?= $this->Html->link(__('Edit'), ['action' => 'edit', $school->school_id],['class'=>'btn btn-warning']) ?>
-                <?= $this->Html->link(__('Delete'), ['action' => 'delete', $school->school_id],['class'=>'btn btn-danger']) ?>
+                <?= $this->Html->link(__('Edit'), ['action' => 'edit', $school->id],['class'=>'btn btn-warning']) ?>
+                <?= $this->Html->link(__('Delete'), ['action' => 'delete', $school->id],['class'=>'btn btn-danger']) ?>
             </td>
         </tr>
 

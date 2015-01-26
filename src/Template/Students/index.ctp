@@ -1,4 +1,5 @@
 <div class="students index large-10 medium-9 columns">
+    <?= $this->Html->link(__('Synchronized with Contingent'), ['action' => '#'],['class'=>'btn btn-success pull-right']) ?>
     <table cellpadding="0" cellspacing="0" class="table table-hover">
     <thead>
         <tr>
@@ -23,7 +24,7 @@
     <?php foreach ($students as $student): ?>
         <tr>
             <td  class='hidden-xs hidden-sm'>
-                <?= $student->has('school') ? $this->Html->link($student->school->name, ['controller' => 'Schools', 'action' => 'edit', $student->school->school_id]) : '' ?>
+                <?= $student->has('school') ? $this->Html->link($student->school->name, ['controller' => 'Schools', 'action' => 'edit', $student->school->id]) : '' ?>
             </td>
             <td class='hidden-xs hidden-sm'><?= $this->Text->autoParagraph(h($student->student_id)); ?></td>
             <td><?= $this->Text->autoParagraph(h($student->first_name)); ?></td>

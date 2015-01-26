@@ -47,19 +47,41 @@ class StudentsTable extends Table
             ->add('school_id', 'valid', ['rule' => 'numeric'])
             ->requirePresence('school_id', 'create')
             ->notEmpty('school_id')
-            ->notEmpty('student_id')
+            ->add('student_id', [
+                'valid' => [
+                    'rule' => 'validateUnique',
+                        'provider' => 'table',
+                        'message' => 'ID is cloning'],
+                'valid_num' => [
+                    'rule' => 'numeric',
+                        'message' => 'ID isn\'t numeric']
+
+            ])
+
+            ->notEmpty('student_id', 'A ID is required')
             ->requirePresence('first_name', 'create')
             ->notEmpty('first_name')
             ->requirePresence('last_name', 'create')
             ->notEmpty('last_name')
-            ->add('grade_level', 'valid', ['rule' => 'numeric'])
+            ->add('grade_level', [
+                'valid' => [
+                    'rule' => 'numeric',
+                    'message' => 'Grade isn\'t numeric',
+                ]
+            ])
             ->requirePresence('grade_level', 'create')
-            ->notEmpty('grade_level')
+            ->notEmpty('grade_level', 'A Grade Level is required')
+            ->add('user_name', [
+                'valid' => [
+                    'rule' => 'validateUnique',
+                    'provider' => 'table',
+                    'message' => 'User Name is cloning']
+            ])
             ->requirePresence('user_name', 'create')
-            ->notEmpty('user_name')
+            ->notEmpty('user_name', 'A User Name is required')
             ->add('password', 'valid', ['rule' => 'numeric'])
             ->requirePresence('password', 'create')
-            ->notEmpty('password')
+            ->notEmpty('password', 'A Password is required')
             ->add('status_id', 'valid', ['rule' => 'numeric'])
             ->requirePresence('status_id', 'create')
             ->notEmpty('status_id');
@@ -80,4 +102,5 @@ class StudentsTable extends Table
         $rules->add($rules->existsIn(['status_id'], 'Status'));
         return $rules;
     }
+
 }

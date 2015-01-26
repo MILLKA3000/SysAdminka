@@ -3,10 +3,13 @@
     <fieldset class="">
         <legend><?= __('Edit School') ?></legend>
         <?php
+            echo $this->Form->input('school_id',['class'=>'form-control','type'=>'text']);
+        ?>
+        <?php
             echo $this->Form->input('name',['class'=>'form-control']);
         ?>
     </fieldset>
     <br/>
-    <?= $this->Form->button(__('Submit')) ?>
+    <?= $this->Form->button(__('Save'),['class'=>'btn btn-success']) ?>
     <?= $this->Form->end() ?>
 </div>
