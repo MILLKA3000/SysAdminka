@@ -1,5 +1,5 @@
 <div class="students index large-10 medium-9 columns">
-    <?= $this->Html->link(__('Synchronized with Contingent'), ['action' => '#'],['class'=>'btn btn-success pull-right']) ?>
+    <?= $this->Html->link(__('Synchronized with Contingent'), ['controller'=>'Sync','action' => 'contingent'],['class'=>'btn btn-success pull-right']) ?>
     <table cellpadding="0" cellspacing="0" class="table table-hover">
     <thead>
         <tr>
