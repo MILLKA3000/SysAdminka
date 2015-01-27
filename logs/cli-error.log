@@ -122,3 +122,41 @@ Stack Trace:
 #14 {main}
 
 
+2015-01-27 11:21:47 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'c2sysadmin.statuses' doesn't exist
+Stack Trace:
+#0 D:\OpenServer\domains\sysadmin\SysAdminka\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'statuses', Array, Object(Cake\Database\Schema\Table))
+#1 D:\OpenServer\domains\sysadmin\SysAdminka\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(65): Cake\Database\Schema\Collection->describe('statuses', Array)
+#2 D:\OpenServer\domains\sysadmin\SysAdminka\vendor\cakephp\cakephp\src\ORM\Table.php(364): Cake\Database\Schema\CachedCollection->describe('statuses')
+#3 D:\OpenServer\domains\sysadmin\SysAdminka\vendor\cakephp\cakephp\src\ORM\Table.php(440): Cake\ORM\Table->schema()
+#4 D:\OpenServer\domains\sysadmin\SysAdminka\plugins\Bake\src\Shell\Task\ViewTask.php(455): Cake\ORM\Table->primaryKey()
+#5 D:\OpenServer\domains\sysadmin\SysAdminka\plugins\Bake\src\Shell\Task\ViewTask.php(275): Bake\Shell\Task\ViewTask->_associations(Object(App\Model\Table\StatusTable))
+#6 D:\OpenServer\domains\sysadmin\SysAdminka\plugins\Bake\src\Shell\Task\ViewTask.php(139): Bake\Shell\Task\ViewTask->_loadController()
+#7 [internal function]: Bake\Shell\Task\ViewTask->main('Status')
+#8 D:\OpenServer\domains\sysadmin\SysAdminka\vendor\cakephp\cakephp\src\Console\Shell.php(387): call_user_func_array(Array, Array)
+#9 D:\OpenServer\domains\sysadmin\SysAdminka\vendor\cakephp\cakephp\src\Console\Shell.php(382): Cake\Console\Shell->runCommand(Array, false)
+#10 D:\OpenServer\domains\sysadmin\SysAdminka\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(200): Cake\Console\Shell->runCommand(Array, true)
+#11 D:\OpenServer\domains\sysadmin\SysAdminka\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(171): Cake\Console\ShellDispatcher->_dispatch()
+#12 D:\OpenServer\domains\sysadmin\SysAdminka\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(122): Cake\Console\ShellDispatcher->dispatch()
+#13 D:\OpenServer\domains\sysadmin\SysAdminka\bin\cake.php(20): Cake\Console\ShellDispatcher::run(Array)
+#14 {main}
+
+
+2015-01-27 11:24:05 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'c2sysadmin.statuses' doesn't exist
+Stack Trace:
+#0 D:\OpenServer\domains\sysadmin\SysAdminka\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'statuses', Array, Object(Cake\Database\Schema\Table))
+#1 D:\OpenServer\domains\sysadmin\SysAdminka\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(65): Cake\Database\Schema\Collection->describe('statuses', Array)
+#2 D:\OpenServer\domains\sysadmin\SysAdminka\vendor\cakephp\cakephp\src\ORM\Table.php(364): Cake\Database\Schema\CachedCollection->describe('statuses')
+#3 D:\OpenServer\domains\sysadmin\SysAdminka\vendor\cakephp\cakephp\src\ORM\Table.php(440): Cake\ORM\Table->schema()
+#4 D:\OpenServer\domains\sysadmin\SysAdminka\plugins\Bake\src\Shell\Task\ViewTask.php(455): Cake\ORM\Table->primaryKey()
+#5 D:\OpenServer\domains\sysadmin\SysAdminka\plugins\Bake\src\Shell\Task\ViewTask.php(275): Bake\Shell\Task\ViewTask->_associations(Object(App\Model\Table\StatusTable))
+#6 D:\OpenServer\domains\sysadmin\SysAdminka\plugins\Bake\src\Shell\Task\ViewTask.php(139): Bake\Shell\Task\ViewTask->_loadController()
+#7 [internal function]: Bake\Shell\Task\ViewTask->main('status')
+#8 D:\OpenServer\domains\sysadmin\SysAdminka\vendor\cakephp\cakephp\src\Console\Shell.php(387): call_user_func_array(Array, Array)
+#9 D:\OpenServer\domains\sysadmin\SysAdminka\vendor\cakephp\cakephp\src\Console\Shell.php(382): Cake\Console\Shell->runCommand(Array, false)
+#10 D:\OpenServer\domains\sysadmin\SysAdminka\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(200): Cake\Console\Shell->runCommand(Array, true)
+#11 D:\OpenServer\domains\sysadmin\SysAdminka\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(171): Cake\Console\ShellDispatcher->_dispatch()
+#12 D:\OpenServer\domains\sysadmin\SysAdminka\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(122): Cake\Console\ShellDispatcher->dispatch()
+#13 D:\OpenServer\domains\sysadmin\SysAdminka\bin\cake.php(20): Cake\Console\ShellDispatcher::run(Array)
+#14 {main}
+
+

@@ -19,10 +19,7 @@ class StatusControllerTest extends IntegrationTestCase
         'Status' => 'app.status',
         'Statuses' => 'app.statuses',
         'Students' => 'app.students',
-        'Schools' => 'app.schools',
-        'Rosters' => 'app.rosters',
-        'Classes' => 'app.classes',
-        'Staffs' => 'app.staffs'
+        'Schools' => 'app.schools'
     ];
 
     /**
