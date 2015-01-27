@@ -13,6 +13,7 @@ $cakeDescription = 'SysAdminka(TDMU)';
     <?= $this->Html->meta('icon') ?>
 
     <?= $this->Html->css('bootstrap.css') ?>
+    <?= $this->Html->css('sysadmin.css') ?>
     <?= $this->Html->css('sb-admin.css') ?>
     <?= $this->Html->css('plugins/morris.css') ?>
     <?= $this->Html->css('../font-awesome/css/font-awesome.min.css') ?>

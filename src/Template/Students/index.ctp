@@ -1,5 +1,19 @@
-<div class="students index large-10 medium-9 columns">
-    <?= $this->Html->link(__('Synchronized with Contingent'), ['action' => '#'],['class'=>'btn btn-success pull-right']) ?>
+<div class="">
+    <div class="row">
+        <div class="col-sm-6 col-md-6 col-xs-6">
+            <div class="row">
+                <div class="col-sm-10 col-md-6 col-xs-9">
+                    <?= $this->Form->input('',['class'=>'form-control search_sort','type'=>'text','label' => false,'value'=>$search]); ?>
+                </div>
+                <div class="col-sm-1 col-md-1 col-xs-1">
+                    <button class="btn btn-default" type="button" onClick='window.location.href = "/students/index/"+$(".change_sort").val()+"/"+$(".search_sort").val()'><i class="fa fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-xs-6">
+            <?= $this->Html->link(__('Synchronized with Contingent'), ['controller'=>'Sync','action' => 'contingent'],['class'=>'btn btn-success pull-right']) ?>
+        </div>
+    </div>
     <table cellpadding="0" cellspacing="0" class="table table-hover">
     <thead>
         <tr>
@@ -10,9 +24,9 @@
             <th style='width:200px'><?= $this->Paginator->sort('user_name') ?></th>
             <th style='width:200px'><?=$this->Form->input('status',[
                     'options' => $status,
-                     'class'=>'form-control',
+                     'class'=>'form-control change_sort',
                      'style'=>'max-width:200px',
-                     'onChange'=>'window.location.href = "/students/index/"+this.value',
+                     'onChange'=>'window.location.href = "/students/index/"+this.value+"/"+$(".search_sort").val()',
                      'default'=>$statuses
                 ]);
                 ?>

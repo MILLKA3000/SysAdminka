@@ -19,7 +19,7 @@ class StatusController extends AppController
     public function index()
     {
         $this->paginate = [
-            'contain' => ['Statuses']
+            'contain' => []
         ];
         $this->set('status', $this->paginate($this->Status));
     }
@@ -31,13 +31,13 @@ class StatusController extends AppController
      * @return void
      * @throws \Cake\Network\Exception\NotFoundException
      */
-    public function view($id = null)
-    {
-        $status = $this->Status->get($id, [
-            'contain' => ['Statuses', 'Status', 'Students']
-        ]);
-        $this->set('status', $status);
-    }
+//    public function view($id = null)
+//    {
+//        $status = $this->Status->get($id, [
+//            'contain' => [ 'Students']
+//        ]);
+//        $this->set('status', $status);
+//    }
 
     /**
      * Add method
@@ -46,6 +46,7 @@ class StatusController extends AppController
      */
     public function add()
     {
+
         $status = $this->Status->newEntity();
         if ($this->request->is('post')) {
             $status = $this->Status->patchEntity($status, $this->request->data);
@@ -56,8 +57,8 @@ class StatusController extends AppController
                 $this->Flash->error('The status could not be saved. Please, try again.');
             }
         }
-        $statuses = $this->Status->Statuses->find('list', ['limit' => 200]);
-        $this->set(compact('status', 'statuses'));
+        $this->set(compact('status'));
+        $this->render('edit');
     }
 
     /**
@@ -81,8 +82,8 @@ class StatusController extends AppController
                 $this->Flash->error('The status could not be saved. Please, try again.');
             }
         }
-        $statuses = $this->Status->Statuses->find('list', ['limit' => 200]);
-        $this->set(compact('status', 'statuses'));
+
+        $this->set(compact('status'));
     }
 
     /**
@@ -94,7 +95,7 @@ class StatusController extends AppController
      */
     public function delete($id = null)
     {
-        $this->request->allowMethod(['post', 'delete']);
+//        $this->request->allowMethod(['post', 'delete']);
         $status = $this->Status->get($id);
         if ($this->Status->delete($status)) {
             $this->Flash->success('The status has been deleted.');

@@ -16,7 +16,7 @@
             <a href="javascript:;" data-toggle="collapse" data-target="#Sync"><i class="fa fa-fw fa-dashboard"></i> Synchronized </a>
             <ul id="Sync" class="collapse">
                 <li>
-                    <a href="#"><i class="fa fa-fw fa-table"></i>Kontingent</a>
+                    <a href="/Sync/contingent"><i class="fa fa-fw fa-table"></i>Contingent</a>
                 </li>
                 <li>
                     <a href="#"><i class="fa fa-fw fa-desktop"></i>Google</a>
@@ -30,7 +30,10 @@
             <a href="javascript:;" data-toggle="collapse" data-target="#Setting"><i class="fa fa-fw fa-edit"></i> Settings </a>
             <ul id="Setting" class="collapse">
                 <li>
-                    <a href="#"><i class="fa fa-fw fa-edit"></i>Statuses</a>
+                    <a href="/Status/index"><i class="fa fa-fw fa-edit"></i>Statuses</a>
+                </li>
+                <li>
+                    <a href="/Users/index"><i class="fa fa-fw fa-edit"></i>Control of users</a>
                 </li>
                 <li>
                     <a href="#"><i class="fa fa-fw fa-edit"></i>Data for the email</a>

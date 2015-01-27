@@ -18,17 +18,17 @@ class StudentsController extends AppController
      * @return void
      */
 
-    public function index($statuses=0)
+    public function index($statuses=0,$search=NULL)
     {
 
         $this->paginate = [
             'contain' => ['Schools','Status'],
-            'conditions' => ['Students.status_id' => $statuses],
+            'conditions' => ['AND'=>['Students.status_id' => $statuses,'OR'=>['Students.last_name LIKE "%'.$search.'%"','Students.first_name LIKE "%'.$search.'%"']]],
             'limit' => '25'
         ];
         $status = $this->Students->Status->find('list', ['limit' => 200]);
         $this->set('students', $this->paginate($this->Students));
-        $this->set(compact('status','statuses'));
+        $this->set(compact('status','statuses','search'));
     }
 
     /**

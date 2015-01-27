@@ -11,6 +11,30 @@ use App\Controller\AppController;
 class UsersController extends AppController
 {
 
+
+
+    public function login()
+    {
+
+        if ($this->request->is('post')) {
+            print_r($_POST);
+            $user = $this->Auth->identify();
+
+            if ($user) {
+
+                $this->Auth->setUser($user);
+                return $this->redirect($this->Auth->redirectUrl());
+            }
+            $this->Flash->error(__('Invalid username or password, try again'));
+        }
+    }
+
+    public function logout()
+    {
+        return $this->redirect($this->Auth->logout());
+    }
+
+
     /**
      * Index method
      *
@@ -54,6 +78,7 @@ class UsersController extends AppController
             }
         }
         $this->set(compact('user'));
+        $this->render('edit');
     }
 
     /**
@@ -89,7 +114,6 @@ class UsersController extends AppController
      */
     public function delete($id = null)
     {
-        $this->request->allowMethod(['post', 'delete']);
         $user = $this->Users->get($id);
         if ($this->Users->delete($user)) {
             $this->Flash->success('The user has been deleted.');

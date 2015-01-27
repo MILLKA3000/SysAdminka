@@ -1,5 +1,5 @@
 <div class="schools index large-10 medium-9 columns">
-    <?= $this->Html->link(__('Add'), ['action' => 'add'],['class'=>'btn btn-success pull-right']) ?>
+    <?= $this->Html->link(__('Add new school'), ['action' => 'add'],['class'=>'btn btn-success pull-right']) ?>
     <table cellpadding="0" cellspacing="0" class="table table-hover">
     <thead>
         <tr>

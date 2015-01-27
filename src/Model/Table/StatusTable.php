@@ -20,17 +20,11 @@ class StatusTable extends Table
      */
     public function initialize(array $config)
     {
-        $this->table('status');
+        $this->table('statuses');
         $this->displayField('name');
-        $this->belongsTo('Statuses', [
-            'foreignKey' => 'status_id'
-        ]);
-        $this->hasMany('Status', [
-            'foreignKey' => 'status_id'
-        ]);
-        $this->hasMany('Students', [
-            'foreignKey' => 'status_id'
-        ]);
+        $this->primaryKey('status_id');
+
+
     }
 
     /**
@@ -42,9 +36,6 @@ class StatusTable extends Table
     public function validationDefault(Validator $validator)
     {
         $validator
-            ->add('status_id', 'valid', ['rule' => 'numeric'])
-            ->requirePresence('status_id', 'create')
-            ->notEmpty('status_id')
             ->requirePresence('name', 'create')
             ->notEmpty('name');
 
@@ -60,7 +51,7 @@ class StatusTable extends Table
      */
     public function buildRules(RulesChecker $rules)
     {
-        $rules->add($rules->existsIn(['status_id'], 'Statuses'));
+        $rules->add($rules->existsIn(['status_id'], 'Status'));
         return $rules;
     }
 }

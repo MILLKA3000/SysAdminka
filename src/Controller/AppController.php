@@ -12,9 +12,12 @@
  * @since     0.2.9
  * @license   http://www.opensource.org/licenses/mit-license.php MIT License
  */
-namespace App\Controller;
+// src/Controller/AppController.php
 
-use Cake\Controller\Controller;
+    namespace App\Controller;
+
+    use Cake\Event\Event;
+    use Cake\Controller\Controller;
 
 /**
  * Application Controller
@@ -24,6 +27,7 @@ use Cake\Controller\Controller;
  *
  * @link http://book.cakephp.org/3.0/en/controllers.html#the-app-controller
  */
+
 class AppController extends Controller
 {
 
@@ -37,5 +41,31 @@ class AppController extends Controller
     public function initialize()
     {
         $this->loadComponent('Flash');
+        $this->loadComponent('Auth', [
+            'authenticate' => [
+                'Form' => [
+                    'fields' => [
+                        'username' => 'email',
+                        'password' => 'password'
+                    ]
+                ]
+            ],
+            'loginRedirect' => [
+                'controller' => 'Articles',
+                'action' => 'index'
+            ],
+            'logoutRedirect' => [
+                'controller' => 'Pages',
+                'action' => 'display',
+                'home'
+            ]
+        ]);
     }
+    public function beforeFilter(Event $event)
+    {
+        $this->Auth->allow(['api']);
+    }
+
 }
+
+

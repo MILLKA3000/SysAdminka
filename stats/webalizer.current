@@ -1,7 +1,7 @@
-# Webalizer V2.23-08 Incremental Data - 01/20/2015 15:21:52
-2015 1 20 15 21 52
-27 26 1 22 3 1 220803 6 1 0 0 0
-1 79 79 20 20
+# Webalizer V2.23-08 Incremental Data - 01/26/2015 21:09:04
+2015 1 26 21 9 4
+991 768 5 192 58 5 18347718 443 10 0 0 0
+4 53 378 20 26
 0 0 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
@@ -24,15 +24,15 @@
 27 26 220803 1 6 1 0 0
 0 0 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
+367 255 3016419 1 83 2 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+597 487 15110496 4 354 7 0 0
 0 0 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 0 0 0 0 0 0
-0 0 0 0 0 0 0 0
-0 0 0 0 0 0 0 0
-0 0 0 0 0 0 0 0
 0 0 0 0 0 0
 0 0 0 0 0 0
 0 0 0 0 0 0
@@ -44,24 +44,23 @@
 0 0 0 0 0 0
 0 0 0 0 0 0
 0 0 0 0 0 0
+33 22 218680 12 0 0
+261 184 2176510 47 0 0
+95 70 813332 30 0 0
 0 0 0 0 0 0
+87 81 1603113 54 0 0
+62 59 2024072 59 0 0
 0 0 0 0 0 0
+22 19 1937295 19 0 0
 0 0 0 0 0 0
-0 0 0 0 0 0
-27 26 220803 6 0 0
-0 0 0 0 0 0
-0 0 0 0 0 0
-0 0 0 0 0 0
-0 0 0 0 0 0
-0 0 0 0 0 0
-0 0 0 0 0 0
+378 294 8870022 196 0 0
+53 39 704694 26 0 0
 0 0 0 0 0 0
 0 0 0 0 0 0
 0
 0
 0
-26
-0
+768
 0
 0
 0
@@ -70,15 +69,16 @@
 0
 0
 1
+12
+0
+122
 0
 0
 0
 0
 0
-0
-0
-0
-0
+8
+80
 0
 0
 0
@@ -99,72 +99,551 @@
 0
 0
 # -urls- 
+/debug_kit/toolbar/2f6ac675-f934-4b71-bcfb-42fd908ccffd
+0 1 0 1425 0 0 0 0
 /js/jquery.json-2.4.min.js
-0 1 0 1412 0 0 0 0
+0 2 0 2824 0 0 0 0
+/debug_kit/toolbar/65980fd4-2349-4535-9249-7e34f51c91a7
+0 1 0 1289 0 0 0 0
+/debug_kit/toolbar/b2f3d430-003c-4dec-8bac-49451028f506
+0 1 0 1280 0 0 0 0
+/debug_kit/toolbar/dc9b05de-fd91-41db-b990-46e10d90bebc
+0 1 0 1426 0 0 0 0
+/debug_kit/toolbar/cce640a2-a6aa-4f89-849d-0c6114c867f4
+0 1 0 1290 0 0 0 0
+/debug_kit/toolbar/1653a939-c428-4e2d-9e94-4abd47dcc812
+0 1 0 1291 0 0 0 0
+/debug_kit/toolbar/91dcee8d-75f8-4f6d-9959-ecb812d91112
+0 1 0 1424 0 0 0 0
+/debug_kit/panels/view/b53baa23-04ab-40da-b91a-968f2f97c7aa
+0 1 0 545 0 0 0 0
+/phpmyadmin/tbl_change.php
+0 12 0 49797 0 0 0 0
+/debug_kit/panels/view/1d1d87a3-6f0c-462d-8237-9a3d68530b2c
+0 1 0 545 0 0 0 0
+/students/edit/207
+0 1 0 2772 0 0 0 0
+/debug_kit/js/toolbar.js
+0 25 0 9698 0 0 0 0
+/phpmyadmin/
+0 78 0 143322 0 3 0 0
+/debug_kit/toolbar/77a8f607-9e30-44cc-9782-77677b6ef9f0
+0 1 0 1422 0 0 0 0
+/debug_kit/css/reset.css
+0 26 0 12786 0 0 0 0
+/debug_kit/toolbar/f9467881-a388-40da-82d4-bfec396f59e0
+0 1 0 1425 0 0 0 0
+/debug_kit/toolbar/0e9e0f95-b4a8-42a6-b59a-fd2260522c5d
+0 1 0 1420 0 0 0 0
+/debug_kit/toolbar/56450a04-c8e4-4329-9a41-a9257c26a6b5
+0 1 0 1288 0 0 0 0
+/phpmyadmin/themes/pmahomme/jquery/images/ui-bg_flat_75_ffffff_40x100.png
+1 1 0 367 0 0 0 0
+/debug_kit/toolbar/7c8a308b-45d9-481d-8eda-61ff80727749
+0 1 0 1425 0 0 0 0
+/js/plugins/morris/morris.min.js
+0 21 0 217772 0 0 0 0
+/debug_kit/toolbar/f909cea4-a0af-4102-b8a9-3583324cef04
+0 1 0 1426 0 0 0 0
+/Schools/index
+0 13 0 34116 0 0 0 0
+/debug_kit/toolbar/0a4e7f96-d40c-4205-945f-56f69b098502
+0 1 0 1424 0 1 0 0
 /css/news.css
-0 1 1 526 0 0 0 0
+0 2 0 1053 0 0 0 0
+/css/plugins/morris.css
+0 35 0 20537 0 0 0 0
+/debug_kit/toolbar/90bb332d-56fb-41c9-b3d7-a354069d204e
+0 1 0 1422 0 0 0 0
+/debug_kit/toolbar/359b73b7-c584-444b-b7c6-fc6a559d8e69
+0 1 0 1422 0 0 0 0
 /js/timer.js
-0 1 8779 1983 0 0 0 0
+0 2 0 3966 0 0 0 0
+/font-awesome/fonts/fontawesome-webfont.woff
+0 6 0 197798 0 0 0 0
+/debug_kit/toolbar/a841cf61-1e13-4131-ab57-50a47508724c
+0 1 0 1417 0 1 0 0
 /css/metisMenu/metisMenu.css
-0 1 1 780 0 0 0 0
+0 2 0 1560 0 0 0 0
+/phpmyadmin/themes/pmahomme/img/logo_left.png
+1 4 0 3101 0 0 0 0
 /js/flash.js
-0 1 0 548 0 0 0 0
+0 2 0 1096 0 0 0 0
+/debug_kit/toolbar/1e52bdcb-4d5c-4c41-bbc8-50fc3ba12e0c
+0 1 0 1425 0 0 0 0
+/debug_kit/toolbar/82868b17-4e7d-460b-84b2-ca1753edb861
+0 1 0 1427 0 0 0 0
+/phpmyadmin/themes/pmahomme/jquery/images/ui-bg_highlight-soft_75_cccccc_1x100.png
+1 1 0 368 0 0 0 0
+/debug_kit/toolbar/5a28aeb2-4ed6-4b59-902a-c7cc03bb6343
+0 1 0 1284 0 0 0 0
 /js/metisMenu/jquery.metisMenu.js
-0 1 0 1179 0 0 0 0
+0 2 0 2357 0 0 0 0
+/debug_kit/toolbar/25445c14-e547-40b6-a0bb-6dacee93d436
+0 1 0 1425 0 0 0 0
+/debug_kit/toolbar/819f116f-6a53-4630-b8e0-ea6c79757f7e
+0 1 0 1417 0 0 0 0
+/debug_kit/panels/view/fa4bdc69-7ca4-400d-9c4b-46511fc7f0d1
+0 1 0 1626 0 0 0 0
+/js/bootstrap.min.js
+0 21 0 204913 0 0 0 0
+/debug_kit/toolbar/dd908e89-a6da-4efa-957c-8ad674399cf4
+0 1 0 1421 0 0 0 0
+/js/jquery.js
+0 21 0 705114 0 0 0 0
+/phpmyadmin/themes/pmahomme/img/arrow_ltr.png
+1 3 0 777 0 0 0 0
+/debug_kit/panels/view/6679f06e-3742-4817-ad1c-e4c9be0f51f9
+0 1 0 1151 0 0 0 0
+/debug_kit/toolbar/04a40a63-cc04-47e5-a8a6-7876d88464a0
+0 1 0 1292 0 0 0 0
+/debug_kit/toolbar/21814a92-c63d-4f4d-84a6-54b28d4730a0
+0 1 0 1280 0 0 0 0
+/debug_kit/toolbar/001348c0-5f38-4b04-9b26-27b2a91c3acd
+0 1 0 1422 0 0 0 0
 /js/admin.js
-0 1 1 516 0 0 0 0
+0 2 0 1032 0 0 0 0
+/debug_kit/toolbar/f55d0829-2d9a-4a10-ace2-06ee11681688
+0 1 0 1291 0 0 0 0
+/debug_kit/toolbar/4d768de8-3088-4023-8224-03995fd6c9cb
+0 1 0 1421 0 0 0 0
+/phpmyadmin/themes/pmahomme/jquery/images/ui-icons_222222_256x240.png
+1 1 0 3999 0 0 0 0
+/phpmyadmin/js/get_image.js.php
+0 7 0 46564 0 0 0 0
 /css/bootstrap/bootstrap.css
-0 1 0 19855 0 0 0 0
+0 2 0 39710 0 0 0 0
+/debug_kit/toolbar/142f1f5f-9e5b-4872-86fe-2a94ff398732
+0 1 0 1422 0 0 0 0
+/debug_kit/toolbar/5ff2b85f-25f4-407e-99a5-9dd7be03bcd8
+0 1 0 1425 0 0 0 0
+/debug_kit/toolbar/fe272c9c-bb4e-45c5-b157-5911dd0c6da5
+0 1 0 1426 0 0 0 0
+/debug_kit/toolbar/8014df9a-802b-483a-8f6f-dba51c2ca208
+0 3 0 4257 0 0 0 0
+/phpmyadmin/themes/pmahomme/img/col_drop.png
+1 1 0 414 0 0 0 0
+/debug_kit/toolbar/103b2ac5-70e1-4230-ab3f-fa3f031b1806
+0 1 0 1285 0 0 0 0
+/students/index/3
+0 3 0 8733 0 0 0 0
+/phpmyadmin/navigation.php
+0 12 0 14534 0 0 0 0
+/debug_kit/toolbar/9894d3f6-83bc-439c-9220-7d755e4ef9ec
+0 1 0 1422 0 0 0 0
+/debug_kit/panels/view/53b3c4e8-04ee-4a3c-b969-f731750d60fe
+0 1 0 562 0 0 0 0
+/debug_kit/panels/view/ecd61f63-fc4a-4dab-b58e-dba29e81168f
+0 1 0 1689 0 0 0 0
+/debug_kit/panels/view/e3d61ac4-d30e-451c-a147-7c694517ce07
+0 1 0 566 0 0 0 0
+/debug_kit/toolbar/98f73dec-d053-46cd-aead-051eb8936962
+0 1 0 1283 0 0 0 0
+/students
+0 7 0 28499 0 0 0 0
 /js/bootstrap/bootstrap.min.js
-0 1 0 8886 0 0 0 0
+0 2 0 17771 0 0 0 0
+/debug_kit/toolbar/2040d437-9569-4138-ab27-3247b18d6fe6
+0 1 0 1425 0 0 0 0
+/debug_kit/css/toolbar.css
+0 25 0 23108 0 0 0 0
 /favicon.ico
-0 1 0 670 0 0 0 0
+0 5 0 7584 0 0 0 0
+/schools/edit/1
+0 4 0 9704 0 0 0 0
 /js/bootstrap/bootstrap.js
-0 1 1 12748 0 0 0 0
+0 2 0 25495 0 0 0 0
+/debug_kit/toolbar/63f38ae5-8ae5-47a3-b023-3bf0c5edd7fb
+0 1 0 1284 0 0 0 0
+/debug_kit/toolbar/0e8e1e4c-c998-43b3-8591-667e166b7857
+0 1 0 1416 0 0 0 0
+/debug_kit/toolbar/03296b09-3443-415a-a93f-6d6f24d5a814
+0 1 0 1419 0 0 0 0
+/debug_kit/toolbar/7c660fbc-b97d-4f2a-a97e-5ee6a0fa9b4b
+0 1 0 1427 0 0 0 0
+/debug_kit/toolbar/cac84222-69b4-4208-b2c0-8bf2a3958cbd
+0 1 0 1420 0 0 0 0
+/students/edit/2
+0 1 0 2774 0 0 0 0
+/students/index/7
+0 3 0 8767 0 0 0 0
 /css/bootstrap/bootstrap.min.css
-0 1 1 18479 0 0 0 0
+0 2 0 36958 0 0 0 0
+/phpmyadmin/themes/pmahomme/jquery/images/ui-bg_flat_0_aaaaaa_40x100.png
+1 1 0 368 0 0 0 0
+/debug_kit/toolbar/472c4ffd-a1b6-47c8-be93-ffd438405de5
+0 1 0 1287 0 0 0 0
+/font-awesome/css/font-awesome.min.css
+0 5 0 26894 0 0 0 0
+/debug_kit/toolbar/268809ea-e846-43c8-9f8c-eeccc191b48c
+0 1 0 1422 0 0 0 0
+/debug_kit/toolbar/e3683649-0f1b-427b-b7e0-6995c076b4f8
+0 1 0 1422 0 0 0 0
+/debug_kit/toolbar/845c6813-7d58-45a2-9765-7eba3c0d2228
+0 1 0 1424 0 0 0 0
+/schools
+0 2 0 5445 0 0 0 0
+/debug_kit/panels/view/cbcffe78-29eb-4997-8ace-a3665a396d03
+0 1 0 409 0 0 0 0
 /js/news.js
-0 1 1 649 0 0 0 0
+0 2 0 1298 0 0 0 0
+/debug_kit/panels/view/180a4c80-3668-4724-9315-1d03e13232fc
+0 2 0 1160 0 0 0 0
 /js/function.js
-0 1 1 1046 0 0 0 0
+0 2 0 2092 0 0 0 0
+/debug_kit/toolbar/9d68d87d-9f1d-4fa0-806d-8aa8607ae6ea
+0 1 0 1422 0 0 0 0
+/debug_kit/toolbar/31b655e2-2ac6-426f-9ce4-307580a127c4
+0 1 0 1290 0 0 0 0
+/phpmyadmin/themes/pmahomme/img/col_pointer.png
+1 1 0 395 0 0 0 0
+/debug_kit/panels/view/49f32835-f33a-40a6-98f7-a5a648a78179
+0 1 0 726 0 0 0 0
 /css/style.css
-0 1 0 1217 0 0 0 0
+0 2 0 2435 0 0 0 0
+/debug_kit/toolbar/c51ad6a2-da4c-40b5-8ab4-bb9e9abff846
+0 1 0 1415 0 0 0 0
+/students/index/5
+0 1 0 2756 0 0 0 0
 /css/common.css
-0 1 1 1120 0 0 0 0
+0 2 0 2240 0 0 0 0
+/phpmyadmin/themes/pmahomme/jquery/jquery-ui-1.9.2.custom.css
+0 7 0 45598 0 0 0 0
+/debug_kit/toolbar/156ddd49-0ca6-4c72-9d56-9ffa576eb8d2
+0 1 0 1418 0 0 0 0
+/students/index/1
+0 2 0 6032 0 0 0 0
+/debug_kit/toolbar/8eb73c36-e5bf-4b89-89fd-47bcfd8c899a
+0 1 0 1421 0 0 0 0
+/phpmyadmin/themes/pmahomme/jquery/images/ui-bg_glass_75_dadada_1x400.png
+1 1 0 441 0 0 0 0
+/debug_kit/toolbar/11498787-6067-44c5-80e2-5fd5336717df
+0 1 0 1427 0 0 0 0
+/debug_kit/toolbar/f41f17d5-7fdd-405a-b355-b69221d7ce14
+0 1 0 1287 0 0 0 0
+/debug_kit/toolbar/5b59b6fc-be59-4570-ae38-8eeee04d5b33
+0 1 0 1418 0 0 0 0
 /users/login
-0 5 1 8886 0 0 0 0
+0 6 0 10663 0 0 0 0
+/debug_kit/toolbar/3d6ec6c6-e8a6-4126-90a5-294f0fe6b9bd
+0 1 0 1285 0 0 0 0
+/debug_kit/toolbar/928957a2-b5b4-4ee6-8c7a-ab7e357ec2c8
+0 1 0 1422 0 0 0 0
+/phpmyadmin/js/get_scripts.js.php
+0 16 0 10157417 0 0 0 0
+/debug_kit/panels/view/034a96ac-b13e-4020-9a5a-7ac02d17cc40
+0 1 0 545 0 0 0 0
+/debug_kit/toolbar/6bdfc6df-0522-48a6-94c0-c4b1c5294764
+0 1 0 1427 0 0 0 0
+/debug_kit/toolbar/207eac50-9de0-4828-9ce8-e1c63a0da50d
+0 1 0 1420 0 0 0 0
+/css/bootstrap.min.css
+0 16 0 312897 0 0 0 0
+/debug_kit/toolbar/5a0035e1-2e87-467f-8204-147c798dee4d
+0 1 0 1422 0 0 0 0
+/debug_kit/toolbar/b812ec41-a15d-4590-b039-169decd2c6a7
+0 1 0 1284 0 0 0 0
+/phpmyadmin/themes/pmahomme/jquery/images/ui-bg_glass_65_ffffff_1x400.png
+1 1 0 378 0 0 0 0
 /css/menuedit.css
-0 1 1 1325 0 0 0 0
+0 2 0 2650 0 0 0 0
+/debug_kit/toolbar/a62bab28-909e-4479-b9a4-30eb2a370ca1
+0 1 0 1426 0 0 0 0
+/debug_kit/panels/view/77838b4a-e18a-405c-9169-466b312e5cbf
+0 1 0 545 0 0 0 0
+/phpmyadmin/tbl_select.php
+0 2 0 8558 0 0 0 0
+/debug_kit/toolbar/ecc879c0-d747-4657-b943-9e475cbb4c42
+0 1 0 1422 0 0 0 0
+/debug_kit/panels/view/58e306a4-85d8-48df-bf80-6c0c9c53a3f8
+0 2 0 1091 0 0 0 0
+/debug_kit/toolbar/2cfb7bee-d7fb-4925-b743-b0d1b78cd324
+0 1 0 1427 0 0 0 0
+/debug_kit/toolbar/bc6a6e5b-2ad8-46bc-8995-c4c75443ddd2
+0 1 0 1421 0 0 0 0
+/phpmyadmin/js/messages.php
+0 13 0 327830 0 0 0 0
+/css/bootstrap.css
+0 19 0 401720 0 0 0 0
+/debug_kit/toolbar/bf78a7cc-9b98-4860-95f6-99925996bad9
+0 1 0 1290 0 0 0 0
+/debug_kit/toolbar/5097ed95-92c3-4c08-8632-3b254d4bb95b
+0 1 0 1422 0 0 0 0
+/phpmyadmin/favicon.ico
+0 1 0 19203 0 0 0 0
+/debug_kit/toolbar/47d9eaa0-bb53-4611-a0e0-8fd9f722a0db
+0 1 0 1289 0 0 0 0
+/phpmyadmin/db_structure.php
+0 2 0 9203 0 0 0 0
+/phpmyadmin/sql.php
+0 32 0 190759 3 0 0 0
+/students/index/6
+0 2 0 5550 0 0 0 0
+/phpmyadmin/themes/pmahomme/img/ajax_clock_small.gif
+1 4 0 2631 0 0 0 0
+/debug_kit/toolbar/491fc37e-3125-4829-9f47-2e0969b6cf18
+0 1 0 1422 0 0 0 0
+/debug_kit/toolbar/348db464-7671-4243-b1e9-63ed21caf74e
+0 1 0 1420 0 0 0 0
+/debug_kit/img/cake.icon.png
+1 26 0 24156 0 0 0 0
+/debug_kit/toolbar/a03cb127-7169-4c46-a134-52ba52718eef
+0 1 0 1284 0 0 0 0
+/debug_kit/toolbar/a6f8816c-2a45-4850-9209-e0f759680abc
+0 1 0 1288 0 0 0 0
+/debug_kit/toolbar/2e153a58-3172-4864-99b2-63f0bba54df9
+0 1 0 1288 0 0 0 0
 /js/login.js
-0 1 1 525 0 0 0 0
+0 2 0 1050 0 0 0 0
+/phpmyadmin/phpmyadmin.css.php
+0 17 0 299319 0 0 0 0
 /css/scribble_light.png
-1 1 1 42444 0 0 0 0
+1 2 0 84888 0 0 0 0
+/
+0 28 0 64004 2 0 0 0
+/Students/index
+0 12 0 49525 2 0 0 0
+/debug_kit/panels/view/ad8e14e6-47ee-4eed-85e1-88678c8ac344
+0 1 0 550 0 0 0 0
+/js/plugins/morris/morris-data.js
+0 21 0 30851 0 0 0 0
+/debug_kit/toolbar/f3358fdd-d4f9-4739-9054-d583ffaf2891
+0 1 0 1288 0 0 0 0
+/phpmyadmin/tbl_addfield.php
+0 4 0 19306 0 0 0 0
+/students/edit/6
+0 1 0 2919 0 0 0 0
+/css/sb-admin.css
+0 35 0 48045 0 0 0 0
+/debug_kit/toolbar/3c7c2d16-e476-4d59-8625-cb79e9696998
+0 1 0 1425 0 0 0 0
+/phpmyadmin/themes/pmahomme/img/logo_right.png
+1 4 0 5121 0 0 0 0
+/phpmyadmin/tbl_structure.php
+0 8 0 40503 0 0 0 0
+/css/base.css
+0 6 0 132060 0 0 0 0
+/debug_kit/toolbar/ff65fed3-958a-430a-99a0-cdc95426976a
+0 1 0 1421 0 0 0 0
+/debug_kit/panels/view/78f9ae50-9e85-4753-9f71-6b19a30f35b6
+0 1 0 1592 0 0 0 0
+/debug_kit/toolbar/798a98db-c21d-45d2-93cc-cba7f4aa7d11
+0 1 0 1424 0 0 0 0
+/phpmyadmin/themes/dot.gif
+1 7 0 1392 0 0 0 0
+/phpmyadmin/themes/pmahomme/jquery/images/ui-bg_glass_75_e6e6e6_1x400.png
+1 1 0 393 0 0 0 0
+/debug_kit/toolbar/c20df64d-627a-43f1-bd4c-aaec4edb64dd
+0 1 0 1417 0 0 0 0
+/phpmyadmin/themes/pmahomme/img/left_nav_bg.png
+1 1 0 510 0 0 0 0
+/debug_kit/panels/view/7886938e-97fe-451d-87fc-70c4fcbd5da9
+0 1 0 416 0 0 0 0
+/debug_kit/toolbar/c7024257-841e-46e3-95b8-7e5c945fa155
+0 1 0 1419 0 0 0 0
+/debug_kit/toolbar/99a2fd96-03e0-4558-97b9-150b820124bb
+0 1 0 1421 0 0 0 0
+/css/cake.css
+0 6 0 12327 0 0 0 0
+/debug_kit/toolbar/e0a2994a-ea60-4347-badd-810ebf538e37
+0 1 0 1288 0 0 0 0
+/students/
+0 1 0 4145 0 0 0 0
+/debug_kit/toolbar/137650c9-f8b5-4095-9d82-5867692b2da1
+0 1 0 1425 0 0 0 0
+/js/plugins/morris/raphael.min.js
+0 21 0 672506 0 0 0 0
+/debug_kit/toolbar/e7e52a53-9ff1-462f-96f7-4ea0bb301293
+0 1 0 1420 0 0 0 0
+/debug_kit/js/toolbar-app.js
+0 26 0 22231 0 0 0 0
+/debug_kit/toolbar/ff4a7be1-3ded-4601-8d61-2d1aa35248dc
+0 1 0 1420 0 0 0 0
+/debug_kit/toolbar/c9c4c8cf-5d9e-41d5-94c7-1c3de7d28d03
+0 1 0 1427 0 0 0 0
 /img/gerb_tdmu.png
-1 1 1 95070 0 0 0 0
+1 2 0 190140 0 0 0 0
 /css/flash.css
-0 1 1121 504 0 0 0 0
+0 2 0 1009 0 0 0 0
+/debug_kit/panels/view/087f1b49-ad58-4be3-82b1-892c531ea914
+0 2 0 3383 0 0 0 0
+/debug_kit/toolbar/e94114f1-7bb8-4149-b28c-26bba1258059
+0 1 0 1285 0 0 0 0
+/debug_kit/panels/view/21855a00-d832-404a-b810-eb7092b498fa
+0 1 0 1726 0 0 0 0
+/debug_kit/js/jquery.js
+0 26 0 374140 0 0 0 0
+/phpmyadmin/themes/pmahomme/img/s_fulltext.png
+1 3 0 810 0 0 0 0
+/phpmyadmin/themes/pmahomme/img/sprites.png
+1 1 0 38739 0 0 0 0
+/students/index/2
+0 2 0 5516 0 0 0 0
+/phpmyadmin/tbl_replace.php
+0 14 0 65476 0 0 0 0
+/debug_kit/toolbar/22580641-3065-4ed4-a752-01b5b0948609
+0 1 0 1424 0 0 0 0
 # End Of Table - urls
 # -sites- (monthly)
+5.58.39.123
+0 70 56 839548 1 1422305978 0 0
+/debug_kit/toolbar/f3358fdd-d4f9-4739-9054-d583ffaf2891
+5.58.54.78
+0 819 626 16390570 6 1422305518 0 0
+/debug_kit/toolbar/2cfb7bee-d7fb-4925-b743-b0d1b78cd324
+80.243.147.132
+0 22 21 192103 1 1422277055 0 0
+/debug_kit/panels/view/fa4bdc69-7ca4-400d-9c4b-46511fc7f0d1
 217.196.164.17
 0 27 26 220803 1 1421767312 0 0
 /users/login
+176.8.120.27
+0 53 39 704694 1 1422306544 0 0
+/debug_kit/toolbar/7c660fbc-b97d-4f2a-a97e-5ee6a0fa9b4b
 # End Of Table - sites (monthly)
 # -sites- (daily)
-217.196.164.17
-0 27 26 220803 1 1421767312 0 0
-/users/login
+5.58.39.123
+0 70 56 839548 1 1422305978 0 0
+/debug_kit/toolbar/f3358fdd-d4f9-4739-9054-d583ffaf2891
+5.58.54.78
+0 452 371 13374151 4 1422305518 0 0
+/debug_kit/toolbar/2cfb7bee-d7fb-4925-b743-b0d1b78cd324
+80.243.147.132
+0 22 21 192103 1 1422277055 0 0
+/debug_kit/panels/view/fa4bdc69-7ca4-400d-9c4b-46511fc7f0d1
+176.8.120.27
+0 53 39 704694 1 1422306544 0 0
+/debug_kit/toolbar/7c660fbc-b97d-4f2a-a97e-5ee6a0fa9b4b
 # End Of Table - sites (daily)
 # -referrers- 
+http://adm.milka.co.vu/Students/index.html
+1 2
+http://adm.milka.co.vu/students/edit/6
+1 3
+http://adm.milka.co.vu/phpmyadmin/index.php
+1 194
+http://adm.milka.co.vu/debug_kit/toolbar/9d68d87d-9f1d-4fa0-806d-8aa8607ae6ea
+1 5
+http://adm.milka.co.vu/debug_kit/toolbar/ecc879c0-d747-4657-b943-9e475cbb4c42
+1 5
+http://adm.milka.co.vu/debug_kit/toolbar/0e9e0f95-b4a8-42a6-b59a-fd2260522c5d
+1 5
+http://adm.milka.co.vu/students/index/7
+1 15
+http://adm.milka.co.vu/debug_kit/toolbar/56450a04-c8e4-4329-9a41-a9257c26a6b5
+1 9
 http://adm.milka.co.vu/css/style.css
-1 1
+1 2
+http://adm.milka.co.vu/debug_kit/toolbar/4d768de8-3088-4023-8224-03995fd6c9cb
+1 6
+http://adm.milka.co.vu/debug_kit/toolbar/928957a2-b5b4-4ee6-8c7a-ab7e357ec2c8
+1 5
+http://adm.milka.co.vu/debug_kit/toolbar/798a98db-c21d-45d2-93cc-cba7f4aa7d11
+1 6
+http://adm.milka.co.vu/debug_kit/toolbar/a6f8816c-2a45-4850-9209-e0f759680abc
+1 5
+http://adm.milka.co.vu/schools
+1 6
+http://adm.milka.co.vu/debug_kit/toolbar/dd908e89-a6da-4efa-957c-8ad674399cf4
+1 5
+http://adm.milka.co.vu/students
+1 31
+http://adm.milka.co.vu/schools/edit/1
+1 13
+http://adm.milka.co.vu/Schools/index
+1 47
+http://adm.milka.co.vu/students/index/5
+1 3
+http://adm.milka.co.vu/debug_kit/toolbar/e94114f1-7bb8-4149-b28c-26bba1258059
+1 5
+http://adm.milka.co.vu/debug_kit/toolbar/5ff2b85f-25f4-407e-99a5-9dd7be03bcd8
+1 5
+http://adm.milka.co.vu/debug_kit/toolbar/5097ed95-92c3-4c08-8632-3b254d4bb95b
+1 5
+http://adm.milka.co.vu/students/
+1 2
+http://adm.milka.co.vu/debug_kit/toolbar/cac84222-69b4-4208-b2c0-8bf2a3958cbd
+1 5
 - (Direct Request)
-0 3
+0 57
+http://adm.milka.co.vu/debug_kit/toolbar/99a2fd96-03e0-4558-97b9-150b820124bb
+1 5
+http://adm.milka.co.vu/students/index/6
+1 6
+http://adm.milka.co.vu/students/index/3
+1 22
+http://adm.milka.co.vu/Students/index
+1 72
 http://adm.milka.co.vu/users/login
-1 23
+1 42
+http://adm.milka.co.vu/students/index/1
+1 9
+http://adm.milka.co.vu/students/index/2
+1 6
+http://adm.milka.co.vu/debug_kit/toolbar/91dcee8d-75f8-4f6d-9959-ecb812d91112
+1 1
+http://adm.milka.co.vu/
+1 219
+http://adm.milka.co.vu/debug_kit/toolbar/0a4e7f96-d40c-4205-945f-56f69b098502
+1 5
+http://adm.milka.co.vu/index.html
+1 1
+http://adm.milka.co.vu/debug_kit/toolbar/142f1f5f-9e5b-4872-86fe-2a94ff398732
+1 6
+http://adm.milka.co.vu/phpmyadmin/sql.php
+1 33
+http://adm.milka.co.vu/debug_kit/toolbar/cce640a2-a6aa-4f89-849d-0c6114c867f4
+1 4
+http://adm.milka.co.vu/font-awesome/css/font-awesome.min.css
+1 4
+http://adm.milka.co.vu/debug_kit/toolbar/f55d0829-2d9a-4a10-ace2-06ee11681688
+1 5
+http://adm.milka.co.vu/debug_kit/toolbar/f909cea4-a0af-4102-b8a9-3583324cef04
+1 12
+http://adm.milka.co.vu/phpmyadmin/
+1 9
+http://adm.milka.co.vu/Schools/index.html
+1 2
+http://adm.milka.co.vu/debug_kit/toolbar/e7e52a53-9ff1-462f-96f7-4ea0bb301293
+1 6
+http://adm.milka.co.vu/debug_kit/toolbar/8014df9a-802b-483a-8f6f-dba51c2ca208
+1 5
+http://adm.milka.co.vu/debug_kit/toolbar/5a0035e1-2e87-467f-8204-147c798dee4d
+1 5
+http://adm.milka.co.vu/debug_kit/toolbar/9894d3f6-83bc-439c-9220-7d755e4ef9ec
+1 5
+http://adm.milka.co.vu/students/edit/2
+1 4
+http://adm.milka.co.vu/phpmyadmin/tbl_replace.php
+1 19
+http://adm.milka.co.vu/charts.html
+1 1
+http://adm.milka.co.vu/debug_kit/toolbar/e3683649-0f1b-427b-b7e0-6995c076b4f8
+1 5
+http://adm.milka.co.vu/students/edit/207
+1 6
+http://adm.milka.co.vu/debug_kit/toolbar/21814a92-c63d-4f4d-84a6-54b28d4730a0
+1 5
+http://adm.milka.co.vu/phpmyadmin/themes/pmahomme/jquery/jquery-ui-1.9.2.custom.css
+1 7
+http://adm.milka.co.vu/debug_kit/toolbar/359b73b7-c584-444b-b7c6-fc6a559d8e69
+1 5
+http://adm.milka.co.vu/debug_kit/toolbar/156ddd49-0ca6-4c72-9d56-9ffa576eb8d2
+1 5
+http://adm.milka.co.vu/phpmyadmin/phpmyadmin.css.php
+1 4
 # End Of Table - referrers
 # -agents- 
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:34.0) Gecko/20100101 Firefox/34.0
+0 53
+Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36
+0 367
+Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.91 Safari/537.36
+0 452
 Mozilla/5.0 (Windows NT 6.1; WOW64; rv:35.0) Gecko/20100101 Firefox/35.0
-0 27
+0 49
+Mozilla/5.0 (Windows NT 6.3; WOW64; rv:35.0) Gecko/20100101 Firefox/35.0
+0 70
 # End Of Table - agents
 # -search strings- 
 # End Of Table - search strings

@@ -53,6 +53,7 @@ class SchoolsController extends AppController
         }
 
         $this->set(compact('school'));
+        $this->render('edit');
     }
 
     /**
@@ -88,7 +89,7 @@ class SchoolsController extends AppController
      */
     public function delete($id = null)
     {
-        $this->request->allowMethod(['post', 'delete']);
+//        $this->request->allowMethod(['post', 'delete']);
         $school = $this->Schools->get($id);
         if ($this->Schools->delete($school)) {
             $this->Flash->success('The school has been deleted.');
