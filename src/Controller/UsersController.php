@@ -10,14 +10,9 @@ use App\Controller\AppController;
  */
 class UsersController extends AppController
 {
-
-
-
     public function login()
     {
-
         if ($this->request->is('post')) {
-            print_r($_POST);
             $user = $this->Auth->identify();
 
             if ($user) {
@@ -27,6 +22,7 @@ class UsersController extends AppController
             }
             $this->Flash->error(__('Invalid username or password, try again'));
         }
+        $this->layout="login";
     }
 
     public function logout()

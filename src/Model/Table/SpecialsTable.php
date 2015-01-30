@@ -7,9 +7,9 @@ use Cake\ORM\Table;
 use Cake\Validation\Validator;
 
 /**
- * Schools Model
+ * Specials Model
  */
-class SchoolsTable extends Table
+class SpecialsTable extends Table
 {
 
     /**
@@ -20,9 +20,9 @@ class SchoolsTable extends Table
      */
     public function initialize(array $config)
     {
-        $this->table('schools');
+        $this->table('specials');
         $this->displayField('name');
-        $this->primaryKey('school_id');
+        $this->primaryKey('special_id');
 
     }
 
@@ -37,7 +37,7 @@ class SchoolsTable extends Table
         $validator
             ->add('id', 'valid', ['rule' => 'numeric'])
             ->allowEmpty('id', 'create')
-            ->add('school_id', [
+            ->add('special_id', [
                 'valid' => [
                     'rule' => 'validateUnique',
                     'provider' => 'table',
@@ -47,18 +47,16 @@ class SchoolsTable extends Table
                     'message' => 'ID isn\'t numeric']
 
             ])
-            ->allowEmpty('school_id', 'create')
+            ->allowEmpty('special_id', 'create')
             ->requirePresence('name', 'create')
             ->notEmpty('name');
-
 
         return $validator;
     }
 
     public function buildRules(RulesChecker $rules)
     {
-        $rules->add($rules->existsIn(['id'], 'Schools'));
+        $rules->add($rules->existsIn(['id'], 'Specials'));
         return $rules;
     }
-
 }

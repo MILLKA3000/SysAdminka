@@ -41,6 +41,7 @@ class SchoolsController extends AppController
      */
     public function add()
     {
+        $disabled='';
         $school = $this->Schools->newEntity();
         if ($this->request->is('post')) {
             $school = $this->Schools->patchEntity($school, $this->request->data);
@@ -52,7 +53,7 @@ class SchoolsController extends AppController
             }
         }
 
-        $this->set(compact('school'));
+        $this->set(compact('school','disabled'));
         $this->render('edit');
     }
 
@@ -65,6 +66,7 @@ class SchoolsController extends AppController
      */
     public function edit($id = null)
     {
+        $disabled='disabled';
         $school = $this->Schools->find()
             ->where(['id' => $id])
             ->first();
@@ -77,7 +79,7 @@ class SchoolsController extends AppController
                 $this->Flash->error('The school could not be saved. Please, try again.');
             }
         }
-                $this->set(compact('school'));
+                $this->set(compact('school','disabled'));
     }
 
     /**
@@ -90,7 +92,7 @@ class SchoolsController extends AppController
     public function delete($id = null)
     {
 //        $this->request->allowMethod(['post', 'delete']);
-        $school = $this->Schools->get($id);
+        $school = $this->Schools->find()->where(['id' => $id])->first();
         if ($this->Schools->delete($school)) {
             $this->Flash->success('The school has been deleted.');
         } else {

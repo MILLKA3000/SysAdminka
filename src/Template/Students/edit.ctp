@@ -6,6 +6,8 @@
             echo $this->Form->input('id',['class'=>'form-control']);
             echo $this->Form->input('student_id',['class'=>'form-control','type'=>'text']);
             echo $this->Form->input('school_id', ['options' => $schools,'class'=>'form-control']);
+            echo $this->Form->input('special_id', ['options' => $specials,'class'=>'form-control']);
+            echo $this->Form->input('groupnum', ['class'=>'form-control','type'=>'text']);
             echo $this->Form->input('first_name',['class'=>'form-control','type'=>'text']);
             echo $this->Form->input('last_name',['class'=>'form-control','type'=>'text']);
             echo $this->Form->input('grade_level',['class'=>'form-control','type'=>'text']);

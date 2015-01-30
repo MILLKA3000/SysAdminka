@@ -2,9 +2,11 @@
     <?= $this->Form->create($school); ?>
     <fieldset class="">
         <legend><?= __('Edit School') ?></legend>
-        <?php
-            echo $this->Form->input('school_id',['class'=>'form-control','type'=>'text']);
-        ?>
+        <fieldset <?= $disabled ?>>
+            <?php
+                echo $this->Form->input('school_id',['class'=>'form-control','type'=>'text']);
+            ?>
+        </fieldset>
         <?php
             echo $this->Form->input('name',['class'=>'form-control']);
         ?>

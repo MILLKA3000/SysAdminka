@@ -32,7 +32,7 @@ function sql_execute()
 
 function sql_close()
  {
-  ibase_close ($this->$dbh);
+//  ibase_close ($this->$dbh);
  }
  function select($sql)
  {	$j=0;
@@ -85,15 +85,34 @@ function sql_close()
 	{$i=0;
 		foreach($Mas  as $key => $value) {
 		$Row[0][$i] = $key;
-		$Row[$j][$i] = $value;
+		$Row[$j][$i] =iconv("windows-1251","utf-8", $value);
 			//echo $key.": ".$value.", ";
 			$i++;
 		}   
 	$j++; 		
     }
     return $Row;
- } 
-	function for_sql($sem_v) 
+ }
+     function gets($sql)
+     {	$j=1;
+         $sql = iconv("utf-8","windows-1251", $sql);
+         $this->sql_connect();
+         $this->sql_query=$sql;
+         $this->sql_execute();
+         while($Mas = ibase_fetch_assoc($this->sql_result))
+         {$i=0;
+             foreach($Mas  as $key => $value) {
+                 $Row[$j][$key] = iconv("windows-1251","utf-8", $value);
+                 $i++;
+             }
+             $j++;
+         }
+         return $Row;
+     }
+
+
+
+     function for_sql($sem_v)
 	{
 		for ($i=0;$i<count($sem_v);$i++)
 			{

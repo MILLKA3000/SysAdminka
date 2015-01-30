@@ -26,6 +26,9 @@ class StudentsTable extends Table
         $this->belongsTo('Schools', [
             'foreignKey' => 'school_id'
         ]);
+        $this->belongsTo('Specials', [
+            'foreignKey' => 'special_id'
+        ]);
 
         $this->belongsTo('Status', [
             'foreignKey' => 'status_id'
@@ -47,6 +50,9 @@ class StudentsTable extends Table
             ->add('school_id', 'valid', ['rule' => 'numeric'])
             ->requirePresence('school_id', 'create')
             ->notEmpty('school_id')
+            ->add('special_id', 'valid', ['rule' => 'numeric'])
+            ->requirePresence('special_id', 'create')
+            ->notEmpty('special_id')
             ->add('student_id', [
                 'valid' => [
                     'rule' => 'validateUnique',
@@ -99,6 +105,7 @@ class StudentsTable extends Table
     public function buildRules(RulesChecker $rules)
     {
         $rules->add($rules->existsIn(['school_id'], 'Schools'));
+        $rules->add($rules->existsIn(['special_id'], 'Specials'));
         $rules->add($rules->existsIn(['status_id'], 'Status'));
         return $rules;
     }

@@ -4858,3 +4858,31 @@ Stack Trace:
 #2 {main}
 
 
+2015-01-28 20:44:18 Error: [PDOException] SQLSTATE[HY000] [2002] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение.
+
+Request URL: /users/login
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Database\Driver\PDODriverTrait.php(47): PDO->__construct('mysql:host=127....', 'c2sysadmin', '1qaz2wsx', Array)
+#1 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(84): Cake\Database\Driver\Mysql->_connect('mysql:host=127....', Array)
+#2 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Database\Schema\BaseSchema.php(46): Cake\Database\Driver\Mysql->connect()
+#3 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Database\Dialect\MysqlDialectTrait.php(62): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Mysql))
+#4 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(52): Cake\Database\Driver\Mysql->schemaDialect()
+#5 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(44): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Database\Connection.php(320): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Table.php(363): Cake\Database\Connection->schemaCollection()
+#8 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Query.php(147): Cake\ORM\Table->schema()
+#9 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Query.php(129): Cake\ORM\Query->addDefaultTypes(Object(App\Model\Table\UsersTable))
+#10 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Table.php(1073): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(App\Model\Table\UsersTable))
+#11 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Table.php(822): Cake\ORM\Table->query()
+#12 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Auth\BaseAuthenticate.php(116): Cake\ORM\Table->find('all')
+#13 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Auth\FormAuthenticate.php(77): Cake\Auth\BaseAuthenticate->_findUser('milenium.sergiy...', '1qaz2wsx')
+#14 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(741): Cake\Auth\FormAuthenticate->authenticate(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#15 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\src\Controller\UsersController.php(17): Cake\Controller\Component\AuthComponent->identify()
+#16 [internal function]: App\Controller\UsersController->login()
+#17 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Controller\Controller.php(406): call_user_func_array(Array, Array)
+#18 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#19 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#20 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#21 {main}
+
+

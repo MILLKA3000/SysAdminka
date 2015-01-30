@@ -10,6 +10,9 @@
                 <li>
                     <a href="/Schools/index"><i class="fa fa-fw fa-table"></i>View all department</a>
                 </li>
+                <li>
+                    <a href="/Specials/index"><i class="fa fa-fw fa-table"></i>View all speciality</a>
+                </li>
             </ul>
         </li>
         <li>

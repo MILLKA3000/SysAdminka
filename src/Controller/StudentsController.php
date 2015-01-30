@@ -18,15 +18,15 @@ class StudentsController extends AppController
      * @return void
      */
 
-    public function index($statuses=0,$search=NULL)
+    public function index($statuses=1,$search=NULL)
     {
 
         $this->paginate = [
-            'contain' => ['Schools','Status'],
+            'contain' => ['Schools','Status','Specials'],
             'conditions' => ['AND'=>['Students.status_id' => $statuses,'OR'=>['Students.last_name LIKE "%'.$search.'%"','Students.first_name LIKE "%'.$search.'%"']]],
             'limit' => '25'
         ];
-        $status = $this->Students->Status->find('list', ['limit' => 200]);
+        $status = $this->Students->Status->find('list', ['limit' => 50]);
         $this->set('students', $this->paginate($this->Students));
         $this->set(compact('status','statuses','search'));
     }
@@ -38,13 +38,13 @@ class StudentsController extends AppController
      * @return void
      * @throws \Cake\Network\Exception\NotFoundException
      */
-    public function view($id = null)
-    {
-        $student = $this->Students->get($id, [
-            'contain' => ['Schools']
-        ]);
-        $this->set('student', $student);
-    }
+//    public function view($id = null)
+//    {
+//        $student = $this->Students->get($id, [
+//            'contain' => ['Schools']
+//        ]);
+//        $this->set('student', $student);
+//    }
 
     /**
      * Add method
@@ -90,9 +90,10 @@ class StudentsController extends AppController
                 $this->Flash->error('The student could not be saved. Please, try again.');
             }
         }
-        $schools = $this->Students->Schools->find('list', ['limit' => 20]);
-        $status = $this->Students->Status->find('list', ['limit' => 20]);
-        $this->set(compact('student', 'schools','status'));
+        $schools = $this->Students->Schools->find('list', ['limit' => 50]);
+        $specials = $this->Students->Specials->find('list', ['limit' => 50]);
+        $status = $this->Students->Status->find('list', ['limit' => 50]);
+        $this->set(compact('student', 'schools','status','specials'));
     }
 
     /**
