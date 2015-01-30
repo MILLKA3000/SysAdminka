@@ -6,7 +6,7 @@
             echo $this->Form->input('fname',['class'=>'form-control','type'=>'text']);
             echo $this->Form->input('lname',['class'=>'form-control','type'=>'text']);
             echo $this->Form->input('email',['class'=>'form-control','type'=>'text']);
-            echo $this->Form->input('password',['class'=>'form-control','type'=>'text','data-toggle'=>'tooltip','data-placement'=>'top','title'=>'Only new password','value'=>'']);
+            echo $this->Form->input('password',['class'=>'form-control','type'=>'text','data-toggle'=>'tooltip','data-placement'=>'top','title'=>'Only new password','value'=>'','required'=>'none']);
         ?>
     </fieldset>
     <br/>

@@ -28,15 +28,54 @@ use Cake\View\Exception\MissingTemplateException;
 class PagesController extends AppController
 {
 
-    /**
-     * Displays a view
-     *
-     * @return void|\Cake\Network\Response
-     * @throws \Cake\Network\Exception\NotFoundException When the view file could not
-     *   be found or \Cake\View\Exception\MissingTemplateException in debug mode.
-     */
+    private $stat;
+
+    private $settings;
+
+
+
+    private function _get_statuses($id_status){
+        $this->loadModel('Students');
+        return $this->Students->find()->where(["status_id IN (".$id_status.")"])->count();
+    }
+
+
+
+    protected function __sum_stat($stats){
+
+        $a2sum = array();
+
+        foreach($stats as $k=>$stat){
+            $array = json_decode($stat->statistics);
+            $sum[] = $array;
+        }
+
+        foreach ($sum as $k=>$subArray) {
+            foreach ($subArray as $id=>$value) {
+                $a2sum[$id]+=$value;
+            }
+        }
+        return $a2sum;
+    }
+
     public function display()
     {
+        $this->loadModel('Synchronized');
+        $this->loadModel('Settings');
+
+        $this->settings = $this->Settings->_get_settings();
+        $stats = $this->Synchronized->find()
+            ->where(['and'=>[["Synchronized.date > ".mktime(0,0,0,$this->Settings->__find_setting('display_stat_last',$this->settings))],["Synchronized.date < ".mktime()]]])->all();
+
+        $data = $this->__sum_stat($stats);
+        $data['conflict_students'] = $this->_get_statuses("3,7");
+        $data['archive_students'] = $this->_get_statuses("10");
+        $synchronized = $this->Synchronized->find()
+            ->where(['and'=>[["Synchronized.date > ".mktime(0,0,0,$this->Settings->__find_setting('display_stat_last',$this->settings))],["Synchronized.date < ".mktime()]]])
+            ->sortBy('date','DESC');
+            $this->set('display_chart',$this->Settings->__find_setting('display_chart',$this->settings));
+            $this->set('display_log_dashbord',$this->Settings->__find_setting('display_log_dashbord',$this->settings));
+            $this->set(compact('data','synchronized'));
         $this->render('home');
     }
 }

@@ -24,6 +24,7 @@ class SyncController extends AppController
 
     private $status = false;
 
+    private $message = array();
 
     private $options = array();
 
@@ -102,6 +103,10 @@ class SyncController extends AppController
         $this->contingent->sql_connect();
     }
 
+    public function index(){
+        return $this->redirect(['action' => 'contingent']);
+    }
+
     /*
      * Get all students with Contingent
      */
@@ -130,8 +135,7 @@ class SyncController extends AppController
 
 
             if ($this->request->data['archive']==on){
-
-
+                $this->_sync_archive();
             }
 
             if ($this->request->data(['all_students'])==on){
@@ -146,23 +150,53 @@ class SyncController extends AppController
                 $data['statistics']=json_encode($this->options);
                 $data['date']=mktime();
                 if ($this->Synchronized->save($data)) {
-                    $this->Flash->success('Status Ok!');
+                    $this->message[]['message']='Sync is Ok. DB write status Ok.';
                 }
-
             }
-
-
+            $this->Flash->error_form($this->message);
         }
         $this->render('index');
     }
 
-    public function _api_json_contingent($semester){
-        $this->_get_students_semesters($semester);
-        $this->_sync_C_with_LDB_users();
-//        $this->set('students',$this->students);
-        $this->render('index');
+    private function _sync_archive(){
+        $this->loadModel('Students');
+        $students = $this->Students->find()->where(['((grade_level > 9) OR ((grade_level IN (1,2,3)) AND (school_id=44)))']);
+        foreach($students as $student){
+            $student_of_contingent = $this->contingent->gets("SELECT STUDENTS.ARCHIVE FROM STUDENTS WHERE STUDENTID LIKE '".$student->student_id."'");
+            if ($student_of_contingent[1]['ARCHIVE']==1){
+                $data = $this->Students->get($student->id);
+                $data['status_id']=10;
+                if ($this->Students->save($data)) {
+                    $this->status=true;
+                    $this->options['students_arhive']++;
+                    $this->message[]['message']='Students is in archive: '. $this->options['students_arhive'];
+                }
+            }
+        }
+        if($this->options['students_arhive']==0){
+            $this->message[]['message']="Sorry, no isn't the students in archive of Contingent now";
+        }
     }
 
+//-----------------------------------------------------------------------------------------------------------------------
+    public function api(){
+        $this->_get_students();
+        $this->_sync_C_with_LDB_users();
+        if ($this->status==true){
+            $this->loadModel('Synchronized');
+            $data = $this->Synchronized->newEntity();
+            $data['status_contingent']='ok';
+            $data['status_google']='--';
+            $data['statistics']=json_encode($this->options);
+            $data['date']=mktime();
+            if ($this->Synchronized->save($data)) {
+//                $this->message[]['message']='Sync is Ok. DB write status Ok.';
+            }
+        }
+        $this->layout = 'ajax';
+        $this->render(false);
+    }
+//-----------------------------------------------------------------------------------------------------------------------
     /*
      * Sync Contingent with Local DataBase
      */
@@ -187,7 +221,7 @@ class SyncController extends AppController
                         if ($this->Specials->save($data)) {
                             $this->options['rename_specials']++;
                             $this->status=true;
-                            $this->Flash->success('Editing'.$this->options['rename_specials']);
+                            $this->message[]['message']='Editing speciality: '.$this->options['rename_specials'];
                         }
                     }
                 }else{
@@ -197,9 +231,13 @@ class SyncController extends AppController
                     if ($this->Specials->save($data)) {
                         $this->options['new_specials']++;
                         $this->status=true;
-                        $this->Flash->success('Status Ok!');
+                        $this->message[]['message']='New speciality: '.$this->options['new_specials'];
+
                     }
                 }
+        }
+        if(($this->options['rename_specials']==0) and ($this->options['new_specials']==0)){
+            $this->message[]['message']="Sorry, no isn't the new speciality in Contingent now";
         }
     }
 
@@ -254,7 +292,7 @@ class SyncController extends AppController
                             if ($this->Students->save($data)) {
                                 $this->options['rename_student']++;
                                 $this->status=true;
-                                $this->Flash->success('Editing'.$this->options['rename_student']);
+//                                $this->message[]['message']='Editing students: '.$this->options['rename_student'];
                             }
                         }
 
@@ -280,15 +318,19 @@ class SyncController extends AppController
 
                     if (isset($student_login_clone)){
                         $data['status_id'] = 3;
+                        $this->options['clone_login_in students']++;
                     }
 
                     if ($this->Students->save($data)) {
                         $this->options['new_student']++;
                         $this->status=true;
-                        $this->Flash->success('Status Ok!');
+//                        $this->message[]['message']='New students: '.$this->options['new_student'];
                     }
                 }
             }
+        }
+        if(($this->options['rename_student']==0) and ($this->options['new_student']==0)){
+            $this->message[]['message']="Sorry, no isn't the new students in Contingent now";
         }
 
     }
@@ -319,14 +361,13 @@ class SyncController extends AppController
      * implode fio -> fname, lname
      */
     private function _emplode_fi($str){
+        $str = str_replace("(","",$str);
+        $str = str_replace(")","",$str);
         $fullname = explode(" ", $str);
         $name['fname']=$fullname[0];
         $fullname[0] = str_replace("'","",$fullname[0]);
-        $fullname[0] = str_replace("(","",$fullname[0]);
         $fullname[1] = str_replace("'","",$fullname[1]);
-        $fullname[1] = str_replace("(","",$fullname[1]);
         $fullname[2] = str_replace("'","",$fullname[2]);
-        $fullname[2] = str_replace("(","",$fullname[2]);
         $name['uname']=$this->_create_username($fullname[0])."_".$this->_create_username($fullname[1][0].$fullname[1][1].$fullname[1][2].$fullname[1][3].$fullname[2][0].$fullname[2][1].$fullname[2][2].$fullname[2][3]);
         unset($fullname[0]);
         $name['lname']=implode(" ", $fullname);

@@ -39,7 +39,7 @@
                     <a href="/Users/index"><i class="fa fa-fw fa-edit"></i>Control of users</a>
                 </li>
                 <li>
-                    <a href="#"><i class="fa fa-fw fa-edit"></i>Data for the email</a>
+                    <a href="/Settings/index"><i class="fa fa-fw fa-edit"></i>Configuration</a>
                 </li>
             </ul>
         </li>

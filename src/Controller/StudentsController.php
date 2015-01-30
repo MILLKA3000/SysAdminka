@@ -103,17 +103,20 @@ class StudentsController extends AppController
      * @return void
      * @throws \Cake\Network\Exception\NotFoundException
      */
-//    public function delete($id = null)
-//    {
-//        $this->request->allowMethod(['post', 'delete']);
-//        $student = $this->Students->get($id);
-//        if ($this->Students->delete($student)) {
-//            $this->Flash->success('The student has been deleted.');
-//        } else {
-//            $this->Flash->error('The student could not be deleted. Please, try again.');
-//        }
-//        return $this->redirect(['action' => 'index']);
-//    }
+    public function delete($id = null)
+    {
+        $student = $this->Students->find()->where(['status_id'=>10,'id'=>$id])->first();
+        if (isset($student)){
+        if ($this->Students->delete($student)) {
+            $this->Flash->success('The student has been deleted.');
+        } else {
+            $this->Flash->error('The student could not be deleted. Please, try again.');
+        }
+        }else{
+            $this->Flash->error('The student could not be deleted. Please, try again.');
+        }
+        return $this->redirect(['action' => 'index']);
+    }
 
 
 

@@ -74,3 +74,16 @@
     margin-top: 10px;
 }
 
+.sync{
+    color: #fff;
+    background-color: #E0FFC8;
+    border-color: #A0FFB3;
+}
+.sync:hover{
+    color: #fff;
+    background-color: rgba(73, 203, 255, 0.36);
+    border-color: rgba(38, 187, 221, 0.66);
+}
+.disabled{
+    cursor: not-allowed;
+}

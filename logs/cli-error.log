@@ -395,3 +395,21 @@ Stack Trace:
 #13 {main}
 
 
+2015-01-30 15:30:23 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'c2sysadmin.synhronized' doesn't exist
+Stack Trace:
+#0 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'synhronized', Array, Object(Cake\Database\Schema\Table))
+#1 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(65): Cake\Database\Schema\Collection->describe('synhronized', Array)
+#2 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Table.php(364): Cake\Database\Schema\CachedCollection->describe('synhronized')
+#3 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\ORM\Table.php(440): Cake\ORM\Table->schema()
+#4 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\plugins\Bake\src\Shell\Task\ViewTask.php(269): Cake\ORM\Table->primaryKey()
+#5 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\plugins\Bake\src\Shell\Task\ViewTask.php(139): Bake\Shell\Task\ViewTask->_loadController()
+#6 [internal function]: Bake\Shell\Task\ViewTask->main('synhronized')
+#7 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Console\Shell.php(387): call_user_func_array(Array, Array)
+#8 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Console\Shell.php(382): Cake\Console\Shell->runCommand(Array, false)
+#9 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(200): Cake\Console\Shell->runCommand(Array, true)
+#10 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(171): Cake\Console\ShellDispatcher->_dispatch()
+#11 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(122): Cake\Console\ShellDispatcher->dispatch()
+#12 D:\SERVERPHP\OpenServer\domains\SysMilka\SysAdminka\bin\cake.php(20): Cake\Console\ShellDispatcher::run(Array)
+#13 {main}
+
+

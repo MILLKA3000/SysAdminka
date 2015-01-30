@@ -11,7 +11,6 @@ $cakeDescription = 'SysAdminka(TDMU)';
         <?= $this->fetch('title') ?>
     </title>
     <?= $this->Html->meta('icon') ?>
-
     <?= $this->Html->css('bootstrap.css') ?>
     <?= $this->Html->css('sysadmin.css') ?>
     <?= $this->Html->css('sb-admin.css') ?>

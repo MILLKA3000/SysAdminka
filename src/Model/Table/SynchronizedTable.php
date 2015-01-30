@@ -24,6 +24,7 @@ class SynchronizedTable extends Table
         $this->primaryKey('id');
     }
 
+
     /**
      * Default validation rules.
      *

@@ -13,6 +13,7 @@
     <?= $this->Html->meta('icon') ?>
 
     <?= $this->Html->css('bootstrap.css') ?>
+    <?= $this->Html->css('bootstrap.min.css') ?>
     <?= $this->Html->css('sysadmin.css') ?>
     <?= $this->Html->css('../font-awesome/css/font-awesome.min.css') ?>
     <?= $this->Html->script('jquery.js') ?>

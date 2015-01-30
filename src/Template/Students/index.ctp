@@ -17,14 +17,14 @@
     <table cellpadding="0" cellspacing="0" class="table table-hover">
     <thead>
         <tr>
-            <th  class='hidden-xs hidden-sm' style='width:250px'><?= $this->Paginator->sort('school_id','Department') ?></th>
-            <th  class='hidden-xs hidden-sm' style='width:250px'><?= $this->Paginator->sort('special_id','Special') ?></th>
-            <th class='hidden-xs hidden-sm' style='width:200px'><?= $this->Paginator->sort('grade_level','Semester') ?></th>
-            <th class='hidden-xs hidden-sm' style='width:200px'><?= $this->Paginator->sort('student_id') ?></th>
-            <th class='hidden-xs hidden-sm' style='width:200px'><?= $this->Paginator->sort('groupnum') ?></th>
-            <th style='width:200px'><?= $this->Paginator->sort('first_name') ?></th>
-            <th style='width:200px'><?= $this->Paginator->sort('last_name') ?></th>
-            <th style='width:200px'><?= $this->Paginator->sort('user_name') ?></th>
+            <th  class='hidden-xs hidden-sm' style='width:150px'><?= $this->Paginator->sort('school_id','Department') ?></th>
+            <th  class='hidden-xs hidden-sm' style='width:150px'><?= $this->Paginator->sort('special_id','Special') ?></th>
+            <th class='hidden-xs hidden-sm' style='width:20px'><?= $this->Paginator->sort('grade_level','Semester') ?></th>
+            <th class='hidden-xs hidden-sm' style='width:50px'><?= $this->Paginator->sort('student_id') ?></th>
+            <th class='hidden-xs hidden-sm' style='width:20px'><?= $this->Paginator->sort('groupnum') ?></th>
+            <th style='width:150px'><?= $this->Paginator->sort('first_name') ?></th>
+            <th style='width:150px'><?= $this->Paginator->sort('last_name') ?></th>
+            <th style='width:150px'><?= $this->Paginator->sort('user_name') ?></th>
 
             <th style='width:200px'><?= $this->Form->input('status',[
                     'options' => $status,
@@ -57,6 +57,8 @@
                 <?= $student->has('status') ?  $student->status->name:'' ?>
             <td class="actions">
                 <?= $this->Html->link(__('Edit'), ['action' => 'edit', $student->id],['class'=>'btn btn-warning']) ?>
+                <?= $student->status_id==10 ? $this->Html->link(__('Delete'), ['action' => 'delete', $student->id],['class'=>'btn btn-danger']): ''?>
+
             </td>
         </tr>
 

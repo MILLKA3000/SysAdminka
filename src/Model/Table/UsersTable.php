@@ -62,4 +62,5 @@ class UsersTable extends Table
         $rules->add($rules->isUnique(['email']));
         return $rules;
     }
+
 }
