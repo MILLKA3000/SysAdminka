@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f1f1f89-f03c-4650-94cd-3a0807349563" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/SyncController.php" afterPath="$PROJECT_DIR$/src/Controller/SyncController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
     </list>
     <ignored path="SysAdminka.iws" />
     <ignored path=".idea/workspace.xml" />

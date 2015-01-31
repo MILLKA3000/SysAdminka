@@ -2,6 +2,7 @@ tmp/*
 .idea/*
 [Cc]onfig/core.php
 [Cc]onfig/database.php
+[Cc]onfig/app.php
 src/Controller/Firebird/*
 app/tmp/*
 app/[Cc]onfig/core.php
