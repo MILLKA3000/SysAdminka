@@ -4,7 +4,9 @@ tmp/*
 [Cc]onfig/database.php
 [Cc]onfig/app.php
 src/Controller/Firebird/*
+app/src/Controller/Firebird/*
 app/tmp/*
 app/[Cc]onfig/core.php
+app/[Cc]onfig/app.php
 app/[Cc]onfig/database.php
 !empty
