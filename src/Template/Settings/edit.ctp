@@ -4,24 +4,22 @@
         <legend><?= __('Edit Setting') ?></legend>
 
 
-        <?php if (isset($setting->type)){?>
+        <?php if (isset($setting)){?>
             <fieldset <?= $disabled ?>>
-                <?php
-                    echo $this->Form->input('name',['class'=>'form-control','type'=>'text']);
-                ?>
+                <?= $this->Form->input('name',['class'=>'form-control','type'=>'text']); ?>
             </fieldset>
-            <?php
-                    //$setting = json_decode($setting->type,true);
-                     echo $this->Form->input('note',['class'=>'form-control']);
-            ?>
-<!--            --><?php //if(isset($setting['name'])) echo $this->element('/config/title',array('title' =>$setting['name']));?>
-<!--            --><?php //if(isset($setting['type']['count'])) echo $this->element('config/count',array('count' =>$setting['type']['count']));?>
-<!--            --><?php //if(isset($setting['type']['time'])) echo $this->element('config/time',array('time' =>$setting['type']['time']));?>
-<!--            --><?php //if(isset($setting['type']['rupture'])) echo $this->element('config/rupture',array('rupture' =>$setting['type']['rupture']));?>
-<!--            --><?php //if(isset($setting['type']['config'])) echo $this->element('config/array',array('array' =>$setting['type']['config']));?>
+
+            <?= $disabled!='disabled' ? $this->Form->input('note',['class'=>'form-control']) : '';?>
+            <?= $disabled!='disabled' ? $this->Form->input('type',['class'=>'form-control','options' => ['text'=>'Text Input','checkbox'=>'CheckBox','number'=>'Number input','array_email'=>'List Emails']]) : '';?>
+
+            <?= $setting->type==null ? $this->element('/config/text',array('note' =>$setting->note)) : '' ;?>
+            <?= $setting->type=='text' ? $this->element('/config/text',array('note' =>$setting->note)) : '' ;?>
+            <?= $setting->type=='checkbox' ? $this->element('/config/checkbox',array('note' =>$setting->note)) : '' ;?>
+            <?= $setting->type=='number' ? $this->element('/config/number',array('note' =>$setting->note)) : '' ;?>
+            <?= $setting->type=='array_email' ? $this->element('/config/array_email',array('note' =>$setting->note)) : '' ;?>
 
             <?php
-                   echo $this->Form->input('value',['class'=>'form-control','type'=>$setting->type,'label'=>$setting->note]);
+                  // echo $this->Form->input('value',['class'=>'form-control','type'=>$setting->type,'label'=>$setting->note]);
             ?>
                 </fieldset>
             <br/>

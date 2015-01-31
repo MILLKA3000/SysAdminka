@@ -71,6 +71,9 @@ class SettingsController extends AppController
             'contain' => []
         ]);
         if ($this->request->is(['patch', 'post', 'put'])) {
+            if (is_array($this->request->data['config'])){
+                $this->request->data['value'] = json_encode($this->request->data['config']);
+            }
             $setting = $this->Settings->patchEntity($setting, $this->request->data);
             if ($this->Settings->save($setting)) {
                 $this->Flash->success('The setting has been saved.');
@@ -100,4 +103,7 @@ class SettingsController extends AppController
 //        }
 //        return $this->redirect(['action' => 'index']);
 //    }
+
+
+
 }

@@ -174,7 +174,7 @@ class SyncController extends AppController
             }
         }
         if($this->options['students_arhive']==0){
-            $this->message[]['message']="Sorry, no isn't the students in archive of Contingent now";
+            $this->message[]['message']="Sorry, there are no new records in Contingent databace";
         }
     }
 
@@ -237,7 +237,7 @@ class SyncController extends AppController
                 }
         }
         if(($this->options['rename_specials']==0) and ($this->options['new_specials']==0)){
-            $this->message[]['message']="Sorry, no isn't the new speciality in Contingent now";
+            $this->message[]['message']="Sorry, there are no new records in Contingent databace";
         }
     }
 
@@ -330,7 +330,7 @@ class SyncController extends AppController
             }
         }
         if(($this->options['rename_student']==0) and ($this->options['new_student']==0)){
-            $this->message[]['message']="Sorry, no isn't the new students in Contingent now";
+            $this->message[]['message']="Sorry, there are no new records in Contingent databace";
         }
 
     }

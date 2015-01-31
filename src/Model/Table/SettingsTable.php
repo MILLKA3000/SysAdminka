@@ -51,9 +51,21 @@ class SettingsTable extends Table
             ->add('id', 'valid', ['rule' => 'numeric'])
             ->allowEmpty('id', 'create')
             ->requirePresence('name', 'create')
-            ->notEmpty('name');
+            ->notEmpty('name')
+            ->requirePresence('note', 'create')
+            ->notEmpty('note')
+            ->requirePresence('value', 'create')
+            ->notEmpty('value');
 
 
         return $validator;
     }
+
+//    public function beforeSave($event, $entity, $options)
+//    {
+//        die;
+//        is_array($this->value)===true ? $this->value = json_encode($setting->value,true) : $this->value;
+//    }
+
+
 }
