@@ -221,7 +221,7 @@ class SyncController extends AppController
                         if ($this->Specials->save($data)) {
                             $this->options['rename_specials']++;
                             $this->status=true;
-                            $this->message[]['message']='Editing speciality: '.$this->options['rename_specials'];
+//                            $this->message[]['message']='Editing speciality: '.$this->options['rename_specials'];
                         }
                     }
                 }else{
@@ -231,7 +231,7 @@ class SyncController extends AppController
                     if ($this->Specials->save($data)) {
                         $this->options['new_specials']++;
                         $this->status=true;
-                        $this->message[]['message']='New speciality: '.$this->options['new_specials'];
+//                        $this->message[]['message']='New speciality: '.$this->options['new_specials'];
 
                     }
                 }
