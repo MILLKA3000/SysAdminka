@@ -1,5 +1,5 @@
 <?php
-$cakeDescription = 'SysAdminka(TDMU)';
+$cakeDescription = $site_name;
 ?>
 <!DOCTYPE html>
 <html>

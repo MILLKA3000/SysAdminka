@@ -16,18 +16,8 @@
             </ul>
         </li>
         <li>
-            <a href="javascript:;" data-toggle="collapse" data-target="#Sync"><i class="fa fa-fw fa-dashboard"></i> Synchronized </a>
-            <ul id="Sync" class="collapse">
-                <li>
-                    <a href="/Sync/contingent"><i class="fa fa-fw fa-table"></i>Contingent</a>
-                </li>
-                <li>
-                    <a href="#"><i class="fa fa-fw fa-desktop"></i>Google</a>
-                </li>
-<!--                <li>-->
-<!--                    </i><a href="#"><i class="fa fa-fw fa-edit"></i>Setting kron</a>-->
-<!--                </li>-->
-            </ul>
+            <a href="/Sync/contingent" data-toggle="collapse" data-target="#Sync"><i class="fa fa-fw fa-dashboard"></i> Synchronized </a>
+
         </li>
         <li>
             <a href="javascript:;" data-toggle="collapse" data-target="#Setting"><i class="fa fa-fw fa-edit"></i> Settings </a>

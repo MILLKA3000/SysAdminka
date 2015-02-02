@@ -65,18 +65,18 @@
                         </div>
                         <div class="col-sm-6 col-md-3">
                              <div class="thumbnail sync">
-                                 <fieldset disabled>
+                                 <fieldset >
                                  <label>
                                      <?= $this->Html->image("SyncImage.png", [
                                          "alt" => "Sync",
-                                         "class"=>"col-xs-12 hidden-xs hidden-sm disabled"
+                                         "class"=>"col-xs-12 hidden-xs hidden-sm "
                                      ]);?>
-                                     <div class="caption disabled">
+                                     <div class="caption ">
                                          <h3 class="">Sync, folder with photos with Contingent </h3>
                                          <p class="alert alert-danger hidden-xs">Time of synchronization can be more than 2 minute</p>
                                          <div class="checkbox">
                                              <label>
-                                                 <input type="checkbox" name="pictures" style="width:50px;height: 40px;">
+                                                 <input type="checkbox" name="photo" style="width:50px;height: 40px;">
                                              </label>
                                          </div>
                                      </div>
@@ -109,18 +109,18 @@
                     </div>
                     <div class="col-sm-6 col-md-3">
                         <div class="thumbnail sync">
-                            <fieldset disabled>
+                            <fieldset >
                                 <label>
                                     <?= $this->Html->image("Api.png", [
                                         "alt" => "Sync",
-                                        "class"=>"col-xs-12 hidden-xs hidden-sm disabled"
+                                        "class"=>"col-xs-12 hidden-xs hidden-sm "
                                     ]);?>
-                                    <div class="caption disabled">
+                                    <div class="caption ">
                                         <h3 class="">Send photo to google (API)</h3>
                                         <p class="alert alert-danger hidden-xs">Time of synchronization can be more than ~10 minute</p>
                                         <div class="checkbox">
                                             <label>
-                                                <input type="checkbox" name="pictures" style="width:50px;height: 40px;">
+                                                <input type="checkbox" name="google_photo" style="width:50px;height: 40px;">
                                             </label>
                                         </div>
                                     </div>

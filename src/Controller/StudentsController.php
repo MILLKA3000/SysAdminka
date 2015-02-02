@@ -20,7 +20,8 @@ class StudentsController extends AppController
 
     public function index($statuses=1,$search=NULL)
     {
-
+        $this->loadModel('Settings');
+        $this->settings = $this->Settings->_get_settings();
         $this->paginate = [
             'contain' => ['Schools','Status','Specials'],
             'conditions' => ['AND'=>['Students.status_id' => $statuses,'OR'=>['Students.last_name LIKE "%'.$search.'%"','Students.first_name LIKE "%'.$search.'%"']]],
@@ -28,6 +29,7 @@ class StudentsController extends AppController
         ];
         $status = $this->Students->Status->find('list', ['limit' => 50]);
         $this->set('students', $this->paginate($this->Students));
+        $this->set('viev_photo_students',$this->Settings->__find_setting('viev_photo_students',$this->settings));
         $this->set(compact('status','statuses','search'));
     }
 

@@ -40,7 +40,8 @@
     </thead>
     <tbody>
     <?php foreach ($students as $student): ?>
-        <tr>
+        <tr <?= $viev_photo_students==1 ? ' class="popover_students hidden-xs hidden-sm" data-toggle="popover" img="'.$student->user_name.'" ' : '' ?>>
+
             <td  class='hidden-xs hidden-sm'>
                 <?= $student->has('school') ? $this->Html->link($student->school->name, ['controller' => 'Schools', 'action' => 'edit', $student->school->id]) : '' ?>
             </td>
@@ -75,4 +76,19 @@
     </div>
 </div>
 
+<script>
+    $(document).ready(function(){
 
+//        $('.popover_students').popover({placement: 'left', content: '<img src="/photo/"'+$(this).attr('img')+'.jpg" >', html: true})
+
+
+    $('table').on('mouseenter', '.popover_students', function() {
+        $(this).popover({placement: 'left', content: '<img src="/photo/'+$(this).attr('img')+'.jpg" class="img-responsive" style="max-height:150px">', html: true})
+        $(this).popover('show');
+    });
+    $('table').on('mouseleave', '.popover_students', function() {
+        $(this).popover('hide');
+    });
+
+    });
+</script>

@@ -5,7 +5,7 @@
         foreach(json_decode($setting->value,true) as $mas):?>
         <tr  id="tr-in-del-<?php echo $i;?>">
             <td>
-                <input type="email" name="config[]" class="form-control" placeholder="" id="in-del-<?php echo $i;?>"  value="<?php echo $mas;?>">
+                <input type="<?= $type ?>" name="config[]" class="form-control" placeholder="" id="in-del-<?php echo $i;?>"  value="<?php echo $mas;?>">
             </td>
             <td>
                 <button type="button" class="btn btn-danger delete-arr" id="del-<?php echo $i;?>">Delete</button>

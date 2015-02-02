@@ -8,7 +8,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="/Pages/display">SysAdmin TDMU</a>
+        <a class="navbar-brand" href="/Pages/display"><?= isset($site_name) ? $site_name : 'Default' ?></a>
     </div>
 
     <?= $this->element('menu/topmenu');?>

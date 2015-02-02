@@ -53,9 +53,7 @@ class SettingsTable extends Table
             ->requirePresence('name', 'create')
             ->notEmpty('name')
             ->requirePresence('note', 'create')
-            ->notEmpty('note')
-            ->requirePresence('value', 'create')
-            ->notEmpty('value');
+            ->notEmpty('note');
 
 
         return $validator;

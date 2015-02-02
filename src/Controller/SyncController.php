@@ -3,8 +3,21 @@ namespace App\Controller;
 use App\Controller\AppController;
 use Cake\Network\Request;
 
+use Cake\Network\Http\Client;;
+
 include_once('Firebird/class_firebird.php');
+include_once('Component/Google_Api/autoload.php');
+include_once ('Component/Google_Api/src/Google/Client.php');
+include_once ('Component/Google_Api/src/Google/Sevice/Oauth2.php');
+include_once ('Component/Google_Api/src/Google/Auth/AssertionCredentials.php');
+
 use class_ibase_fb;
+use Google_Client;
+use Google_Auth_AssertionCredentials;
+use Google_Service_Directory;
+use Google_Service_Oauth2;
+
+
 
 /**
  * Students Controller
@@ -98,9 +111,18 @@ class SyncController extends AppController
         '\'' => ''
     ];
 
+    private $client_id = '943473990893-ja51t9rhce8789lal48gtpmbh4oht945.apps.googleusercontent.com';
+    private $service_account_name = '943473990893-gkf9eek54q9ij5oh0nm1e77487fdd8n4@developer.gserviceaccount.com';
+    private $client_secret = 'NqRmhVDrVd54AgEp9-7E7f4H';
+    private $redirect_uri = 'http://adm.milka.co.vu/sync/oauth2callback';
+    private $client;
+
+
     public function beforeFilter(){
         $this->contingent = new class_ibase_fb();
         $this->contingent->sql_connect();
+        $this->client = new Google_Client();
+//        google_api_php_client_autoload();
     }
 
     public function index(){
@@ -118,13 +140,89 @@ class SyncController extends AppController
 
     private function _get_students(){
         $this->students = $this->contingent->gets("
-			SELECT STUDENTS.DEPARTMENTID,STUDENTS.SEMESTER,STUDENTS.FIO,STUDENTS.STUDENTID,STUDENTS.PHOTO,STUDENTS.ARCHIVE,STUDENTS.GROUPNUM,STUDENTS.STATUS,STUDENTS.SPECIALITYID
+			SELECT FIRST 1 STUDENTS.DEPARTMENTID,STUDENTS.SEMESTER,STUDENTS.FIO,STUDENTS.STUDENTID,STUDENTS.PHOTO,STUDENTS.ARCHIVE,STUDENTS.GROUPNUM,STUDENTS.STATUS,STUDENTS.SPECIALITYID
 			FROM STUDENTS WHERE ARCHIVE=0");
     }
     private function _get_speciality(){
         $this->speciality = $this->contingent->gets("
 			SELECT SPECIALITYID,SPECIALITY FROM GUIDE_SPECIALITY WHERE USE=1");
     }
+
+    public function oauth2callback(){
+        $this->client->setApplicationName("SysAdminka");
+        $this->client->setClientId($this->client_id);
+        $this->client->setClientSecret($this->client_secret);
+        $this->client->setRedirectUri($this->redirect_uri);
+        $this->client->addScope('https://www.googleapis.com/auth/admin.directory.user');
+
+        $objOAuthService = new Google_Service_Oauth2($this->client);
+
+        if (isset($_GET['code'])) { // we received the positive auth callback, get the token and store it in session
+            $this->client->authenticate($_GET['code']);
+            $_SESSION['access_token'] = $this->client->getAccessToken();
+
+        }
+
+        if (isset($_SESSION['access_token'])) { // extract token from session and configure client
+            $this->client->setAccessToken($_SESSION['access_token']);
+        }
+
+        if (!$this->client->getAccessToken()) {
+            $authUrl = $this->client->createAuthUrl();
+            header("Location: ".$authUrl);
+            die;
+        }
+
+    }
+
+    private function _LDB_ToGoogle_photo(){
+        $this->_get_students();
+        $service = new Google_Service_Directory($this->client);
+        $key = file_get_contents(ROOT.DS."webroot".DS."Google_key".DS."1fa047635e4bac618edbe30d56e074cff7ad9a75-privatekey.p12");
+
+        $cred = new Google_Auth_AssertionCredentials(
+            $this->service_account_name,
+            array('https://www.googleapis.com/auth/admin.directory.user'),
+            $key,
+            'notasecret',
+            'http://oauth.net/grant_type/jwt/1.0/bearer',
+            'admin4eg@tdmu.edu.ua'
+        );
+
+        if($this->client->getAuth()->isAccessTokenExpired()) {
+            $this->client->getAuth()->refreshTokenWithAssertion($cred);
+        }
+        foreach($this->students as $student_of_contingent){
+            $img = ibase_blob_get(ibase_blob_open($student_of_contingent['PHOTO']), ibase_blob_info($student_of_contingent['PHOTO'])[0]);
+        }
+//        "photoData" => base64_decode (strtr($img, '-_,', '+/=')),
+//       $status = $service->users_photos->update()
+        $data = array(
+            "postBody" => "Google_UserPhoto",
+            "userKey" => "vasylyk_mymy@tdmu.edu.ua",
+            "mimeType"=> "image/jpeg",
+            "data" => $img,
+
+        );
+        $data = array(
+            "postBody" => "Google_UserPhoto",
+            "userKey"=> "vasylyk_mymy@tdmu.edu.ua",
+             "photoData"=> $img
+
+        );
+//        var_dump($service->users_photos);die;
+        $service->users_photos->call('update', array($data));
+//        $status = $service->users_photos->patch("vasylyk_mymy@tdmu.edu.ua","Google_UserPhoto",array($data));
+//        var_dump($service->users_photos);
+//        $status = $service->users_photos->get("admin@tdmu.edu.ua");
+//         var_dump($status);
+
+//        die;
+//        $service->users->update("vasylyk_mymy@tdmu.edu.ua","Google_User",$data);die;
+
+
+    }
+
     public function contingent(){
 
         if ($this->request->is('post')) {
@@ -142,6 +240,16 @@ class SyncController extends AppController
                  $this->_get_students();
                  $this->_sync_C_with_LDB_users();
             }
+
+            if ($this->request->data['photo']==on){
+                $this->_get_students();
+                $this->_sync_C_with_LDB_photo();
+            }
+            if ($this->request->data['google_photo']==on){
+                $this->oauth2callback();
+                $this->_LDB_ToGoogle_photo();
+            }
+
             if ($this->status==true){
                 $this->loadModel('Synchronized');
                 $data = $this->Synchronized->newEntity();
@@ -176,6 +284,23 @@ class SyncController extends AppController
         if($this->options['students_arhive']==0){
             $this->message[]['message']="Sorry, there are no new records in Contingent databace";
         }
+    }
+
+    private function _view_photo_blob($photo){
+        header("Content-Type: image/jpeg");
+        ibase_blob_echo($photo);
+    }
+
+    private function _sync_C_with_LDB_photo(){
+
+        foreach($this->students as $student_of_contingent){
+            $name = $this->_emplode_fi($student_of_contingent['FIO']);
+            $img = ibase_blob_get(ibase_blob_open($student_of_contingent['PHOTO']), ibase_blob_info($student_of_contingent['PHOTO'])[0]);
+            file_put_contents('photo/'.$name['uname'].'.jpg', $img);
+
+        }
+        $this->message[]['message']='Sync photos was successful';
+
     }
 
 //-----------------------------------------------------------------------------------------------------------------------

@@ -40,6 +40,9 @@ class AppController extends Controller
      */
     public function initialize()
     {
+        $this->loadModel('Settings');
+        $this->set('site_name',$this->Settings->__find_setting('site_name',$this->Settings->_get_settings()));
+
         $this->loadComponent('Flash');
         $this->loadComponent('Auth', [
             'authenticate' => [

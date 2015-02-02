@@ -16,7 +16,7 @@
             <?= $setting->type=='text' ? $this->element('/config/text',array('note' =>$setting->note)) : '' ;?>
             <?= $setting->type=='checkbox' ? $this->element('/config/checkbox',array('note' =>$setting->note)) : '' ;?>
             <?= $setting->type=='number' ? $this->element('/config/number',array('note' =>$setting->note)) : '' ;?>
-            <?= $setting->type=='array_email' ? $this->element('/config/array_email',array('note' =>$setting->note)) : '' ;?>
+            <?= $setting->type=='array_email' ? $this->element('/config/array_email',array('note' =>$setting->note,'type'=>'email')) : '' ;?>
 
             <?php
                   // echo $this->Form->input('value',['class'=>'form-control','type'=>$setting->type,'label'=>$setting->note]);

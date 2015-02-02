@@ -27,6 +27,7 @@ class UsersController extends AppController
 
     public function logout()
     {
+        unset($_SESSION['access_token']);
         return $this->redirect($this->Auth->logout());
     }
 
