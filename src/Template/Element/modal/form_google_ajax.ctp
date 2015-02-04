@@ -35,15 +35,19 @@
                 $("#status").text('Sending :'+1+" from "+max);
                 $("#user").text("User: "+value.user_name+"@tdmu.edu.ua");
                 $.post( "/sync/LDB_ToGoogle_photo/"+value.user_name, function(sync) {
+                    count++;
                     if (sync=="Ok") {
-                        $("#status").text('Sending :'+(count+1)+" from "+max);
-                        $("#user").text("User: "+value.user_name+"@tdmu.edu.ua");
-                        count++;
+                        $.post( "/students/save_google_post/"+value.id, function(status) {
+                            if(status=="Ok"){
 
-                        $(".progress-bar").attr('aria-valuenow',count);
-                        $(".progress-bar").attr('style','width:'+count/max*100+'%');
-                        $(".counting").text(Math.round(count/max*100)+'%');
+                            }
+                        });
                     }
+                    $("#status").text('Sending :'+(count)+" from "+max);
+                    $("#user").text("User: "+value.user_name+"@tdmu.edu.ua");
+                    $(".progress-bar").attr('aria-valuenow',count);
+                    $(".progress-bar").attr('style','width:'+count/max*100+'%');
+                    $(".counting").text(Math.round(count/max*100)+'%');
                     if (count==max){
                         $('.loginModal').modal('hide')
                     }

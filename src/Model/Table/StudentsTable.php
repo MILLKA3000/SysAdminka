@@ -92,7 +92,8 @@ class StudentsTable extends Table
             ->requirePresence('status_id', 'create')
             ->notEmpty('status_id')
             ->add('send_photo_google', 'valid', ['rule' => 'numeric'])
-            ->requirePresence('send_photo_google', 'create');
+            ->requirePresence('send_photo_google', 'create')
+            ->notEmpty('send_photo_google');
 
         return $validator;
     }

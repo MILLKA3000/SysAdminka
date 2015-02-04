@@ -213,11 +213,9 @@ class SyncController extends AppController
                 } catch (\Exception $e) {
                     $datas->setPhotoData($this->base64url_encode(file_get_contents(ROOT.DS."webroot".DS."photo".DS.$user.".jpg")));
                     $this->service->users_photos->update($user.'@tdmu.edu.ua',$datas);
+                    echo "Ok";
                 }
-
-
             }
-        echo "Ok";
         $this->layout='ajax';
         $this->autoRender = false;
     }

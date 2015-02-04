@@ -36,8 +36,17 @@ class StudentsController extends AppController
     public function count_student(){
         $this->layout='ajax';
         $this->autoRender = false;
-        $data = $this->Students->find()->all();
+        $data = $this->Students->find()->where(['(send_photo_google=0 AND status_id=1)']);
         echo json_encode($data);
+    }
+
+    public function save_google_post($id){
+        $data = $this->Students->get($id);
+        $data['send_photo_google']=1;
+        $this->Students->save($data);
+        echo "Ok";
+        $this->layout='ajax';
+        $this->autoRender = false;
     }
 
     /**
