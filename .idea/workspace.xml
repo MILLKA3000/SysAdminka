@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6f1f1f89-f03c-4650-94cd-3a0807349563" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/StudentsController.php" afterPath="$PROJECT_DIR$/src/Controller/StudentsController.php" />
-    </list>
+    <list default="true" id="6f1f1f89-f03c-4650-94cd-3a0807349563" name="Default" comment="" />
     <ignored path="SysAdminka.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,7 +26,7 @@
       <file leaf-file-name="SyncController.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Controller/SyncController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="210" column="0" selection-start="6037" selection-end="6445" vertical-scroll-proportion="0.36977887" vertical-offset="3632" max-vertical-offset="9519">
+            <state line="215" column="30" selection-start="6427" selection-end="6427" vertical-scroll-proportion="0.4864865" vertical-offset="3632" max-vertical-offset="9519">
               <folding>
                 <element signature="e#431#450#0" expanded="true" />
                 <marker date="1423072276657" expanded="true" signature="4107:4306" placeholder="SELECT STUDE..STUDENTS..." />
@@ -926,7 +924,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/SyncController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="210" column="0" selection-start="6037" selection-end="6445" vertical-scroll-proportion="0.36977887" vertical-offset="3632" max-vertical-offset="9519">
+        <state line="215" column="30" selection-start="6427" selection-end="6427" vertical-scroll-proportion="0.4864865" vertical-offset="3632" max-vertical-offset="9519">
           <folding>
             <element signature="e#431#450#0" expanded="true" />
             <marker date="1423072276657" expanded="true" signature="4107:4306" placeholder="SELECT STUDE..STUDENTS..." />
