@@ -36,7 +36,7 @@ class StudentsController extends AppController
     public function count_student(){
         $this->layout='ajax';
         $this->autoRender = false;
-        $data = $this->Students->find()->where(['(send_photo_google=0 AND status_id=1)']);
+        $data = $this->Students->find()->where(['(send_photo_google=0 AND status_id=1)'])->limit($this->Settings->__find_setting('limit_send_photo',$this->Settings->_get_settings()));
         echo json_encode($data);
     }
 

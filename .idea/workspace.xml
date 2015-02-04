@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6f1f1f89-f03c-4650-94cd-3a0807349563" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/StudentsController.php" afterPath="$PROJECT_DIR$/src/Controller/StudentsController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/Table/StudentsTable.php" afterPath="$PROJECT_DIR$/src/Model/Table/StudentsTable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/SyncController.php" afterPath="$PROJECT_DIR$/src/Controller/SyncController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Template/Element/modal/form_google_ajax.ctp" afterPath="$PROJECT_DIR$/src/Template/Element/modal/form_google_ajax.ctp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SysAdminka.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,14 +25,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="SyncController.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="SyncController.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Controller/SyncController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="209" column="51" selection-start="6010" selection-end="6010" vertical-scroll-proportion="-11.28" vertical-offset="3632" max-vertical-offset="9519">
+            <state line="210" column="0" selection-start="6037" selection-end="6445" vertical-scroll-proportion="0.36977887" vertical-offset="3632" max-vertical-offset="9519">
               <folding>
                 <element signature="e#431#450#0" expanded="true" />
-                <marker date="1423070642530" expanded="true" signature="4107:4306" placeholder="SELECT STUDE..STUDENTS..." />
-                <marker date="1423070642530" expanded="true" signature="4413:4477" placeholder="SELECT SPECI..GUIDE_SPECIALITY..." />
+                <marker date="1423072276657" expanded="true" signature="4107:4306" placeholder="SELECT STUDE..STUDENTS..." />
+                <marker date="1423072276657" expanded="true" signature="4413:4477" placeholder="SELECT SPECI..GUIDE_SPECIALITY..." />
               </folding>
             </state>
           </provider>
@@ -91,16 +87,25 @@
       <file leaf-file-name="StudentsController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controller/StudentsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="42" selection-start="1314" selection-end="1314" vertical-scroll-proportion="-9.12" vertical-offset="570" max-vertical-offset="2793">
+            <state line="35" column="36" selection-start="1075" selection-end="1075" vertical-scroll-proportion="-20.52" vertical-offset="152" max-vertical-offset="2793">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StudentsTable.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="AppController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Controller/AppController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="43" column="110" selection-start="1213" selection-end="1315" vertical-scroll-proportion="-10.68" vertical-offset="303" max-vertical-offset="1273">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StudentsTable.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Model/Table/StudentsTable.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="95" column="41" selection-start="3164" selection-end="3164" vertical-scroll-proportion="2.113664" vertical-offset="0" max-vertical-offset="2261">
+            <state line="95" column="41" selection-start="3164" selection-end="3164" vertical-scroll-proportion="-69.92" vertical-offset="0" max-vertical-offset="2261">
               <folding />
             </state>
           </provider>
@@ -110,15 +115,6 @@
         <entry file="file://$PROJECT_DIR$/src/Model/Entity/Student.php">
           <provider selected="true" editor-type-id="text-editor">
             <state line="30" column="8" selection-start="637" selection-end="656" vertical-scroll-proportion="-22.8" vertical-offset="0" max-vertical-offset="741">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ajax.ctp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Template/Layout/ajax.ctp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="0" selection-start="595" selection-end="595" vertical-scroll-proportion="-2.28" vertical-offset="0" max-vertical-offset="190">
               <folding />
             </state>
           </provider>
@@ -194,9 +190,9 @@
         <option value="$PROJECT_DIR$/src/Model/Entity/Student.php" />
         <option value="$PROJECT_DIR$/src/Template/Sync/index.ctp" />
         <option value="$PROJECT_DIR$/src/Model/Table/StudentsTable.php" />
-        <option value="$PROJECT_DIR$/src/Controller/SyncController.php" />
         <option value="$PROJECT_DIR$/src/Template/Element/modal/form_google_ajax.ctp" />
         <option value="$PROJECT_DIR$/src/Controller/StudentsController.php" />
+        <option value="$PROJECT_DIR$/src/Controller/SyncController.php" />
       </list>
     </option>
   </component>
@@ -591,11 +587,6 @@
         <state line="30" column="17" selection-start="963" selection-end="963" vertical-scroll-proportion="-8.0" vertical-offset="104" max-vertical-offset="1387" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/AppController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="37" selection-start="1204" selection-end="1204" vertical-scroll-proportion="-9.92" vertical-offset="303" max-vertical-offset="1273" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/cakephp/cakephp/src/Controller/Component.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="4" selection-start="623" selection-end="623" vertical-scroll-proportion="10.64" vertical-offset="342" max-vertical-offset="3154" />
@@ -902,17 +893,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/SyncController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="209" column="51" selection-start="6010" selection-end="6010" vertical-scroll-proportion="-11.28" vertical-offset="3632" max-vertical-offset="9519">
-          <folding>
-            <element signature="e#431#450#0" expanded="true" />
-            <marker date="1423070642530" expanded="true" signature="4107:4306" placeholder="SELECT STUDE..STUDENTS..." />
-            <marker date="1423070642530" expanded="true" signature="4413:4477" placeholder="SELECT SPECI..GUIDE_SPECIALITY..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Template/Element/modal/form_google_ajax.ctp">
       <provider selected="true" editor-type-id="text-editor">
         <state line="43" column="27" selection-start="1647" selection-end="1647" vertical-scroll-proportion="-22.44" vertical-offset="256" max-vertical-offset="1235">
@@ -923,17 +903,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/StudentsController.php">
+    <entry file="file://$PROJECT_DIR$/src/Model/Table/StudentsTable.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="42" selection-start="1314" selection-end="1314" vertical-scroll-proportion="-9.12" vertical-offset="570" max-vertical-offset="2793">
+        <state line="95" column="41" selection-start="3164" selection-end="3164" vertical-scroll-proportion="-69.92" vertical-offset="0" max-vertical-offset="2261">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/Table/StudentsTable.php">
+    <entry file="file://$PROJECT_DIR$/src/Controller/AppController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="95" column="41" selection-start="3164" selection-end="3164" vertical-scroll-proportion="2.113664" vertical-offset="0" max-vertical-offset="2261">
+        <state line="43" column="110" selection-start="1213" selection-end="1315" vertical-scroll-proportion="-10.68" vertical-offset="303" max-vertical-offset="1273">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/StudentsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="36" selection-start="1075" selection-end="1075" vertical-scroll-proportion="-20.52" vertical-offset="152" max-vertical-offset="2793">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/SyncController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="210" column="0" selection-start="6037" selection-end="6445" vertical-scroll-proportion="0.36977887" vertical-offset="3632" max-vertical-offset="9519">
+          <folding>
+            <element signature="e#431#450#0" expanded="true" />
+            <marker date="1423072276657" expanded="true" signature="4107:4306" placeholder="SELECT STUDE..STUDENTS..." />
+            <marker date="1423072276657" expanded="true" signature="4413:4477" placeholder="SELECT SPECI..GUIDE_SPECIALITY..." />
+          </folding>
         </state>
       </provider>
     </entry>
