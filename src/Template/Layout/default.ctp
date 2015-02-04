@@ -1,7 +1,6 @@
 <?php
 $cakeDescription = $site_name;
 ?>
-<!DOCTYPE html>
 <html>
 <head>
     <?= $this->Html->charset() ?>
@@ -51,9 +50,7 @@ $cakeDescription = $site_name;
     <!-- jQuery -->
 
     <?= $this->Html->script('angular/angular.min.js') ?>
-    <!-- Bootstrap Core JavaScript -->
     <?= $this->Html->script('bootstrap.min.js') ?>
-    <!-- Morris Charts JavaScript -->
     <?= $this->Html->script('plugins/morris/raphael.min.js') ?>
     <?= $this->Html->script('plugins/morris/morris.min.js') ?>
     <?= $this->Html->script('plugins/morris/morris-data.js') ?>

@@ -33,6 +33,13 @@ class StudentsController extends AppController
         $this->set(compact('status','statuses','search'));
     }
 
+    public function count_student(){
+        $this->layout='ajax';
+        $this->autoRender = false;
+        $data = $this->Students->find()->all();
+        echo json_encode($data);
+    }
+
     /**
      * View method
      *

@@ -28,6 +28,8 @@ class UsersController extends AppController
     public function logout()
     {
         unset($_SESSION['access_token']);
+        unset($_SESSION['service_token']);
+
         return $this->redirect($this->Auth->logout());
     }
 
@@ -56,6 +58,7 @@ class UsersController extends AppController
         ]);
         $this->set('user', $user);
     }
+
 
     /**
      * Add method

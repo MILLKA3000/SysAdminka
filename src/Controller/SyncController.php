@@ -112,35 +112,48 @@ class SyncController extends AppController
     ];
 
     private $client_id = '943473990893-ja51t9rhce8789lal48gtpmbh4oht945.apps.googleusercontent.com';
-    private $service_account_name = '943473990893-gkf9eek54q9ij5oh0nm1e77487fdd8n4@developer.gserviceaccount.com';
     private $client_secret = 'NqRmhVDrVd54AgEp9-7E7f4H';
     private $redirect_uri = 'http://adm.milka.co.vu/sync/oauth2callback';
+    private $user_for_Api =  "admin4eg@tdmu.edu.ua";
+    private $service_account_name = '943473990893-gkf9eek54q9ij5oh0nm1e77487fdd8n4@developer.gserviceaccount.com';
+
     private $client;
+    private $service;
 
 
     public function beforeFilter(){
         $this->contingent = new class_ibase_fb();
         $this->contingent->sql_connect();
+
+
         $this->client = new Google_Client();
-//        google_api_php_client_autoload();
+        $this->client->setApplicationName("SysAdminka");
+        $key = (file_get_contents(ROOT.DS."webroot".DS."Google_key".DS."1fa047635e4bac618edbe30d56e074cff7ad9a75-privatekey.p12"));
+        $this->service = new Google_Service_Directory($this->client);
+        if (isset($_SESSION['service_token'])) {
+            $this->client->setAccessToken($_SESSION['service_token']);
+        }
+        $cred = new Google_Auth_AssertionCredentials(
+            $this->service_account_name,
+            array('https://www.googleapis.com/auth/admin.directory.user'),
+            $key,
+            'notasecret'
+        );
+        $cred->sub = $this->user_for_Api;
+        $this->client->setAssertionCredentials($cred);
+        if ($this->client->getAuth()->isAccessTokenExpired()) {
+            $this->client->getAuth()->refreshTokenWithAssertion($cred);
+        }
+        $_SESSION['service_token'] = $this->client->getAccessToken();
     }
 
     public function index(){
         return $this->redirect(['action' => 'contingent']);
     }
 
-    /*
-     * Get all students with Contingent
-     */
-    private function _get_students_semesters($semester){
-//        $this->students = $this->contingent->gets("
-//			SELECT STUDENTS.DEPARTMENTID,STUDENTS.SEMESTER,STUDENTS.FIO,STUDENTS.STUDENTID,STUDENTS.PHOTO,STUDENTS.ARCHIVE,STUDENTS.GROUPNUM
-//			FROM STUDENTS WHERE STUDENTS.SEMESTER = ".$semester." and ARCHIVE=0");
-    }
-
     private function _get_students(){
         $this->students = $this->contingent->gets("
-			SELECT FIRST 1 STUDENTS.DEPARTMENTID,STUDENTS.SEMESTER,STUDENTS.FIO,STUDENTS.STUDENTID,STUDENTS.PHOTO,STUDENTS.ARCHIVE,STUDENTS.GROUPNUM,STUDENTS.STATUS,STUDENTS.SPECIALITYID
+			SELECT STUDENTS.DEPARTMENTID,STUDENTS.SEMESTER,STUDENTS.FIO,STUDENTS.STUDENTID,STUDENTS.PHOTO,STUDENTS.ARCHIVE,STUDENTS.GROUPNUM,STUDENTS.STATUS,STUDENTS.SPECIALITYID
 			FROM STUDENTS WHERE ARCHIVE=0");
     }
     private function _get_speciality(){
@@ -148,6 +161,12 @@ class SyncController extends AppController
 			SELECT SPECIALITYID,SPECIALITY FROM GUIDE_SPECIALITY WHERE USE=1");
     }
 
+
+    /*
+     *
+     *  for Oauth google authorization
+     *
+     */
     public function oauth2callback(){
         $this->client->setApplicationName("SysAdminka");
         $this->client->setClientId($this->client_id);
@@ -155,15 +174,12 @@ class SyncController extends AppController
         $this->client->setRedirectUri($this->redirect_uri);
         $this->client->addScope('https://www.googleapis.com/auth/admin.directory.user');
 
-        $objOAuthService = new Google_Service_Oauth2($this->client);
-
-        if (isset($_GET['code'])) { // we received the positive auth callback, get the token and store it in session
+        if (isset($_GET['code'])) {
             $this->client->authenticate($_GET['code']);
             $_SESSION['access_token'] = $this->client->getAccessToken();
-
         }
 
-        if (isset($_SESSION['access_token'])) { // extract token from session and configure client
+        if (isset($_SESSION['access_token'])) {
             $this->client->setAccessToken($_SESSION['access_token']);
         }
 
@@ -172,82 +188,65 @@ class SyncController extends AppController
             header("Location: ".$authUrl);
             die;
         }
+        $this->redirect(array("controller" => "Sync","action" => "contingent"));
+    }
+    /*
+     *
+     *  for Service google
+     *
+     */
+    public function LDB_ToGoogle_photo($user){
 
+
+        $datas = new \Google_Service_Directory_UserPhoto();
+
+            $user_of_google = $this->service->
+                users->
+                listUsers(['orderBy'=>'email',
+                           'domain'=>'tdmu.edu.ua',
+                           'query'=>'email='.$user.'@tdmu.edu.ua'])
+                ->getUsers();
+            if(count($user_of_google)>0){
+//                $this->service->users_photos->delete($user.'@tdmu.edu.ua');
+                try {
+                    $this->service->users_photos->get($user.'@tdmu.edu.ua');
+                } catch (\Exception $e) {
+                    $datas->setPhotoData($this->base64url_encode(file_get_contents(ROOT.DS."webroot".DS."photo".DS.$user.".jpg")));
+                    $this->service->users_photos->update($user.'@tdmu.edu.ua',$datas);
+                }
+
+
+            }
+        echo "Ok";
+        $this->layout='ajax';
+        $this->autoRender = false;
     }
 
-    private function _LDB_ToGoogle_photo(){
-        $this->_get_students();
-        $service = new Google_Service_Directory($this->client);
-        $key = file_get_contents(ROOT.DS."webroot".DS."Google_key".DS."1fa047635e4bac618edbe30d56e074cff7ad9a75-privatekey.p12");
-
-        $cred = new Google_Auth_AssertionCredentials(
-            $this->service_account_name,
-            array('https://www.googleapis.com/auth/admin.directory.user'),
-            $key,
-            'notasecret',
-            'http://oauth.net/grant_type/jwt/1.0/bearer',
-            'admin4eg@tdmu.edu.ua'
-        );
-
-        if($this->client->getAuth()->isAccessTokenExpired()) {
-            $this->client->getAuth()->refreshTokenWithAssertion($cred);
-        }
-        foreach($this->students as $student_of_contingent){
-            $img = ibase_blob_get(ibase_blob_open($student_of_contingent['PHOTO']), ibase_blob_info($student_of_contingent['PHOTO'])[0]);
-        }
-//        "photoData" => base64_decode (strtr($img, '-_,', '+/=')),
-//       $status = $service->users_photos->update()
-        $data = array(
-            "postBody" => "Google_UserPhoto",
-            "userKey" => "vasylyk_mymy@tdmu.edu.ua",
-            "mimeType"=> "image/jpeg",
-            "data" => $img,
-
-        );
-        $data = array(
-            "postBody" => "Google_UserPhoto",
-            "userKey"=> "vasylyk_mymy@tdmu.edu.ua",
-             "photoData"=> $img
-
-        );
-//        var_dump($service->users_photos);die;
-        $service->users_photos->call('update', array($data));
-//        $status = $service->users_photos->patch("vasylyk_mymy@tdmu.edu.ua","Google_UserPhoto",array($data));
-//        var_dump($service->users_photos);
-//        $status = $service->users_photos->get("admin@tdmu.edu.ua");
-//         var_dump($status);
-
-//        die;
-//        $service->users->update("vasylyk_mymy@tdmu.edu.ua","Google_User",$data);die;
-
-
+    private function base64url_encode($mime) {
+        return rtrim(strtr(base64_encode($mime), '+/', '-_'), '=');
     }
 
     public function contingent(){
-
         if ($this->request->is('post')) {
             if ($this->request->data(['special'])==on){
                 $this->_get_speciality();
                 $this->_sync_C_with_LDB_spec();
             }
-
-
             if ($this->request->data['archive']==on){
                 $this->_sync_archive();
             }
-
             if ($this->request->data(['all_students'])==on){
                  $this->_get_students();
                  $this->_sync_C_with_LDB_users();
             }
-
             if ($this->request->data['photo']==on){
                 $this->_get_students();
                 $this->_sync_C_with_LDB_photo();
             }
             if ($this->request->data['google_photo']==on){
-                $this->oauth2callback();
-                $this->_LDB_ToGoogle_photo();
+//                    $this->loadModel('Students');
+//                    $this->LDB_ToGoogle_photo($this->Students->find()->limit(200));
+                $this->set('modal_google',true);
             }
 
             if ($this->status==true){

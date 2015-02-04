@@ -1,6 +1,6 @@
-<div class="col-sm-12 col-md-12 col-lg-9 col-xs-12">
-
-    <?= $this->Form->create($student);?>
+<div class="col-sm-12 col-md-12 col-lg-12 col-xs-12">
+    <?= $modal_google=='true' ? $this->element('/modal/form_google_ajax') : ''; ?>
+    <?= $this->Form->create($student,['id'=>'sync_form']);?>
     <fieldset>
         <legend><?= __('Options sync') ?></legend>
              <div class="form-group">
@@ -72,7 +72,7 @@
                                          "class"=>"col-xs-12 hidden-xs hidden-sm "
                                      ]);?>
                                      <div class="caption ">
-                                         <h3 class="">Sync, folder with photos with Contingent </h3>
+                                         <h3 class="">Get photo with Contingent </h3>
                                          <p class="alert alert-danger hidden-xs">Time of synchronization can be more than 2 minute</p>
                                          <div class="checkbox">
                                              <label>
@@ -117,7 +117,7 @@
                                     ]);?>
                                     <div class="caption ">
                                         <h3 class="">Send photo to google (API)</h3>
-                                        <p class="alert alert-danger hidden-xs">Time of synchronization can be more than ~10 minute</p>
+                                        <p class="alert alert-danger hidden-xs">Time of synchronization can be more than 30 minute</p>
                                         <div class="checkbox">
                                             <label>
                                                 <input type="checkbox" name="google_photo" style="width:50px;height: 40px;">
@@ -138,3 +138,15 @@
     <?= $this->Form->end() ?>
 
 </div>
+
+<script>
+    $( "#sync_form" ).submit(function( event ) {
+        if ($(this).find( "[name='google_photo']" ).prop( "checked" )==='true'){
+            event.preventDefault();
+
+        }
+
+    });
+
+
+</script>

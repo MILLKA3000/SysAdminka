@@ -90,7 +90,9 @@ class StudentsTable extends Table
             ->notEmpty('password', 'A Password is required')
             ->add('status_id', 'valid', ['rule' => 'numeric'])
             ->requirePresence('status_id', 'create')
-            ->notEmpty('status_id');
+            ->notEmpty('status_id')
+            ->add('send_photo_google', 'valid', ['rule' => 'numeric'])
+            ->requirePresence('send_photo_google', 'create');
 
         return $validator;
     }
