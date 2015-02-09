@@ -40,7 +40,7 @@
     </thead>
     <tbody>
     <?php foreach ($students as $student): ?>
-        <tr <?= $viev_photo_students==1 ? ' class="popover_students hidden-xs hidden-sm" data-toggle="popover" img="'.$student->user_name.'" ' : '' ?>>
+        <tr <?= $viev_photo_students==1 ? ' class="popover_students" data-toggle="popover" img="'.$student->user_name.'" ' : '' ?>>
 
             <td  class='hidden-xs hidden-sm'>
                 <?= $student->has('school') ? $this->Html->link($student->school->name, ['controller' => 'Schools', 'action' => 'edit', $student->school->id]) : '' ?>

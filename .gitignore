@@ -5,6 +5,7 @@ tmp/*
 [Cc]onfig/app.php
 src/Controller/Firebird/*
 app/src/Controller/Firebird/*
+app/webroot/Google_key/*
 app/tmp/*
 app/[Cc]onfig/core.php
 app/[Cc]onfig/app.php

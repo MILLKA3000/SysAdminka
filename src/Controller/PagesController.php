@@ -61,7 +61,6 @@ class PagesController extends AppController
     public function display()
     {
         $this->loadModel('Synchronized');
-        $this->loadModel('Settings');
 
         $this->settings = $this->Settings->_get_settings();
         $stats = $this->Synchronized->find()

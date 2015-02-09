@@ -19,6 +19,9 @@
                             <?= $this->Form->input('password',['type'=>'password','class'=>'form-control','placeholder'=>'password']) ?>
                             <br/>
                             <?= $this->Form->button(__('Login'),['class'=>'btn btn-lg btn-primary btn-block']); ?>
+                            <a  href="/users/oauth2callback" class="btn btn-lg btn-danger btn-block btn-social btn-google-plus">
+                                <i class="fa fa-google"></i> Sign in with Google
+                            </a>
                             <?= $this->Form->end() ?>
                             <a href="#"
                                class="pull-right need-help"

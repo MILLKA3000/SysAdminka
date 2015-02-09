@@ -48,7 +48,7 @@
                     $(".progress-bar").attr('aria-valuenow',count);
                     $(".progress-bar").attr('style','width:'+count/max*100+'%');
                     $(".counting").text(Math.round(count/max*100)+'%');
-                    if (count==max){
+                    if (count>=max){
                         $('.loginModal').modal('hide')
                     }
                 });
