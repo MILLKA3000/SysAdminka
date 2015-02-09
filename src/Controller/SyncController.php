@@ -283,9 +283,6 @@ class SyncController extends AppController
             $data['status_google']='--';
             $data['statistics']=json_encode($this->options);
             $data['date']=mktime();
-            if ($this->Synchronized->save($data)) {
-//                $this->message[]['message']='Sync is Ok. DB write status Ok.';
-            }
         }
         $this->layout = 'ajax';
         $this->render(false);
@@ -457,6 +454,7 @@ class SyncController extends AppController
     private function _emplode_fi($str){
         $str = str_replace("(","",$str);
         $str = str_replace(")","",$str);
+        $str = str_replace("-","",$str);
         $fullname = explode(" ", $str);
         $name['fname']=$fullname[0];
         $fullname[0] = str_replace("'","",$fullname[0]);
