@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f1f1f89-f03c-4650-94cd-3a0807349563" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Template/Students/edit.ctp" afterPath="$PROJECT_DIR$/src/Template/Students/edit.ctp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Template/Element/menu/rightmenu.ctp" afterPath="$PROJECT_DIR$/src/Template/Element/menu/rightmenu.ctp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Template/Element/menu/topmenu.ctp" afterPath="$PROJECT_DIR$/src/Template/Element/menu/topmenu.ctp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/SyncController.php" afterPath="$PROJECT_DIR$/src/Controller/SyncController.php" />
     </list>
     <ignored path="SysAdminka.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,16 +25,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="SyncController.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="SyncController.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Controller/SyncController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="237" column="75" selection-start="6832" selection-end="6832" vertical-scroll-proportion="-16.6" vertical-offset="4088" max-vertical-offset="10070">
+            <state line="96" column="6" selection-start="2116" selection-end="2116" vertical-scroll-proportion="1.0227545" vertical-offset="970" max-vertical-offset="10070">
               <folding>
                 <element signature="e#32#65#0" expanded="true" />
                 <element signature="e#431#450#0" expanded="true" />
-                <marker date="1423660691876" expanded="true" signature="2935:3148" placeholder="SELECT STUDE..STUDENTS..." />
-                <marker date="1423660691876" expanded="true" signature="3255:3324" placeholder="SELECT SPECI..GUIDE_SPECIALITY..." />
-                <marker date="1423660691876" expanded="true" signature="3421:3478" placeholder="SELECT First..." />
+                <marker date="1423666832594" expanded="true" signature="2940:3153" placeholder="SELECT STUDE..STUDENTS..." />
+                <marker date="1423666832594" expanded="true" signature="3260:3329" placeholder="SELECT SPECI..GUIDE_SPECIALITY..." />
+                <marker date="1423666832594" expanded="true" signature="3426:3483" placeholder="SELECT First..." />
               </folding>
             </state>
           </provider>
@@ -96,10 +94,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="rightmenu.ctp" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="rightmenu.ctp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Template/Element/menu/rightmenu.ctp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="6" selection-start="2602" selection-end="2602" vertical-scroll-proportion="0.8207547" vertical-offset="406" max-vertical-offset="1254">
+            <state line="58" column="6" selection-start="2602" selection-end="2602" vertical-scroll-proportion="-27.84" vertical-offset="406" max-vertical-offset="1254">
               <folding />
             </state>
           </provider>
@@ -190,12 +188,12 @@
         <option value="$PROJECT_DIR$/src/Template/Students/index.ctp" />
         <option value="$PROJECT_DIR$/src/Controller/StudentsController.php" />
         <option value="$PROJECT_DIR$/webroot/js/lightbox/lightbox.js" />
-        <option value="$PROJECT_DIR$/src/Controller/SyncController.php" />
         <option value="$PROJECT_DIR$/src/Template/Layout/default.ctp" />
         <option value="$PROJECT_DIR$/src/Template/Students/edit.ctp" />
         <option value="$PROJECT_DIR$/src/Controller/Firebird/class_firebird.php" />
         <option value="$PROJECT_DIR$/src/Template/Element/menu/topmenu.ctp" />
         <option value="$PROJECT_DIR$/src/Template/Element/menu/rightmenu.ctp" />
+        <option value="$PROJECT_DIR$/src/Controller/SyncController.php" />
       </list>
     </option>
   </component>
@@ -376,77 +374,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Template" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SysAdminka" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SysAdminka" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Template" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Students" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SysAdminka" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SysAdminka" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Template" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Element" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SysAdminka" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SysAdminka" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Template" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Element" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="menu" />
+              <option name="myItemId" value="Controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -843,19 +771,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/SyncController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="237" column="75" selection-start="6832" selection-end="6832" vertical-scroll-proportion="-16.6" vertical-offset="4088" max-vertical-offset="10070">
-          <folding>
-            <element signature="e#32#65#0" expanded="true" />
-            <element signature="e#431#450#0" expanded="true" />
-            <marker date="1423660691876" expanded="true" signature="2935:3148" placeholder="SELECT STUDE..STUDENTS..." />
-            <marker date="1423660691876" expanded="true" signature="3255:3324" placeholder="SELECT SPECI..GUIDE_SPECIALITY..." />
-            <marker date="1423660691876" expanded="true" signature="3421:3478" placeholder="SELECT First..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webroot/js/plugins/flot/flot-data.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="23750">
@@ -902,8 +817,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Template/Element/menu/rightmenu.ctp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="6" selection-start="2602" selection-end="2602" vertical-scroll-proportion="0.8207547" vertical-offset="406" max-vertical-offset="1254">
+        <state line="58" column="6" selection-start="2602" selection-end="2602" vertical-scroll-proportion="-27.84" vertical-offset="406" max-vertical-offset="1254">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/SyncController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="96" column="6" selection-start="2116" selection-end="2116" vertical-scroll-proportion="1.0227545" vertical-offset="970" max-vertical-offset="10070">
+          <folding>
+            <element signature="e#32#65#0" expanded="true" />
+            <element signature="e#431#450#0" expanded="true" />
+            <marker date="1423666832594" expanded="true" signature="2940:3153" placeholder="SELECT STUDE..STUDENTS..." />
+            <marker date="1423666832594" expanded="true" signature="3260:3329" placeholder="SELECT SPECI..GUIDE_SPECIALITY..." />
+            <marker date="1423666832594" expanded="true" signature="3426:3483" placeholder="SELECT First..." />
+          </folding>
         </state>
       </provider>
     </entry>
