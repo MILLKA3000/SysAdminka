@@ -10,13 +10,15 @@ include_once('Component/Google_Api/autoload.php');
 include_once ('Component/Google_Api/src/Google/Client.php');
 include_once ('Component/Google_Api/src/Google/Sevice/Oauth2.php');
 include_once ('Component/Google_Api/src/Google/Auth/AssertionCredentials.php');
+include_once('Component/CsvComponent.php');
 
 use class_ibase_fb;
 use Google_Client;
 use Google_Auth_AssertionCredentials;
 use Google_Service_Directory;
 use Google_Service_Oauth2;
-
+use Cake\Network\Email\Email;
+use CsvComponent;
 
 
 /**
@@ -30,17 +32,17 @@ class SyncController extends AppController
         'А' => 'A',
         'Б' => 'B',
         'В' => 'V',
-        'Г' => 'H',
+        'Г' => 'G',
         'Ґ' => 'G',
         'Д' => 'D',
         'Е' => 'E',
-        'Є' => 'Ye',
-        'Ж' => 'Zh',
+        'Є' => 'E',
+        'Ж' => 'J',
         'З' => 'Z',
         'И' => 'Y',
         'І' => 'I',
         'Ї' => 'Yi',
-        'Й' => 'Y',
+        'Й' => 'J',
         'К' => 'K',
         'Л' => 'L',
         'М' => 'M',
@@ -52,7 +54,7 @@ class SyncController extends AppController
         'Т' => 'T',
         'У' => 'U',
         'Ф' => 'F',
-        'Х' => 'Kh',
+        'Х' => 'H',
         'Ц' => 'Ts',
         'Ч' => 'Ch',
         'Ш' => 'Sh',
@@ -63,17 +65,17 @@ class SyncController extends AppController
         'а' => 'a',
         'б' => 'b',
         'в' => 'v',
-        'г' => 'h',
+        'г' => 'g',
         'ґ' => 'g',
         'д' => 'd',
         'е' => 'e',
-        'є' => 'ie',
-        'ж' => 'zh',
+        'є' => 'e',
+        'ж' => 'j',
         'з' => 'z',
         'и' => 'y',
         'і' => 'i',
-        'ї' => 'i',
-        'й' => 'i',
+        'ї' => 'yi',
+        'й' => 'j',
         'к' => 'k',
         'л' => 'l',
         'м' => 'm',
@@ -85,17 +87,20 @@ class SyncController extends AppController
         'т' => 't',
         'у' => 'u',
         'ф' => 'f',
-        'х' => 'kh',
+        'х' => 'h',
         'ц' => 'ts',
         'ч' => 'ch',
         'ш' => 'sh',
         'щ' => 'shch',
         'ь'  => '',
-        'ю' => 'iu',
-        'я' => 'ia',
+        'ю' => 'yu',
+        'я' => 'ya',
         '\'' => ''
     ];
 
+    private $options_csv;
+
+    private $max;
 
     private $user_for_Api =  "admin4eg@tdmu.edu.ua";
 
@@ -125,6 +130,14 @@ class SyncController extends AppController
     public function beforeFilter(){  // Constructor
         $this->contingent = new class_ibase_fb();
         $this->contingent->sql_connect();
+        $this->options_csv = [
+            'length' => 0,
+            'delimiter' => ',',
+            'enclosure' => '"',
+            'escape' => '\\',
+            'headers' => true,
+            'text' => false,
+        ];
     }
 
     public function index(){
@@ -208,11 +221,11 @@ class SyncController extends AppController
         $this->layout='ajax';
         $this->autoRender = false;
     }
-            /*
-             *
-             *  Delete photo in google
-             *
-             */
+        /*
+         *
+         *  Delete photo in google
+         *
+         */
     public function LDB_ToGoogle_photo_delete($user){
         $this->connect_google_api();
         $user_of_google = $this->service->
@@ -386,11 +399,14 @@ class SyncController extends AppController
         }
     }
 
+
+
     /*
-     * Sync Contingent with Local DataBase
+     * Sync Students with Contingent into Local DataBase
      */
     private function _sync_C_with_LDB_users(){
         $this->loadModel('Students');
+        $this->_max_id();
         foreach($this->students as $student_of_contingent){
             $student_ldb = $this->Students->find()
                 ->where(['student_id ' => $student_of_contingent['STUDENTID']])
@@ -466,6 +482,7 @@ class SyncController extends AppController
                     }
 
                     if ($this->Students->save($data)) {
+                        $new_student_for_email++;
                         $this->options['new_student']++;
                         $this->status=true;
 //                        $this->message[]['message']='New students: '.$this->options['new_student'];
@@ -476,8 +493,35 @@ class SyncController extends AppController
         if(($this->options['rename_student']==0) and ($this->options['new_student']==0)){
             $this->message[]['message']="Sorry, there are no new records in Contingent databace";
         }
-
+        if (count($new_student_for_email)>0){
+            $this->send_email($new_student_for_email,"New students in SysAdmin!");
+        }
     }
+
+    private function _max_id(){
+        $this->loadModel('Students');
+        $this->max = $this->Students->find('all', array('order'=>'Students.id DESC'))->first();
+    }
+
+    private function send_email($new_student_for_email,$title){
+        $this->loadModel('Synchronized');
+        $email = new Email('default');
+        $Csv = new CsvComponent($this->options_csv);
+        if (isset($this->max->id)){
+            $data = $this->Students->find()->where(['id >'.$this->max->id])->all();
+        }else{
+            $data = $this->Students->find()->all();
+        }
+        $data =json_decode(json_encode($data), true);
+        $Csv->exportCsv(ROOT.DS."webroot".DS."files/emails/".$_SESSION['Auth']['User']['id'].".csv", array($data), $this->options_csv);
+        $email->from(['admin@admin.tdmu.edu' => 'Admilka(TDMU)'])
+            ->to(json_decode($this->Settings->__find_setting('admin_emails_for_send',$this->Settings->_get_settings())))
+            ->subject($title)
+            ->attachments([ROOT.DS."webroot".DS."files/emails/".$_SESSION['Auth']['User']['id'].".csv"])
+            ->send($title);
+    }
+
+
     /*
      * create user name
      */

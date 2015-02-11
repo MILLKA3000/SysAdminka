@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6f1f1f89-f03c-4650-94cd-3a0807349563" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/SyncController.php" afterPath="$PROJECT_DIR$/src/Controller/SyncController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SysAdminka.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,31 +29,49 @@
       <file leaf-file-name="SyncController.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Controller/SyncController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="96" column="6" selection-start="2116" selection-end="2116" vertical-scroll-proportion="1.0227545" vertical-offset="970" max-vertical-offset="10070">
+            <state line="516" column="23" selection-start="19489" selection-end="19509" vertical-scroll-proportion="0.82063884" vertical-offset="9136" max-vertical-offset="10906">
               <folding>
                 <element signature="e#32#65#0" expanded="true" />
-                <element signature="e#431#450#0" expanded="true" />
-                <marker date="1423666832594" expanded="true" signature="2940:3153" placeholder="SELECT STUDE..STUDENTS..." />
-                <marker date="1423666832594" expanded="true" signature="3260:3329" placeholder="SELECT SPECI..GUIDE_SPECIALITY..." />
-                <marker date="1423666832594" expanded="true" signature="3426:3483" placeholder="SELECT First..." />
+                <element signature="e#475#494#0" expanded="true" />
+                <marker date="1423675004741" expanded="true" signature="3294:3507" placeholder="SELECT STUDE..STUDENTS..." />
+                <marker date="1423675004741" expanded="true" signature="3614:3683" placeholder="SELECT SPECI..GUIDE_SPECIALITY..." />
+                <marker date="1423675004741" expanded="true" signature="3780:3837" placeholder="SELECT First..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="appengineauth.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controller/Component/Google_Api/examples/appengineauth.php">
+      <file leaf-file-name="Email.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/cakephp/cakephp/src/Network/Email/Email.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="24" selection-start="1263" selection-end="1263" vertical-scroll-proportion="-21.16" vertical-offset="136" max-vertical-offset="988">
+            <state line="1293" column="34" selection-start="36393" selection-end="36393" vertical-scroll-proportion="-27.24" vertical-offset="23468" max-vertical-offset="35568">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="batch.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controller/Component/Google_Api/examples/batch.php">
+      <file leaf-file-name="AbstractTransport.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/cakephp/cakephp/src/Network/Email/AbstractTransport.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="31.2" vertical-offset="780" max-vertical-offset="1653">
+            <state line="35" column="16" selection-start="914" selection-end="914" vertical-scroll-proportion="-6.08" vertical-offset="285" max-vertical-offset="1292">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PagesController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Controller/PagesController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="66" column="135" selection-start="1812" selection-end="1881" vertical-scroll-proportion="-18.2" vertical-offset="533" max-vertical-offset="1368">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ViewsController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Controller/ViewsController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="4" selection-start="244" selection-end="261" vertical-scroll-proportion="-0.76" vertical-offset="171" max-vertical-offset="1425">
               <folding />
             </state>
           </provider>
@@ -85,15 +104,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="flot-data.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webroot/js/plugins/flot/flot-data.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="570" max-vertical-offset="23750">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="rightmenu.ctp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Template/Element/menu/rightmenu.ctp">
           <provider selected="true" editor-type-id="text-editor">
@@ -116,15 +126,6 @@
         <entry file="file://$PROJECT_DIR$/src/Template/Element/menu/topmenu.ctp">
           <provider selected="true" editor-type-id="text-editor">
             <state line="1" column="37" selection-start="61" selection-end="61" vertical-scroll-proportion="-0.76" vertical-offset="0" max-vertical-offset="532">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="form_google_ajax.ctp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Template/Element/modal/form_google_ajax.ctp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="45" selection-start="1128" selection-end="1161" vertical-scroll-proportion="-9.76" vertical-offset="383" max-vertical-offset="1235">
               <folding />
             </state>
           </provider>
@@ -272,90 +273,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="webroot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SysAdminka" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SysAdminka" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webroot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plugins" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SysAdminka" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SysAdminka" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webroot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plugins" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="flot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SysAdminka" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SysAdminka" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webroot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SysAdminka" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SysAdminka" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -477,21 +394,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Controller/Component/Google_Api/src/Google/Http/REST.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="57.0" vertical-offset="1425" max-vertical-offset="3173" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/Component/Google_Api/tests/urlshortener/UrlShortenerTests.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="873" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/Component/Google_Api/tests/general/ApiModelTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3154" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/Component/Google_Api/tests/general/ApiClientTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="64.88" vertical-offset="1622" max-vertical-offset="3439" />
@@ -615,13 +517,6 @@
     <entry file="file://$PROJECT_DIR$/src/Controller/SynchronizedController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2033">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/ViewsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="29" selection-start="818" selection-end="818" vertical-scroll-proportion="4.84" vertical-offset="596" max-vertical-offset="1425">
           <folding />
         </state>
       </provider>
@@ -822,15 +717,43 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/PagesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="135" selection-start="1812" selection-end="1881" vertical-scroll-proportion="-18.2" vertical-offset="533" max-vertical-offset="1368">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/cakephp/cakephp/src/Network/Email/Email.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1293" column="34" selection-start="36393" selection-end="36393" vertical-scroll-proportion="-27.24" vertical-offset="23468" max-vertical-offset="35568">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/cakephp/cakephp/src/Network/Email/AbstractTransport.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="16" selection-start="914" selection-end="914" vertical-scroll-proportion="-6.08" vertical-offset="285" max-vertical-offset="1292">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/ViewsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="4" selection-start="244" selection-end="261" vertical-scroll-proportion="-0.76" vertical-offset="171" max-vertical-offset="1425">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/SyncController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="6" selection-start="2116" selection-end="2116" vertical-scroll-proportion="1.0227545" vertical-offset="970" max-vertical-offset="10070">
+        <state line="516" column="23" selection-start="19489" selection-end="19509" vertical-scroll-proportion="0.82063884" vertical-offset="9136" max-vertical-offset="10906">
           <folding>
             <element signature="e#32#65#0" expanded="true" />
-            <element signature="e#431#450#0" expanded="true" />
-            <marker date="1423666832594" expanded="true" signature="2940:3153" placeholder="SELECT STUDE..STUDENTS..." />
-            <marker date="1423666832594" expanded="true" signature="3260:3329" placeholder="SELECT SPECI..GUIDE_SPECIALITY..." />
-            <marker date="1423666832594" expanded="true" signature="3426:3483" placeholder="SELECT First..." />
+            <element signature="e#475#494#0" expanded="true" />
+            <marker date="1423675004741" expanded="true" signature="3294:3507" placeholder="SELECT STUDE..STUDENTS..." />
+            <marker date="1423675004741" expanded="true" signature="3614:3683" placeholder="SELECT SPECI..GUIDE_SPECIALITY..." />
+            <marker date="1423675004741" expanded="true" signature="3780:3837" placeholder="SELECT First..." />
           </folding>
         </state>
       </provider>
