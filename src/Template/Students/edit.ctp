@@ -39,6 +39,7 @@
     <?php } ?>
     <legend><?= __('Information with Google') ?></legend>
         <ul class="list-group" id="info_g">
+
         </ul>
 
 </div>
@@ -57,25 +58,26 @@
 
 <script>
     $(function () {
+        var datag=0;
         $('[data-toggle="tooltip"]').tooltip()
 
         $.post( "/sync/Get_info_google/"+'<?=$student->user_name?>', function(data) {
-            console.log(data);
+            datag = data;
             var html='';
             $.each(data.externalIds, function(key,value){
                html = html + "<li class='list-group-item list-group-item-info'> "+value.customType+": "+value.value+"</li>";
             });
-            console.log(html);
             $('#info_g').html(
                 "<li class='list-group-item list-group-item-success'> fullName: "+data.setName.fullName+"</li>"+
                 "<li class='list-group-item list-group-item-success'> primaryEmail: "+data.primaryEmail+"</li>"+
                 "<li class='list-group-item list-group-item-success'> orgUnitPath: "+data.orgUnitPath+"</li>"+
                 html+
                 "<li class='list-group-item list-group-item-success'> creationTime: "+data.creationTime+"</li>"
-
-
             );
-        }, "json");
+        }, "json")
+            .fail(function() {
+                $('#info_g').html("<li class='list-group-item list-group-item-danger'>In google this user does not exist!</li>");
+        });
 
     $('#open_photo').click(function(){
         $('#photo').ekkoLightbox();
@@ -93,8 +95,10 @@
     }
 
    $('#send_g').click(function(){
-       $('.text-modal').text('Sending photo users');
-       modal();
+       console.log(datag);
+       if(datag!=0){
+           $('.text-modal').text('Sending photo users');
+           modal();
         $.post( "/sync/LDB_ToGoogle_photo/"+'<?=$student->user_name?>'+'/true', function(sync) {
             if (sync=="Ok") {
                 $.post( "/students/save_google_post/"+'<?=$student->id?>', function(status) {
@@ -105,9 +109,11 @@
 
             }
         });
+       }else{alert('In google this user does not exist!')}
     });
 
     $('#del_g').click(function(){
+        if(datag!=0){
         $('.text-modal').text('Deleting user photo');
         modal();
         $.post( "/sync/LDB_ToGoogle_photo_delete/"+'<?=$student->user_name?>', function(sync) {
@@ -120,6 +126,8 @@
 
             }
         });
+        }else{alert('In google this user does not exist!')}
     });
+
     });
 </script>

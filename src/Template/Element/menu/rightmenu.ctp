@@ -1,5 +1,5 @@
 <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
-
+<div class="collapse navbar-collapse navbar-ex1-collapse">
     <ul class="nav navbar-nav side-nav">
         <li>
             <a href="javascript:;" data-toggle="collapse" data-target="#View"><i class="fa fa-fw fa-edit"></i> View tables </a>
@@ -56,5 +56,5 @@
             </ul>
         </li>
     </ul>
-
+</div>
 
