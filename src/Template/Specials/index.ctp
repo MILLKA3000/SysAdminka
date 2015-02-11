@@ -5,6 +5,7 @@
         <tr>
             <th><?= $this->Paginator->sort('special_id') ?></th>
             <th><?= $this->Paginator->sort('name') ?></th>
+            <th><?= $this->Paginator->sort('code') ?></th>
             <th class="actions"><?= __('Actions') ?></th>
         </tr>
     </thead>
@@ -13,6 +14,7 @@
         <tr>
             <td><?= $this->Number->format($special->special_id) ?></td>
             <td><?= $this->Text->autoParagraph(h($special->name))?></td>
+            <td><?= $this->Text->autoParagraph(h($special->code))?></td>
             <td class="actions">
                 <?= $this->Html->link(__('Edit'), ['action' => 'edit',  $special->special_id],['class'=>'btn btn-warning']) ?>
                 <?= $this->Html->link(__('Delete'), ['action' => 'delete', $special->special_id],['class'=>'btn btn-danger']) ?>

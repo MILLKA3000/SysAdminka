@@ -11,7 +11,7 @@
             </div>
         </div>
         <div class="col-sm-6 col-md-6 col-xs-6">
-            <?= $this->Html->link(__('Synchronized with Contingent'), ['controller'=>'Sync','action' => 'contingent'],['class'=>'btn btn-success pull-right']) ?>
+            <?= $this->Html->link(__('Synchronized'), ['controller'=>'Sync','action' => 'contingent'],['class'=>'btn btn-success pull-right']) ?>
         </div>
     </div>
     <table cellpadding="0" cellspacing="0" class="table table-hover">

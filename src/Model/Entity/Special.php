@@ -17,5 +17,6 @@ class Special extends Entity
     protected $_accessible = [
         'name' => true,
         'special_id' => true,
+        'code' => true,
     ];
 }

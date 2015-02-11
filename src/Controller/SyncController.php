@@ -26,6 +26,80 @@ use Google_Service_Oauth2;
  */
 class SyncController extends AppController
 {
+    private static $ukrainianToEnglishRules = [
+        'А' => 'A',
+        'Б' => 'B',
+        'В' => 'V',
+        'Г' => 'G',
+        'Ґ' => 'G',
+        'Д' => 'D',
+        'Е' => 'E',
+        'Є' => 'E',
+        'Ж' => 'J',
+        'З' => 'Z',
+        'И' => 'Y',
+        'І' => 'I',
+        'Ї' => 'Yi',
+        'Й' => 'J',
+        'К' => 'K',
+        'Л' => 'L',
+        'М' => 'M',
+        'Н' => 'N',
+        'О' => 'O',
+        'П' => 'P',
+        'Р' => 'R',
+        'С' => 'S',
+        'Т' => 'T',
+        'У' => 'U',
+        'Ф' => 'F',
+        'Х' => 'H',
+        'Ц' => 'Ts',
+        'Ч' => 'Ch',
+        'Ш' => 'Sh',
+        'Щ' => 'Shch',
+        'Ь' => '',
+        'Ю' => 'Yu',
+        'Я' => 'Ya',
+        'а' => 'a',
+        'б' => 'b',
+        'в' => 'v',
+        'г' => 'g',
+        'ґ' => 'g',
+        'д' => 'd',
+        'е' => 'e',
+        'є' => 'e',
+        'ж' => 'j',
+        'з' => 'z',
+        'и' => 'y',
+        'і' => 'i',
+        'ї' => 'yi',
+        'й' => 'j',
+        'к' => 'k',
+        'л' => 'l',
+        'м' => 'm',
+        'н' => 'n',
+        'о' => 'o',
+        'п' => 'p',
+        'р' => 'r',
+        'с' => 's',
+        'т' => 't',
+        'у' => 'u',
+        'ф' => 'f',
+        'х' => 'h',
+        'ц' => 'ts',
+        'ч' => 'ch',
+        'ш' => 'sh',
+        'щ' => 'shch',
+        'ь'  => '',
+        'ю' => 'yu',
+        'я' => 'ya',
+        '\'' => ''
+    ];
+
+
+    private $user_for_Api =  "admin4eg@tdmu.edu.ua";
+
+    private $service_account_name = '943473990893-gkf9eek54q9ij5oh0nm1e77487fdd8n4@developer.gserviceaccount.com';
 
     var $uses = array('Students');
 
@@ -41,85 +115,14 @@ class SyncController extends AppController
 
     private $options = array();
 
-    private static $ukrainianToEnglishRules = [
-        'А' => 'A',
-        'Б' => 'B',
-        'В' => 'V',
-        'Г' => 'H',
-        'Ґ' => 'G',
-        'Д' => 'D',
-        'Е' => 'E',
-        'Є' => 'Ye',
-        'Ж' => 'Zh',
-        'З' => 'Z',
-        'И' => 'Y',
-        'І' => 'I',
-        'Ї' => 'Yi',
-        'Й' => 'Y',
-        'К' => 'K',
-        'Л' => 'L',
-        'М' => 'M',
-        'Н' => 'N',
-        'О' => 'O',
-        'П' => 'P',
-        'Р' => 'R',
-        'С' => 'S',
-        'Т' => 'T',
-        'У' => 'U',
-        'Ф' => 'F',
-        'Х' => 'Kh',
-        'Ц' => 'Ts',
-        'Ч' => 'Ch',
-        'Ш' => 'Sh',
-        'Щ' => 'Shch',
-        'Ь' => '',
-        'Ю' => 'Yu',
-        'Я' => 'Ya',
-        'а' => 'a',
-        'б' => 'b',
-        'в' => 'v',
-        'г' => 'h',
-        'ґ' => 'g',
-        'д' => 'd',
-        'е' => 'e',
-        'є' => 'ie',
-        'ж' => 'zh',
-        'з' => 'z',
-        'и' => 'y',
-        'і' => 'i',
-        'ї' => 'i',
-        'й' => 'i',
-        'к' => 'k',
-        'л' => 'l',
-        'м' => 'm',
-        'н' => 'n',
-        'о' => 'o',
-        'п' => 'p',
-        'р' => 'r',
-        'с' => 's',
-        'т' => 't',
-        'у' => 'u',
-        'ф' => 'f',
-        'х' => 'kh',
-        'ц' => 'ts',
-        'ч' => 'ch',
-        'ш' => 'sh',
-        'щ' => 'shch',
-        'ь'  => '',
-        'ю' => 'iu',
-        'я' => 'ia',
-        '\'' => ''
-    ];
-
-
-    private $user_for_Api =  "admin4eg@tdmu.edu.ua";
-    private $service_account_name = '943473990893-gkf9eek54q9ij5oh0nm1e77487fdd8n4@developer.gserviceaccount.com';
-
     private $client;
+
     private $service;
 
+    private $test;
 
-    public function beforeFilter(){
+
+    public function beforeFilter(){  // Constructor
         $this->contingent = new class_ibase_fb();
         $this->contingent->sql_connect();
     }
@@ -130,13 +133,21 @@ class SyncController extends AppController
 
     private function _get_students(){
         $this->students = $this->contingent->gets("
-			SELECT STUDENTS.DEPARTMENTID,STUDENTS.SEMESTER,STUDENTS.FIO,STUDENTS.STUDENTID,STUDENTS.PHOTO,STUDENTS.ARCHIVE,STUDENTS.GROUPNUM,STUDENTS.STATUS,STUDENTS.SPECIALITYID
+			SELECT STUDENTS.DEPARTMENTID,STUDENTS.SEMESTER,STUDENTS.FIO,STUDENTS.NFIO,STUDENTS.STUDENTID,STUDENTS.PHOTO,STUDENTS.ARCHIVE,STUDENTS.GROUPNUM,STUDENTS.STATUS,STUDENTS.SPECIALITYID
 			FROM STUDENTS WHERE ARCHIVE=0");
     }
     private function _get_speciality(){
         $this->speciality = $this->contingent->gets("
-			SELECT SPECIALITYID,SPECIALITY FROM GUIDE_SPECIALITY WHERE USE=1");
+			SELECT SPECIALITYID,SPECIALITY,CODE FROM GUIDE_SPECIALITY WHERE USE=1");
     }
+
+    private function _test_ping(){
+        $this->test = $this->contingent->gets("
+			SELECT First 1 STUDENTID
+			FROM STUDENTS WHERE ARCHIVE=0");
+        if (!isset($this->test[1]['STUDENTID'])) $this->Flash->error('Connect to Contingent not found!!!');
+    }
+
 
     /*
      *
@@ -170,7 +181,7 @@ class SyncController extends AppController
      *  for Service google
      *
      */
-    public function LDB_ToGoogle_photo($user){
+    public function LDB_ToGoogle_photo($user,$force=NULL){
         $this->connect_google_api();
         $datas = new \Google_Service_Directory_UserPhoto();
             $user_of_google = $this->service->
@@ -180,10 +191,14 @@ class SyncController extends AppController
                            'query'=>'email='.$user.'@tdmu.edu.ua'])
                 ->getUsers();
             if(count($user_of_google)>0){
+
 //                $this->service->users_photos->delete($user.'@tdmu.edu.ua');
                 try {
                     $this->service->users_photos->get($user.'@tdmu.edu.ua');
                 } catch (\Exception $e) {
+                    $force=true;
+                }
+                if ($force==true){
                     $datas->setPhotoData($this->base64url_encode(file_get_contents(ROOT.DS."webroot".DS."photo".DS.$user.".jpg")));
                     $datas->setWidth(124);
                     $this->service->users_photos->update($user.'@tdmu.edu.ua',$datas);
@@ -199,6 +214,7 @@ class SyncController extends AppController
     }
 
     public function contingent(){
+    $this->_test_ping();
         if ($this->request->is('post')) {
             if ($this->request->data(['special'])==on){
                 $this->_get_speciality();
@@ -295,7 +311,7 @@ class SyncController extends AppController
         $this->loadModel('Specials');
         foreach($this->speciality as $speciality_of_contingent){
             $specials_ldb = $this->Specials->find()
-                ->where(['special_id ' => $speciality_of_contingent['SPECIALITYID']])
+                ->where(['special_id ' => $speciality_of_contingent['SPECIALITYID'].' AND status_id != 7'])
                 ->first();
                 if (isset($specials_ldb)){
                     $rename=0;
@@ -308,6 +324,10 @@ class SyncController extends AppController
                         $rename++;
                         $data['name']=$speciality_of_contingent['SPECIALITY'];
                     }
+                    if ($speciality_of_contingent['CODE']!=$specials_ldb->code){
+                        $rename++;
+                        $data['code']=$speciality_of_contingent['CODE'];
+                    }
                     if($rename>0){
                         if ($this->Specials->save($data)) {
                             $this->options['rename_specials']++;
@@ -319,6 +339,7 @@ class SyncController extends AppController
                     $data = $this->Specials->newEntity();
                     $data['special_id'] = $speciality_of_contingent['SPECIALITYID'];
                     $data['name'] = $speciality_of_contingent['SPECIALITY'];
+                    $data['code'] = $speciality_of_contingent['CODE'];
                     if ($this->Specials->save($data)) {
                         $this->options['new_specials']++;
                         $this->status=true;
@@ -344,7 +365,7 @@ class SyncController extends AppController
             if ($student_of_contingent['STATUS']=='С'){
                 if (isset($student_ldb)){
                     $rename=0;
-                    $name = $this->_emplode_fi($student_of_contingent['FIO']);
+                    $student_of_contingent['NFIO']!=null ? $name = $this->_emplode_fi($student_of_contingent['NFIO']) : $name = $this->_emplode_fi($student_of_contingent['FIO']);
                     $data = $this->Students->get($student_ldb->id);
                     if ($student_of_contingent['DEPARTMENTID']!=$student_ldb->school_id){
                         $rename++;
@@ -389,8 +410,7 @@ class SyncController extends AppController
 
 
                 }else{
-
-                    $name = $this->_emplode_fi($student_of_contingent['FIO']);
+                    $student_of_contingent['NFIO']!=null ? $name = $this->_emplode_fi($student_of_contingent['NFIO']) : $name = $this->_emplode_fi($student_of_contingent['FIO']);
                     $data = $this->Students->newEntity();
                     $data['student_id'] = $student_of_contingent['STUDENTID'];
                     $data['school_id'] = $student_of_contingent['DEPARTMENTID'];
@@ -452,17 +472,20 @@ class SyncController extends AppController
      * implode fio -> fname, lname
      */
     private function _emplode_fi($str){
+        if ($str[0]==' '){$str = substr($str, 1);}
         $str = str_replace("(","",$str);
         $str = str_replace(")","",$str);
         $str = str_replace("-","",$str);
+        $str = str_replace("'","",$str);
+        $str = str_replace(":","",$str);
+        $str = str_replace(".","",$str);
+        $str = str_replace("`","",$str);
+        $str = str_replace("\"","",$str);
         $fullname = explode(" ", $str);
-        $name['fname']=$fullname[0];
-        $fullname[0] = str_replace("'","",$fullname[0]);
-        $fullname[1] = str_replace("'","",$fullname[1]);
-        $fullname[2] = str_replace("'","",$fullname[2]);
+        $name['lname']=$fullname[0];
         $name['uname']=$this->_create_username($fullname[0])."_".$this->_create_username($fullname[1][0].$fullname[1][1].$fullname[1][2].$fullname[1][3].$fullname[2][0].$fullname[2][1].$fullname[2][2].$fullname[2][3]);
         unset($fullname[0]);
-        $name['lname']=implode(" ", $fullname);
+        $name['fname']=implode(" ", $fullname);
         return $name;
     }
 }

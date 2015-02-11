@@ -10,6 +10,9 @@
         <?php
             echo $this->Form->input('name',['class'=>'form-control','type'=>'text']);
         ?>
+        <?php
+            echo $this->Form->input('code',['class'=>'form-control','type'=>'text']);
+        ?>
     </fieldset>
     <br/>
     <?= $this->Form->button(__('Submit'),['class'=>'btn btn-success']) ?>

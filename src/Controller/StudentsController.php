@@ -20,11 +20,13 @@ class StudentsController extends AppController
 
     public function index($statuses=1,$search=NULL)
     {
+
+        $str = str_replace("(","",$str);
         $this->loadModel('Settings');
         $this->settings = $this->Settings->_get_settings();
         $this->paginate = [
             'contain' => ['Schools','Status','Specials'],
-            'conditions' => ['AND'=>['Students.status_id' => $statuses,'OR'=>['Students.last_name LIKE "%'.$search.'%"','Students.first_name LIKE "%'.$search.'%"']]],
+            'conditions' => ['AND'=>['Students.status_id' => addslashes($statuses),'OR'=>['Students.last_name LIKE "%'.addslashes ($search).'%"','Students.first_name LIKE "%'.addslashes ($search).'%"']]],
             'limit' => '25'
         ];
         $status = $this->Students->Status->find('list', ['limit' => 50]);

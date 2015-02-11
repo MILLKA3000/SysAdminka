@@ -72,7 +72,7 @@
                                          "class"=>"col-xs-12 hidden-xs"
                                      ]);?>
                                      <div class="caption ">
-                                         <h3 class="">Get photo with Contingent </h3>
+                                         <h3 class="">Get photos with Contingent </h3>
                                          <p class="alert alert-danger">Time of synchronization can be more than 2 minute</p>
                                          <div class="checkbox">
                                              <label>

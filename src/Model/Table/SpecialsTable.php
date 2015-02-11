@@ -49,7 +49,9 @@ class SpecialsTable extends Table
             ])
             ->allowEmpty('special_id', 'create')
             ->requirePresence('name', 'create')
-            ->notEmpty('name');
+            ->notEmpty('name')
+            ->requirePresence('code', 'create')
+            ->notEmpty('code');
 
         return $validator;
     }

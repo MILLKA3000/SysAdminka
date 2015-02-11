@@ -1,4 +1,4 @@
-<div class=" col-sm-6 col-md-6 col-xs-11">
+<div class=" col-sm-6 col-md-8 col-xs-11">
     <?= $this->Form->create($student); ?>
     <fieldset>
         <legend><?= __('Edit Student') ?></legend>
@@ -21,8 +21,51 @@
     <?= $this->Form->end() ?>
     <br/>
 </div>
+<div class="col-md-3 hidden-sm hidden-xs">
+    <legend><?= __('Photo') ?></legend>
+    <?php if (file_exists(ROOT."/webroot/photo/" .$student->user_name. ".jpg")){ ?>
+    <img src="/photo/<?= $student->user_name?>.jpg" class="img-responsive" style="margin-bottom: 30px;">
+    <?= $this->Html->link(__('Send photo into google'),[''],['class'=>'btn btn-success','id'=>'send_g+']) ?>
+    <?= $this->Html->link(__('Delete photo in google'),[''],['class'=>'btn btn-danger'],['id'=>'del_g+'],['confirm' =>'') ?>
+    <?php }else{ ?>
+        <img src="/img/nophoto.jpg" class="img-responsive">
+    <?php } ?>
+
+
+</div>
+
+<div class="modal fade loginModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div  style="padding: 20px">
+                <h1 class="text-center login-title">Sending photo users</h1>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
 <script>
     $(function () {
         $('[data-toggle="tooltip"]').tooltip()
-    })
+    });
+
+    $(function () {
+        $('.loginModal').modal({
+            backdrop: 'static',
+            keyboard: false
+        });
+
+        $.post( "/sync/LDB_ToGoogle_photo/"+'<?=$student->user_name?>'+'/true', function(sync) {
+            if (sync=="Ok") {
+                $.post( "/students/save_google_post/"+'<?=$student->id?>', function(status) {
+                    if(status=="Ok"){
+                        $('.loginModal').modal('hide');
+                    }
+                });
+
+            }
+        });
+    });
 </script>
