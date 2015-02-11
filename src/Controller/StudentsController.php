@@ -51,6 +51,14 @@ class StudentsController extends AppController
         $this->autoRender = false;
     }
 
+    public function delete_google_post($id){
+        $data = $this->Students->get($id);
+        $data['send_photo_google']=0;
+        $this->Students->save($data);
+        echo "Ok";
+        $this->layout='ajax';
+        $this->autoRender = false;
+    }
     /**
      * View method
      *

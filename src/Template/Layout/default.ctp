@@ -13,7 +13,6 @@ $cakeDescription = $site_name;
     <?= $this->Html->css('bootstrap.css') ?>
     <?= $this->Html->css('sysadmin.css') ?>
     <?= $this->Html->css('sb-admin.css') ?>
-    <?= $this->Html->css('plugins/morris.css') ?>
     <?= $this->Html->css('../font-awesome/css/font-awesome.min.css') ?>
     <?= $this->Html->script('jquery.js') ?>
 
@@ -51,9 +50,8 @@ $cakeDescription = $site_name;
 
     <?= $this->Html->script('angular/angular.min.js') ?>
     <?= $this->Html->script('bootstrap.min.js') ?>
-    <?= $this->Html->script('plugins/morris/raphael.min.js') ?>
-    <?= $this->Html->script('plugins/morris/morris.min.js') ?>
-    <?= $this->Html->script('plugins/morris/morris-data.js') ?>
+    <?= $this->Html->script('lightbox/lightbox.js') ?>
+
 
 </body>
 </html>

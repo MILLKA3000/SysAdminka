@@ -1,4 +1,4 @@
-<div class=" col-sm-6 col-md-8 col-xs-11">
+<div class=" col-sm-12 col-md-7 col-xs-12">
     <?= $this->Form->create($student); ?>
     <fieldset>
         <legend><?= __('Edit Student') ?></legend>
@@ -21,16 +21,25 @@
     <?= $this->Form->end() ?>
     <br/>
 </div>
-<div class="col-md-3 hidden-sm hidden-xs">
-    <legend><?= __('Photo') ?></legend>
+<div class="col-md-5 hidden-sm hidden-xs">
+    <legend><?= __('Sending photo with Contingent') ?></legend>
     <?php if (file_exists(ROOT."/webroot/photo/" .$student->user_name. ".jpg")){ ?>
-    <img src="/photo/<?= $student->user_name?>.jpg" class="img-responsive" style="margin-bottom: 30px;">
-    <?= $this->Html->link(__('Send photo into google'),[''],['class'=>'btn btn-success','id'=>'send_g+']) ?>
-    <?= $this->Html->link(__('Delete photo in google'),[''],['class'=>'btn btn-danger'],['id'=>'del_g+'],['confirm' =>'') ?>
+        <div class="row">
+            <div class="col-md-5">
+                <a href="/photo/<?= $student->user_name?>.jpg" data-toggle="lightbox" data-title="<?= $student->user_name?>" id="photo"></a>
+                <img src="/photo/<?= $student->user_name?>.jpg" class="img-responsive thumbnail" style="max-height: 250px" id="open_photo">
+            </div>
+            <div class="col-md-6">
+                <?= $this->Form->button(__('Send photo into google'),['class'=>'btn btn-success','id'=>'send_g','style'=>'margin: 20px 0;']) ?>
+                <?= $this->Form->button(__('Delete photo in google'),['class'=>'btn btn-danger','id'=>'del_g']) ?>
+            </div>
+        </div>
     <?php }else{ ?>
         <img src="/img/nophoto.jpg" class="img-responsive">
     <?php } ?>
-
+    <legend><?= __('Information with Google') ?></legend>
+        <ul class="list-group" id="info_g">
+        </ul>
 
 </div>
 
@@ -38,7 +47,7 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div  style="padding: 20px">
-                <h1 class="text-center login-title">Sending photo users</h1>
+                <h1 class="text-center text-modal">?</h1>
 
             </div>
         </div>
@@ -49,23 +58,68 @@
 <script>
     $(function () {
         $('[data-toggle="tooltip"]').tooltip()
+
+        $.post( "/sync/Get_info_google/"+'<?=$student->user_name?>', function(data) {
+            console.log(data);
+            var html='';
+            $.each(data.externalIds, function(key,value){
+               html = html + "<li class='list-group-item list-group-item-info'> "+value.customType+": "+value.value+"</li>";
+            });
+            console.log(html);
+            $('#info_g').html(
+                "<li class='list-group-item list-group-item-success'> fullName: "+data.setName.fullName+"</li>"+
+                "<li class='list-group-item list-group-item-success'> primaryEmail: "+data.primaryEmail+"</li>"+
+                "<li class='list-group-item list-group-item-success'> orgUnitPath: "+data.orgUnitPath+"</li>"+
+                html+
+                "<li class='list-group-item list-group-item-success'> creationTime: "+data.creationTime+"</li>"
+
+
+            );
+        }, "json");
+
+    $('#open_photo').click(function(){
+        $('#photo').ekkoLightbox();
     });
 
-    $(function () {
+    function modal(){
         $('.loginModal').modal({
             backdrop: 'static',
             keyboard: false
         });
+    }
 
+    function hide_modal(){
+        $('.loginModal').modal('hide');
+    }
+
+   $('#send_g').click(function(){
+       $('.text-modal').text('Sending photo users');
+       modal();
         $.post( "/sync/LDB_ToGoogle_photo/"+'<?=$student->user_name?>'+'/true', function(sync) {
             if (sync=="Ok") {
                 $.post( "/students/save_google_post/"+'<?=$student->id?>', function(status) {
                     if(status=="Ok"){
-                        $('.loginModal').modal('hide');
+                        hide_modal();
                     }
                 });
 
             }
         });
+    });
+
+    $('#del_g').click(function(){
+        $('.text-modal').text('Deleting user photo');
+        modal();
+        $.post( "/sync/LDB_ToGoogle_photo_delete/"+'<?=$student->user_name?>', function(sync) {
+            if (sync=="Ok") {
+                $.post( "/students/delete_google_post/"+'<?=$student->id?>', function(status) {
+                    if(status=="Ok"){
+                        hide_modal();
+                    }
+                });
+
+            }
+        });
+    });
     });
 </script>

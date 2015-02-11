@@ -208,6 +208,39 @@ class SyncController extends AppController
         $this->layout='ajax';
         $this->autoRender = false;
     }
+            /*
+             *
+             *  Delete photo in google
+             *
+             */
+    public function LDB_ToGoogle_photo_delete($user){
+        $this->connect_google_api();
+        $user_of_google = $this->service->
+            users->
+            listUsers(['orderBy'=>'email',
+                       'domain'=>'tdmu.edu.ua',
+                       'query'=>'email='.$user.'@tdmu.edu.ua'])
+            ->getUsers();
+        if(count($user_of_google)>0){
+            $this->service->users_photos->delete($user.'@tdmu.edu.ua');
+            echo "Ok";
+        }
+        $this->layout='ajax';
+        $this->autoRender = false;
+    }
+        /*
+         *
+         *  Get all information the student with google
+         *
+         */
+    public function Get_info_google($user){
+        $this->connect_google_api();
+        $user_of_google = $this->service->users->get($user.'@tdmu.edu.ua');
+        $user_of_google->setName = $user_of_google->name;
+        echo json_encode($user_of_google);
+        $this->layout='ajax';
+        $this->autoRender = false;
+    }
 
     private function base64url_encode($mime) {
         return rtrim(strtr(base64_encode($mime), '+/', '-_'), '=');
