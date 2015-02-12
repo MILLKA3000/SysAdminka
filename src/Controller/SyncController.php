@@ -147,7 +147,7 @@ class SyncController extends AppController
 
     private function _get_students(){
         $this->students = $this->contingent->gets("
-			SELECT STUDENTS.DEPARTMENTID,STUDENTS.SEMESTER,STUDENTS.FIO,STUDENTS.NFIO,STUDENTS.STUDENTID,STUDENTS.PHOTO,STUDENTS.ARCHIVE,STUDENTS.GROUPNUM,STUDENTS.STATUS,STUDENTS.SPECIALITYID
+			SELECT FIRST 1 STUDENTS.DEPARTMENTID,STUDENTS.SEMESTER,STUDENTS.FIO,STUDENTS.NFIO,STUDENTS.STUDENTID,STUDENTS.PHOTO,STUDENTS.ARCHIVE,STUDENTS.GROUPNUM,STUDENTS.STATUS,STUDENTS.SPECIALITYID
 			FROM STUDENTS WHERE ARCHIVE=0");
     }
     private function _get_speciality(){
@@ -514,7 +514,7 @@ class SyncController extends AppController
 
     private function send_email($new_student_for_email,$title){
         $this->loadModel('Synchronized');
-        $email = new Email('default');
+
         $Csv = new CsvComponent($this->options_csv);
         if (isset($this->max->id)){
             $data = $this->Students->find()->where(['id >'.$this->max->id])->all();
@@ -523,6 +523,9 @@ class SyncController extends AppController
         }
         $data =json_decode(json_encode($data), true);
         $Csv->exportCsv(ROOT.DS."webroot".DS."files/emails/email.csv", array($data), $this->options_csv);
+        $email = new Email();
+        $email->transport('gmail');
+
         $email->from([$this->Settings->__find_setting('admin_emails',$this->Settings->_get_settings()) => 'Admilka(TDMU)'])
             ->to(json_decode($this->Settings->__find_setting('admin_emails_for_send',$this->Settings->_get_settings())))
             ->subject($title)
