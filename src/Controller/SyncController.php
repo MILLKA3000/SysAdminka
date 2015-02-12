@@ -283,7 +283,8 @@ class SyncController extends AppController
             }
             if ($this->request->data['cron_google_send']==on){
                 $output = shell_exec('sudo -u gaps /opt/gasync/run_google_sync.sh');
-                $this->message[]['message']=$output;
+                $logs = 'View log sync with Google <a href="'.$_SERVER['domain'].'/log/SDS_sync.log">View</a><br/><br/>';
+                $this->message[]['message']=$logs.$output;
             }
 
             if ($this->status==true){
