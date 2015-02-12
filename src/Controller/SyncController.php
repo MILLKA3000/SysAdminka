@@ -282,7 +282,7 @@ class SyncController extends AppController
                 $this->set('modal_google',true);
             }
             if ($this->request->data['cron_google_send']==on){
-                $output = shell_exec('/opt/gasync/run_google_sync.sh');
+                $output = shell_exec('sudo -u gaps /opt/gasync/run_google_sync.sh');
                 $this->message[]['message']=$output;
             }
 
@@ -351,7 +351,7 @@ class SyncController extends AppController
             $data['statistics']=json_encode($this->options);
             $data['date']=mktime();
             if ($this->Synchronized->save($data)) {
-                $output = shell_exec('/opt/gasync/run_google_sync.sh');
+                $output = shell_exec('sudo -u gaps /opt/gasync/run_google_sync.sh');
             }
         }
         $this->layout = 'ajax';
