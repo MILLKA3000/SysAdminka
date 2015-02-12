@@ -16,7 +16,7 @@ class UsersController extends AppController
 
     private $client_id = '943473990893-ja51t9rhce8789lal48gtpmbh4oht945.apps.googleusercontent.com';
     private $client_secret = 'NqRmhVDrVd54AgEp9-7E7f4H';
-    private $redirect_uri = 'http://adm.milka.co.vu/users/oauth2callback';
+    private $redirect_uri = 'http://site-tsmu.tk/users/oauth2callback';
     private $client;
 
     public function login()
