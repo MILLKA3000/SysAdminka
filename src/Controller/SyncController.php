@@ -513,11 +513,11 @@ class SyncController extends AppController
             $data = $this->Students->find()->all();
         }
         $data =json_decode(json_encode($data), true);
-        $Csv->exportCsv(ROOT.DS."webroot".DS."files/emails/".$_SESSION['Auth']['User']['id'].".csv", array($data), $this->options_csv);
+        $Csv->exportCsv(ROOT.DS."webroot".DS."files/emails/email.csv", array($data), $this->options_csv);
         $email->from([$this->Settings->__find_setting('admin_emails',$this->Settings->_get_settings()) => 'Admilka(TDMU)'])
             ->to(json_decode($this->Settings->__find_setting('admin_emails_for_send',$this->Settings->_get_settings())))
             ->subject($title)
-            ->attachments([ROOT.DS."webroot".DS."files/emails/".$_SESSION['Auth']['User']['id'].".csv"])
+            ->attachments([ROOT.DS."webroot".DS."files/emails/email.csv"])
             ->send($title);
     }
 
