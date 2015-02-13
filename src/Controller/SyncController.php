@@ -128,6 +128,7 @@ class SyncController extends AppController
 
 
     public function beforeFilter(){  // Constructor
+        $this->Auth->allow('api');
         $this->contingent = new class_ibase_fb();
         $this->contingent->sql_connect();
         $this->options_csv = [
@@ -280,6 +281,11 @@ class SyncController extends AppController
             if ($this->request->data['google_photo']==on){
                 $this->set('modal_google',true);
             }
+            if ($this->request->data['cron_google_send']==on){
+                $output = shell_exec('sudo -u gaps /opt/gasync/run_google_sync.sh');
+                $logs = 'View log sync with Google <a href="'.$_SERVER['domain'].'/log/SDS_sync.log">View</a><br/><br/>';
+                $this->message[]['message']=$logs.$output;
+            }
 
             if ($this->status==true){
                 $this->loadModel('Synchronized');
@@ -345,6 +351,9 @@ class SyncController extends AppController
             $data['status_google']='--';
             $data['statistics']=json_encode($this->options);
             $data['date']=mktime();
+            if ($this->Synchronized->save($data)) {
+                $output = shell_exec('sudo -u gaps /opt/gasync/run_google_sync.sh');
+            }
         }
         $this->layout = 'ajax';
         $this->render(false);
@@ -505,7 +514,7 @@ class SyncController extends AppController
 
     private function send_email($new_student_for_email,$title){
         $this->loadModel('Synchronized');
-        $email = new Email('default');
+
         $Csv = new CsvComponent($this->options_csv);
         if (isset($this->max->id)){
             $data = $this->Students->find()->where(['id >'.$this->max->id])->all();
@@ -514,6 +523,9 @@ class SyncController extends AppController
         }
         $data =json_decode(json_encode($data), true);
         $Csv->exportCsv(ROOT.DS."webroot".DS."files/emails/email.csv", array($data), $this->options_csv);
+        $email = new Email();
+        $email->transport('gmail');
+
         $email->from([$this->Settings->__find_setting('admin_emails',$this->Settings->_get_settings()) => 'Admilka(TDMU)'])
             ->to(json_decode($this->Settings->__find_setting('admin_emails_for_send',$this->Settings->_get_settings())))
             ->subject($title)
