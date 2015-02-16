@@ -512,6 +512,12 @@ class SyncController extends AppController
         $this->max = $this->Students->find('all', array('order'=>'Students.id DESC'))->first();
     }
 
+    /*
+     *
+     *  Send email SMTP
+     *
+     */
+
     private function send_email($new_student_for_email,$title){
         $this->loadModel('Synchronized');
 

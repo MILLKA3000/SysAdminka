@@ -19,4 +19,10 @@ class Special extends Entity
         'special_id' => true,
         'code' => true,
     ];
+
+    protected function _getName()
+    {
+        return $this->_properties['name'] . '(' .
+        $this->_properties['code'].')';
+    }
 }

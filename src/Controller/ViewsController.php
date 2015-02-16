@@ -3,6 +3,7 @@ namespace App\Controller;
 use App\Controller\AppController;
 include_once('Component/CsvComponent.php');
 use CsvComponent;
+use ZipArchive;
 class ViewsController extends AppController
 {
     private $schools;
@@ -66,5 +67,21 @@ class ViewsController extends AppController
             }
         }
         $this->render('moodle');
+    }
+
+    public function photos(){
+        if ($this->request->is('post')) {
+            $zip = new ZipArchive();
+            $filename = ROOT.DS."webroot".DS."files/temp_archive/photos.zip";
+            unlink($filename);
+            if ($zip->open($filename, ZipArchive::CREATE)!==TRUE) {
+                exit("cannot open <$filename>\n");
+            }
+            $directory = realpath('photo/');
+            $options = array('add_path' => 'photos/', 'remove_path' => $directory);
+            $zip->addPattern('/\.(?:jpg|jpeg)$/', $directory, $options);
+            $zip->close();
+            $this->redirect($_SERVER['domain']."/files/temp_archive/photos.zip");
+        }
     }
 }

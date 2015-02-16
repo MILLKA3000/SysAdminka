@@ -16,7 +16,7 @@
             </ul>
         </li>
         <li>
-            <a href="/Sync/contingent" data-toggle="collapse" data-target="#Sync"><i class="fa fa-fw fa-dashboard"></i> Synchronized </a>
+            <a href="/Sync/contingent" data-toggle="collapse" data-target="#Sync"><i class="fa fa-fw fa-dashboard"></i> Synchronization </a>
 
         </li>
         <li>
@@ -34,13 +34,16 @@
             </ul>
         </li>
         <li>
-            <a href="javascript:;" data-toggle="collapse" data-target="#Templates"><i class="fa fa-fw fa-edit"></i>Templates</a>
+            <a href="javascript:;" data-toggle="collapse" data-target="#Templates"><i class="fa fa-fw fa-edit"></i>Export</a>
             <ul id="Templates" class="collapse">
                 <li>
                     <a href="/Views/deanery"><i class="fa fa-fw fa-edit"></i>For Dean</a>
                 </li>
                 <li>
                     <a href="/Views/moodle"><i class="fa fa-fw fa-edit"></i>For Moodle</a>
+                </li>
+                <li>
+                    <a href="/Views/photos"><i class="fa fa-fw fa-edit"></i>All photo of students</a>
                 </li>
             </ul>
         </li>
