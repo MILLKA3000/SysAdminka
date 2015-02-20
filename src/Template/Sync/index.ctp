@@ -13,7 +13,7 @@
                                         "class"=>"col-xs-12 hidden-xs "
                                     ]);?>
                                 <div class="caption">
-                                    <h3 class="">Sync each student with Contingent</h3>
+                                    <h3 class="">Get each student from Contingent</h3>
                                    <p class="alert alert-danger">Time of synchronization can be more than 1 minute</p>
                                     <div class="checkbox">
                                         <label>
@@ -52,8 +52,8 @@
                                     "class"=>"col-xs-12 hidden-xs"
                                 ]);?>
                                 <div class="caption">
-                                    <h3 class="">Sync specialyty with Contingent</h3>
-                                    <p class="alert alert-info">It syncs all speciality, what in status "use" in contingent.</p>
+                                    <h3 class="">Get specialyty from Contingent</h3>
+                                    <p class="alert alert-info">It syncs all speciality, what have status "use" in contingent.</p>
                                     <div class="checkbox">
                                         <label>
                                             <input type="checkbox" name="special" style="width:50px;height: 40px;">
@@ -72,7 +72,7 @@
                                          "class"=>"col-xs-12 hidden-xs"
                                      ]);?>
                                      <div class="caption ">
-                                         <h3 class="">Get photos with Contingent </h3>
+                                         <h3 class="">Get photos from Contingent </h3>
                                          <p class="alert alert-danger">Time of synchronization can be more than 2 minute</p>
                                          <div class="checkbox">
                                              <label>
@@ -96,7 +96,7 @@
                                      ]);?>
                                      <div class="caption">
                                          <h3 class="">Google Sync</h3>
-                                         <p class="alert alert-danger">Time of synchronization can be more than ~10 minute</p>
+                                         <p class="alert alert-danger">Time of synchronization can be more than ~5 minute</p>
                                          <div class="checkbox">
                                              <label>
                                                  <input type="checkbox" name="cron_google_send" style="width:50px;height: 40px;">
@@ -117,10 +117,10 @@
                                     ]);?>
                                     <div class="caption ">
                                         <h3 class="">Send photo to google (API)</h3>
-                                        <p class="alert alert-danger">Time of synchronization can be more than 30 minute</p>
+                                        <p class="alert alert-danger">Time of synchronization can be more than ~30 minute</p>
                                         <div class="checkbox">
                                             <label>
-                                                <input type="checkbox" name="google_photo" style="width:50px;height: 40px;">
+                                                <input type="checkbox" name="google_photo" style="width:50px;height: 40px;"><label><span></span></label>
                                             </label>
                                         </div>
                                     </div>
