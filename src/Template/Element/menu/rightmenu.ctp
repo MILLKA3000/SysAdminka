@@ -37,10 +37,10 @@
             <a href="javascript:;" data-toggle="collapse" data-target="#Templates"><i class="fa fa-fw fa-edit"></i>Export</a>
             <ul id="Templates" class="collapse">
                 <li>
-                    <a href="/Views/deanery"><i class="fa fa-fw fa-edit"></i>For Dean</a>
+                    <a href="/Views/deanery"><i class="fa fa-fw fa-edit"></i>For Dean template</a>
                 </li>
                 <li>
-                    <a href="/Views/moodle"><i class="fa fa-fw fa-edit"></i>For Moodle</a>
+                    <a href="/Views/moodle"><i class="fa fa-fw fa-edit"></i>For Moodle template</a>
                 </li>
                 <li>
                     <a href="/Views/photos"><i class="fa fa-fw fa-edit"></i>All photo of students</a>

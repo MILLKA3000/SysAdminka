@@ -26,7 +26,13 @@ class StudentsController extends AppController
         $this->settings = $this->Settings->_get_settings();
         $this->paginate = [
             'contain' => ['Schools','Status','Specials'],
-            'conditions' => ['AND'=>['Students.status_id' => addslashes($statuses),'OR'=>['Students.last_name LIKE "%'.addslashes ($search).'%"','Students.first_name LIKE "%'.addslashes ($search).'%"']]],
+            'conditions' => ['AND'=>['Students.status_id' => addslashes($statuses),
+                                     'OR'=>[
+                                         'Students.last_name LIKE "%'.addslashes ($search).'%"',
+                                         'Students.first_name LIKE "%'.addslashes ($search).'%"',
+                                         'Students.user_name LIKE "%'.addslashes ($search).'%"',
+                                         'Students.student_id LIKE "%'.addslashes ($search).'%"'
+                                     ]]],
             'limit' => '25'
         ];
         $status = $this->Students->Status->find('list', ['limit' => 50]);

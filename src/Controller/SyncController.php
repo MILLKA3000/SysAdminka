@@ -329,12 +329,13 @@ class SyncController extends AppController
     }
 
     private function _sync_C_with_LDB_photo(){
-
+        $this->loadModel('Students');
         foreach($this->students as $student_of_contingent){
-            $name = $this->_emplode_fi($student_of_contingent['FIO']);
+            $student_ldb = $this->Students->find()
+                ->where(['student_id ' => $student_of_contingent['STUDENTID']],['status_id'=>1])
+                ->first();
             $img = ibase_blob_get(ibase_blob_open($student_of_contingent['PHOTO']), ibase_blob_info($student_of_contingent['PHOTO'])[0]);
-            file_put_contents('photo/'.$name['uname'].'.jpg', $img);
-
+            file_put_contents('photo/'.$student_ldb['user_name'].'.jpg', $img);
         }
         $this->message[]['message']='Sync photos was successful';
 

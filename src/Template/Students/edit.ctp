@@ -12,7 +12,7 @@
             echo $this->Form->input('last_name',['class'=>'form-control','type'=>'text']);
             echo $this->Form->input('grade_level',['class'=>'form-control','type'=>'text']);
             echo $this->Form->input('user_name',['class'=>'form-control','type'=>'text','data-toggle'=>'tooltip','data-placement'=>'top','title'=>'If you editing this user name, it record will current delete on the google']);
-            echo $this->Form->input('password',['class'=>'form-control']);
+            echo $this->Form->input('password',['class'=>'form-control','type'=>'text']);
             echo $this->Form->input('status_id',['options' => $status,'class'=>'form-control']);
         ?>
     </fieldset>
@@ -22,7 +22,7 @@
     <br/>
 </div>
 <div class="col-md-5 hidden-sm hidden-xs">
-    <legend><?= __('Sending photo with Contingent') ?></legend>
+    <legend><?= __('Sending photo from Contingent to Google') ?></legend>
     <?php if (file_exists(ROOT."/webroot/photo/" .$student->user_name. ".jpg")){ ?>
         <div class="row">
             <div class="col-md-5">
