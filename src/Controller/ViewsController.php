@@ -59,6 +59,7 @@ class ViewsController extends AppController
                     ' Semester'
                 ]),
                 'idnumber' => 'student_id',
+                'auth' => $data->func()->concat(['googleoauth2'])
 
             ]);
             $data =json_decode(json_encode($data), true);
