@@ -1,11 +1,16 @@
 <div class="specials index large-10 medium-9 columns">
     <?= $this->Html->link(__('Add new speciality'), ['action' => 'add'],['class'=>'btn btn-success pull-right']) ?>
-    <table cellpadding="0" cellspacing="0" class="table table-hover">
+    <table cellpadding="0" cellspacing="0" class="table table-hover ui-datatable"
+           data-global-search="false"
+           data-length-change="false"
+           data-info="true"
+           data-paging="true"
+           data-page-length="10">
     <thead>
         <tr>
-            <th><?= $this->Paginator->sort('special_id') ?></th>
-            <th><?= $this->Paginator->sort('name') ?></th>
-            <th><?= $this->Paginator->sort('code') ?></th>
+            <th data-filterable="text" ><?= $this->Paginator->sort('special_id') ?></th>
+            <th data-filterable="text"><?= $this->Paginator->sort('name') ?></th>
+            <th data-filterable="text" ><?= $this->Paginator->sort('code') ?></th>
             <th class="actions"><?= __('Actions') ?></th>
         </tr>
     </thead>

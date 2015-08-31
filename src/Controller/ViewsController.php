@@ -40,6 +40,26 @@ class ViewsController extends AppController
                         ' AND special_id = '.$this->request->data['special_id'].
                         ' AND grade_level = '.$this->request->data['grade_level'].
                         ' AND status_id = '.$this->request->data['status_id']]);
+
+            $data= $data->select([
+                'username'=>'user_name',
+                'password'=>'password',
+                'firstname'=>'first_name',
+                'lastname'=>'last_name',
+                'email' => $data->func()->concat([
+                    'user_name' => 'literal',
+                    '@',
+                    'tdmu.edu.ua'
+                ]),
+                'course1' => $data->func()->concat(['']),
+                'group1' => 'groupnum',
+                'cohort1' => $data->func()->concat([
+                    'grade_level' => 'literal',
+                    ' Semester'
+                ]),
+                'idnumber' => 'student_id',
+
+            ]);
             $data =json_decode(json_encode($data), true);
             if (count($data)>0){
                 $Csv->exportCsv(ROOT.DS."webroot".DS."files/".$_SESSION['Auth']['User']['id'].".csv", array($data), $this->options);
@@ -66,7 +86,7 @@ class ViewsController extends AppController
                 $this->Flash->error(__('No users'));
             }
         }
-        $this->render('moodle');
+
     }
 
     public function photos(){

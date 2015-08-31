@@ -13,6 +13,8 @@ $cakeDescription = $site_name;
     <?= $this->Html->css('bootstrap.css') ?>
     <?= $this->Html->css('sysadmin.css') ?>
     <?= $this->Html->css('sb-admin.css') ?>
+    <?= $this->Html->css('animation.css') ?>
+    <?= $this->Html->css('dataTables.bootstrap.css') ?>
     <?= $this->Html->css('../font-awesome/css/font-awesome.min.css') ?>
     <?= $this->Html->script('jquery.js') ?>
 
@@ -51,7 +53,11 @@ $cakeDescription = $site_name;
     <?= $this->Html->script('angular/angular.min.js') ?>
     <?= $this->Html->script('bootstrap.min.js') ?>
     <?= $this->Html->script('lightbox/lightbox.js') ?>
-
-
+    <?= $this->Html->script('jquery.dataTables.min.js') ?>
+    <?= $this->Html->script('dataTables.bootstrap.js') ?>
+    <?= $this->Html->script('datatables-helper.js') ?>
+    <script>
+        $('.ui-datatable').dataTableHelper();
+    </script>
 </body>
 </html>

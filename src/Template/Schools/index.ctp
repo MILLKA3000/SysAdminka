@@ -1,10 +1,15 @@
 <div class="schools index large-10 medium-9 columns">
     <?= $this->Html->link(__('Add new school'), ['action' => 'add'],['class'=>'btn btn-success pull-right']) ?>
-    <table cellpadding="0" cellspacing="0" class="table table-hover">
+    <table cellpadding="0" cellspacing="0" class="table table-hover ui-datatable"
+           data-global-search="false"
+           data-length-change="false"
+           data-info="true"
+           data-paging="true"
+           data-page-length="50">
     <thead>
         <tr>
-            <th><?= $this->Paginator->sort('school_id') ?></th>
-            <th><?= $this->Paginator->sort('name') ?></th>
+            <th data-filterable="select" data-sortable="true" data-sort-order="2"><?= $this->Paginator->sort('school_id') ?></th>
+            <th data-filterable="text" data-sortable="true" data-sort-order="2"><?= $this->Paginator->sort('name') ?></th>
             <th class="actions"><?= __('Actions') ?></th>
         </tr>
     </thead>

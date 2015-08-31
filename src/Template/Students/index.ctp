@@ -1,44 +1,51 @@
-<div class="">
+<div id="animation">
+    <div class="circle"></div>
+    <div class="circle1"></div>
+</div>
+
+<div class="data" style="display:none">
+
+
     <div class="row">
-        <div class="col-sm-6 col-md-6 col-xs-6">
-            <div class="row">
-                <div class="col-sm-10 col-md-6 col-xs-9">
-                    <?= $this->Form->input('',['class'=>'form-control search_sort','type'=>'text','label' => false,'value'=>$search]); ?>
-                </div>
-                <div class="col-sm-1 col-md-1 col-xs-1">
-                    <button class="btn btn-default" type="button" onClick='window.location.href = "/students/index/"+$(".change_sort").val()+"/"+$(".search_sort").val()'><i class="fa fa-search"></i></button>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-6 col-md-6 col-xs-6">
+<!--        <div class="col-sm-6 col-md-6 col-xs-6">-->
+<!--            <div class="row">-->
+<!--                <div class="col-sm-10 col-md-6 col-xs-9">-->
+<!--                    --><?//= $this->Form->input('',['class'=>'form-control search_sort','type'=>'text','label' => false,'value'=>$search]); ?>
+<!--                </div>-->
+<!--                <div class="col-sm-1 col-md-1 col-xs-1">-->
+<!--                    <button class="btn btn-default" type="button" onClick='window.location.href = "/students/index/"+$(".change_sort").val()+"/"+$(".search_sort").val()'><i class="fa fa-search"></i></button>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+        <div class="col-sm-12 col-md-12 col-xs-12 text-left">
             <?= $this->Html->link(__('Synchronization'), ['controller'=>'Sync','action' => 'contingent'],['class'=>'btn btn-success pull-right']) ?>
+            <br>
         </div>
     </div>
-    <table cellpadding="0" cellspacing="0" class="table table-hover">
-    <thead>
+    <table
+        class="table table-striped table-bordered table-hover ui-datatable"
+        data-global-search="false"
+        data-length-change="false"
+        data-info="true"
+        data-paging="true"
+        data-page-length="50"
+        >
+        <thead>
         <tr>
-            <th  class='hidden-xs hidden-sm' style='width:150px'><?= $this->Paginator->sort('school_id','Department') ?></th>
-            <th  class='hidden-xs hidden-sm' style='width:150px'><?= $this->Paginator->sort('special_id','Special') ?></th>
-            <th class='hidden-xs hidden-sm' style='width:20px'><?= $this->Paginator->sort('grade_level','Semester') ?></th>
-            <th class='hidden-xs hidden-sm' style='width:50px'><?= $this->Paginator->sort('student_id') ?></th>
-            <th class='hidden-xs hidden-sm' style='width:20px'><?= $this->Paginator->sort('groupnum') ?></th>
-            <th style='width:150px'><?= $this->Paginator->sort('first_name') ?></th>
-            <th style='width:150px'><?= $this->Paginator->sort('last_name') ?></th>
-            <th style='width:150px'><?= $this->Paginator->sort('user_name') ?></th>
-
-            <th style='width:200px'><?= $this->Form->input('status',[
-                    'options' => $status,
-                     'class'=>'form-control change_sort',
-                     'style'=>'max-width:200px',
-                     'onChange'=>'window.location.href = "/students/index/"+this.value+"/"+$(".search_sort").val()',
-                     'default'=>$statuses
-                ]);
-                ?>
-            </th>
-            <th class="actions"><?= __('Actions') ?></th>
+            <th data-filterable="text" data-sortable="true">Department</th>
+            <th data-filterable="text" data-sortable="true" data-sort-order="2">Special</th>
+            <th data-filterable="select" data-sortable="true" data-sort-order="2">Semester</th>
+            <th data-filterable="text" data-sortable="true" data-sort-order="2">student_id</th>
+            <th data-filterable="select" data-sortable="true" data-sort-order="2">groupnum</th>
+            <th data-filterable="text" data-sortable="true" data-sort-order="2">first_name</th>
+            <th data-filterable="text" data-sortable="true" data-sort-order="2">last_name</th>
+            <th data-filterable="text" data-sortable="true" data-sort-order="2">user_name</th>
+            <th data-filterable="select" data-sortable="true" data-sort-order="2">status</th>
+            <th style = "width:50px">Edit</th>
         </tr>
-    </thead>
-    <tbody>
+        </thead>
+        <tbody>
+
     <?php foreach ($students as $student): ?>
         <tr <?= $viev_photo_students==1 ? ' class="popover_students" data-toggle="popover" img="'.$student->user_name.'" ' : '' ?>>
 
@@ -48,9 +55,9 @@
             <td  class='hidden-xs hidden-sm'>
                 <?= $student->has('special') ? $this->Html->link($student->special->name, ['controller' => 'Specials', 'action' => 'edit', $student->special->special_id]) : '' ?>
             </td>
-            <td class='hidden-xs hidden-sm'><?= $this->Text->autoParagraph(h($student->grade_level)); ?></td>
+            <td class='hidden-xs hidden-sm'><?= $student->grade_level ?></td>
             <td class='hidden-xs hidden-sm'><?= $this->Text->autoParagraph(h($student->student_id)); ?></td>
-            <td class='hidden-xs hidden-sm'><?= $this->Text->autoParagraph(h($student->groupnum)); ?></td>
+            <td class='hidden-xs hidden-sm'><?= $student->groupnum ?></td>
             <td><?= $this->Text->autoParagraph(h($student->first_name)); ?></td>
             <td><?= $this->Text->autoParagraph(h($student->last_name)); ?></td>
             <td><?= $this->Text->autoParagraph(h($student->user_name)); ?></td>
@@ -66,27 +73,28 @@
     <?php endforeach; ?>
     </tbody>
     </table>
-    <div class="paginator">
-        <ul class="pagination">
-            <?= $this->Paginator->prev('< ' . __('previous')) ?>
-            <?= $this->Paginator->numbers() ?>
-            <?= $this->Paginator->next(__('next') . ' >') ?>
-        </ul>
-        <p><?= $this->Paginator->counter() ?></p>
-    </div>
+<!--    <div class="paginator">-->
+<!--        <ul class="pagination">-->
+<!--            --><?//= $this->Paginator->prev('< ' . __('previous')) ?>
+<!--            --><?//= $this->Paginator->numbers() ?>
+<!--            --><?//= $this->Paginator->next(__('next') . ' >') ?>
+<!--        </ul>-->
+<!--        <p>--><?//= $this->Paginator->counter() ?><!--</p>-->
+<!--    </div>-->
 </div>
 
 <script>
+
     $(document).ready(function(){
 
-//        $('.popover_students').popover({placement: 'left', content: '<img src="/photo/"'+$(this).attr('img')+'.jpg" >', html: true})
+    $('.data').show();
+    $('#animation').hide();
 
-
-    $('table').on('mouseenter', '.popover_students', function() {
+    $('.table').on('mouseenter', '.popover_students', function() {
         $(this).popover({placement: 'left', content: '<img src="/photo/'+$(this).attr('img')+'.jpg" class="img-responsive" style="max-height:150px">', html: true})
         $(this).popover('show');
     });
-    $('table').on('mouseleave', '.popover_students', function() {
+    $('.table').on('mouseleave', '.popover_students', function() {
         $(this).popover('hide');
     });
 

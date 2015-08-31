@@ -1,12 +1,17 @@
 <div class="users index large-10 medium-9 columns">
     <?= $this->Html->link(__('Add new user'), ['action' => 'add'],['class'=>'btn btn-success pull-right']) ?>
-    <table cellpadding="0" cellspacing="0" class="table table-hover">
+    <table cellpadding="0" cellspacing="0" class="table table-hover ui-datatable"
+           data-global-search="false"
+           data-length-change="false"
+           data-info="true"
+           data-paging="true"
+           data-page-length="10">
     <thead>
         <tr>
-            <th><?= $this->Paginator->sort('id') ?></th>
-            <th><?= $this->Paginator->sort('fname') ?></th>
-            <th><?= $this->Paginator->sort('lname') ?></th>
-            <th><?= $this->Paginator->sort('email') ?></th>
+            <th data-filterable="text"><?= $this->Paginator->sort('id') ?></th>
+            <th data-filterable="text"><?= $this->Paginator->sort('fname') ?></th>
+            <th data-filterable="text"><?= $this->Paginator->sort('lname') ?></th>
+            <th data-filterable="text"><?= $this->Paginator->sort('email') ?></th>
             <th class="actions"><?= __('Actions') ?></th>
         </tr>
     </thead>
