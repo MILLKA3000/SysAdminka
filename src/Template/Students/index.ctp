@@ -7,16 +7,6 @@
 
 
     <div class="row">
-<!--        <div class="col-sm-6 col-md-6 col-xs-6">-->
-<!--            <div class="row">-->
-<!--                <div class="col-sm-10 col-md-6 col-xs-9">-->
-<!--                    --><?//= $this->Form->input('',['class'=>'form-control search_sort','type'=>'text','label' => false,'value'=>$search]); ?>
-<!--                </div>-->
-<!--                <div class="col-sm-1 col-md-1 col-xs-1">-->
-<!--                    <button class="btn btn-default" type="button" onClick='window.location.href = "/students/index/"+$(".change_sort").val()+"/"+$(".search_sort").val()'><i class="fa fa-search"></i></button>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
         <div class="col-sm-12 col-md-12 col-xs-12 text-left">
             <?= $this->Html->link(__('Synchronization'), ['controller'=>'Sync','action' => 'contingent'],['class'=>'btn btn-success pull-right']) ?>
             <br>
@@ -32,11 +22,11 @@
         >
         <thead>
         <tr>
-            <th data-filterable="text" data-sortable="true">Department</th>
-            <th data-filterable="text" data-sortable="true" data-sort-order="2">Special</th>
-            <th data-filterable="select" data-sortable="true" data-sort-order="2">Semester</th>
-            <th data-filterable="text" data-sortable="true" data-sort-order="2">student_id</th>
-            <th data-filterable="select" data-sortable="true" data-sort-order="2">groupnum</th>
+            <th class='hidden-xs hidden-sm'  data-sortable="true">Department</th>
+            <th class='hidden-xs hidden-sm'  data-sortable="true" data-sort-order="2">Special</th>
+            <th class='hidden-xs hidden-sm' data-filterable="select" data-sortable="true" data-sort-order="2">Semester</th>
+            <th class='hidden-xs hidden-sm' data-filterable="text" data-sortable="true" data-sort-order="2">student_id</th>
+            <th class='hidden-xs hidden-sm' data-filterable="select" data-sortable="true" data-sort-order="2">groupnum</th>
             <th data-filterable="text" data-sortable="true" data-sort-order="2">first_name</th>
             <th data-filterable="text" data-sortable="true" data-sort-order="2">last_name</th>
             <th data-filterable="text" data-sortable="true" data-sort-order="2">user_name</th>
@@ -73,14 +63,6 @@
     <?php endforeach; ?>
     </tbody>
     </table>
-<!--    <div class="paginator">-->
-<!--        <ul class="pagination">-->
-<!--            --><?//= $this->Paginator->prev('< ' . __('previous')) ?>
-<!--            --><?//= $this->Paginator->numbers() ?>
-<!--            --><?//= $this->Paginator->next(__('next') . ' >') ?>
-<!--        </ul>-->
-<!--        <p>--><?//= $this->Paginator->counter() ?><!--</p>-->
-<!--    </div>-->
 </div>
 
 <script>

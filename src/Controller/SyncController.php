@@ -314,12 +314,13 @@ class SyncController extends AppController
                 if ($this->Students->save($data)) {
                     $this->status=true;
                     $this->options['students_arhive']++;
-                    $this->message[]['message']='Students is in archive: '. $this->options['students_arhive'];
                 }
             }
         }
         if($this->options['students_arhive']==0){
             $this->message[]['message']="Sorry, there are no new records in Contingent databace";
+        }else{
+            $this->message[]['message']='Students is in archive: '. $this->options['students_arhive'];
         }
     }
 
