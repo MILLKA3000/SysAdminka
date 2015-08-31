@@ -1,5 +1,7 @@
 tmp/*
 .idea/*
+logs/*
+webroot/files/*
 [Cc]onfig/core.php
 [Cc]onfig/database.php
 [Cc]onfig/app.php

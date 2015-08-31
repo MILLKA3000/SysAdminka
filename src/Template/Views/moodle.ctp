@@ -1,7 +1,7 @@
 <div class=" col-sm-6 col-md-6 col-xs-11">
     <?= $this->Form->create($view); ?>
     <fieldset>
-        <legend>Export for Moodle</legend>
+        <legend><?php echo $title ?></legend>
         <?php
         echo $this->Form->input('school_id', ['options' => $schools,'class'=>'form-control']);
         echo $this->Form->input('special_id', ['options' => $specials,'class'=>'form-control']);

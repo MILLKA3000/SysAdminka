@@ -24,7 +24,7 @@ class StudentsController extends AppController
         $this->loadModel('Settings');
         $this->settings = $this->Settings->_get_settings();
         $status = $this->Students->Status->find('list', ['limit' => 50]);
-        $this->set('students', $this->Students->find()->contain(['Schools','Status','Specials']));
+        $this->set('students', $this->Students->find()->contain(['Schools','Status','Specials'])->limit(10000));
         $this->set('viev_photo_students',$this->Settings->__find_setting('viev_photo_students',$this->settings));
         $this->set(compact('status','statuses','search'));
     }

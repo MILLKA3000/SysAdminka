@@ -33,6 +33,7 @@ class ViewsController extends AppController
     }
 
     public function moodle(){
+        $this->set('title','Export for Moodle');
         if ($this->request->is('post')) {
             $Csv = new CsvComponent($this->options);
             $data = $this->Students->find()->where([
@@ -67,6 +68,7 @@ class ViewsController extends AppController
             }else{
                 $this->Flash->error(__('No users'));
             }
+
         }
     }
 
@@ -86,7 +88,8 @@ class ViewsController extends AppController
                 $this->Flash->error(__('No users'));
             }
         }
-
+        $this->set('title','Export for Deanery');
+        $this->render('moodle');
     }
 
     public function photos(){
