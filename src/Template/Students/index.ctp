@@ -10,7 +10,7 @@
 <!--        <div class="col-sm-6 col-md-6 col-xs-6">-->
 <!--            <div class="row">-->
 <!--                <div class="col-sm-10 col-md-6 col-xs-9">-->
-<!--                    --><?//= $this->Form->input('',['class'=>'form-control search_sort','type'=>'text','label' => false,'value'=>$search]); ?>
+<!--                    --><?php // $this->Form->input('',['class'=>'form-control search_sort','type'=>'text','label' => false,'value'=>$search]); ?>
 <!--                </div>-->
 <!--                <div class="col-sm-1 col-md-1 col-xs-1">-->
 <!--                    <button class="btn btn-default" type="button" onClick='window.location.href = "/students/index/"+$(".change_sort").val()+"/"+$(".search_sort").val()'><i class="fa fa-search"></i></button>-->
@@ -32,16 +32,16 @@
         >
         <thead>
         <tr>
-            <th class='hidden-xs hidden-sm' data-sortable="true">Department</th>
-            <th class='hidden-xs hidden-sm' data-sortable="true" data-sort-order="2">Special</th>
-            <th class='hidden-xs hidden-sm' data-filterable="select" data-sortable="true" data-sort-order="2">Semester</th>
-            <th class='hidden-xs hidden-sm' data-filterable="text" data-sortable="true" data-sort-order="2">student_id</th>
-            <th class='hidden-xs hidden-sm' data-filterable="select" data-sortable="true" data-sort-order="2">groupnum</th>
-            <th data-filterable="text" data-sortable="true" data-sort-order="2">first_name</th>
-            <th data-filterable="text" data-sortable="true" data-sort-order="2">last_name</th>
-            <th data-filterable="text" data-sortable="true" data-sort-order="2">user_name</th>
-            <th data-filterable="select" data-sortable="true" data-sort-order="2">status</th>
-            <th style = "width:50px">Edit</th>
+            <th style="max-width:120px" data-filterable="text" class='col-xs-2 hidden-xs hidden-sm' data-sortable="true">Department</th>
+            <th style="max-width:120px" data-filterable="text" class='col-xs-2 hidden-xs hidden-sm' data-sortable="true" data-sort-order="2">Special</th>
+            <th style="max-width:10px" class='col-xs-1 hidden-xs hidden-sm' data-filterable="select" data-sortable="true" data-sort-order="2">Sem</th>
+            <th style="max-width:120px" class='hidden-xs hidden-sm' data-filterable="text" data-sortable="true" data-sort-order="2">Student_id</th>
+            <th style="max-width:10px" class='col-xs-1 hidden-xs hidden-sm' data-filterable="select" data-sortable="true" data-sort-order="2">Group</th>
+            <th style="max-width:50px" data-filterable="text" data-sortable="true" data-sort-order="2">First_name</th>
+            <th style="max-width:50px" data-filterable="text" data-sortable="true" data-sort-order="2">Last_name</th>
+            <th style="max-width:50px" data-filterable="text" data-sortable="true" data-sort-order="2">User_name</th>
+            <th style="max-width:40px" data-filterable="select" data-sortable="true" data-sort-order="2">Status</th>
+            <th style="max-width:20px">Edit</th>
         </tr>
         </thead>
         <tbody>
@@ -75,11 +75,11 @@
     </table>
 <!--    <div class="paginator">-->
 <!--        <ul class="pagination">-->
-<!--            --><?//= $this->Paginator->prev('< ' . __('previous')) ?>
-<!--            --><?//= $this->Paginator->numbers() ?>
-<!--            --><?//= $this->Paginator->next(__('next') . ' >') ?>
+<!--            --><?php // $this->Paginator->prev('< ' . __('previous')) ?>
+<!--            --><?php //$this->Paginator->numbers() ?>
+<!--            --><?php //$this->Paginator->next(__('next') . ' >') ?>
 <!--        </ul>-->
-<!--        <p>--><?//= $this->Paginator->counter() ?><!--</p>-->
+<!--        <p>--><?php //$this->Paginator->counter() ?><!--</p>-->
 <!--    </div>-->
 </div>
 
@@ -90,6 +90,7 @@
     $('.data').show();
     $('#animation').hide();
 
+    $('.data .table .form-control').attr('style','max-width:120px');
     $('.table').on('mouseenter', '.popover_students', function() {
         $(this).popover({placement: 'left', content: '<img src="/photo/'+$(this).attr('img')+'.jpg" class="img-responsive" style="max-height:150px">', html: true})
         $(this).popover('show');

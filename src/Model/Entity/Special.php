@@ -22,7 +22,6 @@ class Special extends Entity
 
     protected function _getName()
     {
-        return $this->_properties['name'] . '(' .
-        $this->_properties['code'].')';
+        return $this->_properties['name'];
     }
 }
